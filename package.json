@@ -19,6 +19,8 @@
     "url": "https://github.com/openreachtech/eslint-config-openreachtech/issues"
   },
   "homepage": "https://github.com/openreachtech/eslint-config-openreachtech#readme",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-plugin-jsdoc": "^39.2.1"
+  }
 }
