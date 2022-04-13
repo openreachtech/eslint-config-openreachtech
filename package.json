@@ -2,7 +2,7 @@
   "name": "@openreachtech/eslint-config",
   "version": "0.0.0",
   "description": "ESLing config by Open Reach Tech inc.",
-  "main": "index.js",
+  "main": ".eslintrc.yml",
   "scripts": {
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
