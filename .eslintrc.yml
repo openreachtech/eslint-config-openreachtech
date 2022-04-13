@@ -9,6 +9,7 @@ parserOptions:
   ecmaVersion: latest
 plugins:
   - jsdoc
+  - openreachtech
 ignorePatterns:
   - trials
 rules:
@@ -82,6 +83,7 @@ rules:
     - defaultAssignment: false
   no-unreachable: error
   no-var: error
+  openreachtech/no-else-if: error
   operator-linebreak:
     - error
     - before
