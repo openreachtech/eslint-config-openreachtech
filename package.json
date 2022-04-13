@@ -4,6 +4,7 @@
   "description": "ESLing config by Open Reach Tech inc.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
