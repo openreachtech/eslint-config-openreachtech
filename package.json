@@ -2,6 +2,11 @@
   "name": "@openreachtech/eslint-config",
   "version": "0.0.0",
   "description": "ESLing config by Open Reach Tech inc.",
+  "files": [
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "main": ".eslintrc.yml",
   "scripts": {
     "lint": "eslint .",
