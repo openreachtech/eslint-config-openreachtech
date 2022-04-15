@@ -13,16 +13,14 @@ plugins:
 ignorePatterns:
   - trials
 rules:
-  array-bracket-spacing:
-    - error
+  array-bracket-spacing: error
   arrow-spacing:
     - error
     - after: true
       before: true
   brace-style: error
   comma-dangle: off
-  comma-spacing:
-    - error
+  comma-spacing: error
   comma-style:
     - error
     - last
@@ -52,12 +50,11 @@ rules:
   jsdoc/require-returns-type: error
   jsdoc/require-throws: error
   jsdoc/require-yields: error
-  key-spacing:
-    - error
+  key-spacing: error
   keyword-spacing:
-     - error
-     - before: true
-       after: true
+    - error
+    - before: true
+      after: true
   lines-around-comment:
     - error
     - beforeBlockComment: true
@@ -69,8 +66,8 @@ rules:
     - error
     - unix
   lines-between-class-members:
-     - error
-     - always
+    - error
+    - always
   multiline-ternary:
     - error
     - always
@@ -78,8 +75,7 @@ rules:
   no-await-in-loop: error
   no-console: error
   no-extra-semi: error
-  no-multi-spaces:
-    - error
+  no-multi-spaces: error
   no-multiple-empty-lines:
     - error
     - max: 1
@@ -113,10 +109,8 @@ rules:
     - selector: 'WhileStatement'
       message: 'Object-Oriented Programming does not require `while` statement.'
   no-return-await: error
-  no-tabs:
-    - error
-  no-trailing-spaces:
-    - error
+  no-tabs: error
+  no-trailing-spaces: error
   no-unexpected-multiline: error
   no-unneeded-ternary:
     - error
@@ -156,8 +150,7 @@ rules:
   quotes:
     - error
     - single
-  rest-spread-spacing:
-    - error
+  rest-spread-spacing: error
   semi:
     - error
     - never
@@ -169,8 +162,7 @@ rules:
     - error
     - first
   space-before-blocks: error
-  space-before-function-paren:
-    - error
+  space-before-function-paren: error
   space-infix-ops: error
   space-unary-ops: error
   spaced-comment: error
@@ -179,8 +171,7 @@ rules:
   template-curly-spacing:
     - error
     - never
-  template-tag-spacing:
-    - error
+  template-tag-spacing: error
   unicode-bom: error
   yield-star-spacing:
     - error
