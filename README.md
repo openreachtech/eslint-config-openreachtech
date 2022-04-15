@@ -1,4 +1,4 @@
-# eslint-config-openreachtech
+# ESLint Config for Open Reach Tech inc.
 
 * ESLint shareable config for Open Reach Tech inc.
 
