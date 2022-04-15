@@ -7,8 +7,8 @@
 * Run `npm install` in each project.
 
   ```
-  npm install --save-dev eslint \
-    eslint-plugin-jsdoc \
+  npm install --save-dev \
+    eslint \
     @openreachtech/eslint-config
   ```
 
