@@ -1,0 +1,35 @@
+{
+  "name": "@openreachtech/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLing config by Open Reach Tech inc.",
+  "files": [
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "main": ".eslintrc.yml",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openreachtech/eslint-config-openreachtech.git"
+  },
+  "keywords": [
+    "ESLint"
+  ],
+  "author": "Open Reach Tech inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openreachtech/eslint-config-openreachtech/issues"
+  },
+  "homepage": "https://github.com/openreachtech/eslint-config-openreachtech#readme",
+  "dependencies": {
+    "eslint-plugin-openreachtech": "^0.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-plugin-jsdoc": "^39.2.1"
+  }
+}
