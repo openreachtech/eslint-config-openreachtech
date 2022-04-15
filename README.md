@@ -1,4 +1,4 @@
-# eslint-config-openreachtech
+# ESLint Config for Open Reach Tech inc.
 
 * ESLint shareable config for Open Reach Tech inc.
 
@@ -24,3 +24,7 @@
 ## License
 
 * MIT © [Open Reach Tech inc.](https://openreach.tech)
+
+## Version
+
+* `0.1.0`
