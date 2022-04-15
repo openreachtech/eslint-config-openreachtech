@@ -24,3 +24,7 @@
 ## License
 
 * MIT © [Open Reach Tech inc.](https://openreach.tech)
+
+## Version
+
+* `0.1.0`
