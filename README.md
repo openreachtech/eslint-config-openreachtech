@@ -1,4 +1,4 @@
-# eslint-config-openreachtech
+# ESLint Config for Open Reach Tech inc.
 
 * ESLint shareable config for Open Reach Tech inc.
 
@@ -7,8 +7,8 @@
 * Run `npm install` in each project.
 
   ```
-  npm install --save-dev eslint \
-    eslint-plugin-jsdoc \
+  npm install --save-dev \
+    eslint \
     @openreachtech/eslint-config
   ```
 
@@ -24,3 +24,7 @@
 ## License
 
 * MIT © [Open Reach Tech inc.](https://openreach.tech)
+
+## Version
+
+* `0.1.0`

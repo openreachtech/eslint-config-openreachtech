@@ -1,6 +1,6 @@
 {
   "name": "@openreachtech/eslint-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ESLing config by Open Reach Tech inc.",
   "files": [
     "LICENSE",
@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/openreachtech/eslint-config-openreachtech#readme",
   "dependencies": {
+    "eslint-plugin-jsdoc": "^39.2.1",
     "eslint-plugin-openreachtech": "^0.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.13.0",
-    "eslint-plugin-jsdoc": "^39.2.1"
+    "eslint": "^8.13.0"
   }
 }
