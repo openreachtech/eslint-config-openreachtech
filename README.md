@@ -28,3 +28,7 @@
 ## Version
 
 * `0.1.0`
+
+## Branch Operation
+
+* Use GitHub Flow.
