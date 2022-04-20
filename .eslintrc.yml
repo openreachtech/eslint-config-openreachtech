@@ -40,6 +40,7 @@ rules:
   indent:
     - error
     - 2
+  jsdoc/check-alignment: error 
   jsdoc/newline-after-description: 
     - error
     - always
