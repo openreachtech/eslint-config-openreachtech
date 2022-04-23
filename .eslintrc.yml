@@ -104,6 +104,8 @@ rules:
       message: 'for..of loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{values, entries}, and iterate over the resulting array.'
     - selector: 'ForStatement'
       message: 'Object-Oriented Programming does not require `for` statement.'
+    - selector: 'Identifier[name=/.+(Data|Info|Item|List|Manager)$/]'
+      message: 'Not allowed to use "Data", "Info", "Item", "List", and "Manager" as suffix of identifier.'
     - selector: 'IfStatement IfStatement'
       message: 'Nested if statements are prohibited, including "else if".'
     - selector: 'LabeledStatement'
