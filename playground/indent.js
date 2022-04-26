@@ -1,8 +1,9 @@
 // @ts-check
 'use strict'
 
-/* add-options-of-indentRule
+/** indent
  *  indent: ["error", 2, { "CallExpression": {"arguments": 1}, MemberExpression: 1, ObjectExpression: 1}]
+ *  npx eslint playground\indent.js --no-ignore
  *  message: 'Expected indentation of 4 spaces but found 2'
  */
 
