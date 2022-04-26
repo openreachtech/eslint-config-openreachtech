@@ -40,6 +40,10 @@ rules:
   indent:
     - error
     - 2
+    - CallExpression:
+        arguments: 1
+      MemberExpression: 1
+      ObjectExpression: 1
   jsdoc/check-alignment: error 
   jsdoc/newline-after-description: 
     - error
