@@ -33,6 +33,9 @@ rules:
   eol-last:
     - error
     - always
+  func-call-spacing:
+    - error
+    - never
   generator-star-spacing:
     - error
     - before: true
