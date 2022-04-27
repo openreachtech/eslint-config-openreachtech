@@ -115,6 +115,8 @@ rules:
       message: 'Not allowed to use "Data", "Info", "Item", "List", and "Manager" as suffix of identifier.'
     - selector: 'IfStatement IfStatement'
       message: 'Nested if statements are prohibited, including "else if".'
+    - selector: 'IfStatement>.alternate[type="IfStatement"]'
+      message: '"else-if" syntax is prohibited.'
     - selector: 'LabeledStatement'
       message: 'Labeled statement is not allowed.'
     - selector: 'SwitchStatement'
