@@ -47,8 +47,8 @@ rules:
         arguments: 1
       MemberExpression: 1
       ObjectExpression: 1
-  jsdoc/check-alignment: error 
-  jsdoc/newline-after-description: 
+  jsdoc/check-alignment: error
+  jsdoc/newline-after-description:
     - error
     - always
   jsdoc/require-asterisk-prefix: error
