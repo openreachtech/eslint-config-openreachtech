@@ -133,6 +133,9 @@ rules:
     - error
     - defaultAssignment: false
   no-unreachable: error
+  no-unused-vars:
+    - error
+    - args: none
   no-useless-constructor: error
   no-var: error
   object-curly-spacing:
