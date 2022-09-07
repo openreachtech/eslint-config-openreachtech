@@ -103,6 +103,8 @@ rules:
       message: 'If statement in it()/test() is not allowed.'
     - selector: 'CallExpression[callee.property.name="forEach"]'
       message: 'Object-Oriented Programming does not require `#forEach()`.'
+    - selector: 'CallExpression[callee.type="MemberExpression"][callee.property.name=/^(every|filter|find|findIndex|findLast|findLastIndex|flatMap|forEach|group|groupToMap|map|reduce|reduceRight|some)$/] IfStatement'
+      message: 'Prohibit the use of if statement in the call expressions of higher-order function of array.'
     - selector: 'DoWhileStatement'
       message: 'Object-Oriented Programming does not require do..while statement.'
     - selector: 'ForInStatement'
