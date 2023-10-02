@@ -9,8 +9,9 @@
   ],
   "main": ".eslintrc.yml",
   "scripts": {
-    "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "l": "npm run lint",
+    "lint": "eslint . --ignore-pattern /tests/linted/",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",
