@@ -9,8 +9,9 @@
   ],
   "main": ".eslintrc.yml",
   "scripts": {
-    "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "l": "npm run lint",
+    "lint": "eslint . --ignore-pattern /tests/linted/",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,9 @@
     "eslint-plugin-openreachtech": "0.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.13.0"
+    "@openreachtech/eslint-inspector": "^1.0.2",
+    "@types/jest": "^29.5.5",
+    "eslint": "^8.13.0",
+    "jest": "^29.7.0"
   }
 }
