@@ -10,7 +10,7 @@
   "main": ".eslintrc.yml",
   "scripts": {
     "l": "npm run lint",
-    "lint": "eslint . --ignore-pattern /tests/linted/",
+    "lint": "eslint . --ignore-pattern /tests/linted/ --ignore-pattern /playground/",
     "test": "jest --forceExit --detectOpenHandles"
   },
   "repository": {
