@@ -209,7 +209,9 @@ rules:
     - min: 2
       # max: Infinity
       properties: always
-      exceptions: []
+      exceptions: # [] # 👀
+        - _
+        - $
       exceptionPatterns: []
   id-match:
     - error
