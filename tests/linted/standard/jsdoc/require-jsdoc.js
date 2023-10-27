@@ -1,27 +1,27 @@
 'use strict'
 
-class RequireJsdoc { // ❌ require.ClassDeclaration:true of `require-jsdoc`
-  constructor () { // ❌ checkConstructors:true, require.exemptEmptyConstructors:false of `require-jsdoc`
+class RequireJsdoc { // ❌ require.ClassDeclaration:true of `jsdoc/require-jsdoc`
+  constructor () { // ❌ checkConstructors:true, require.exemptEmptyConstructors:false of `jsdoc/require-jsdoc`
     this.alpha = 1
     this.beta = null
 
     this.gamma = null
   }
 
-  firstMethod () { // ❌ require.MethodDefinition:true of `require-jsdoc`
+  firstMethod () { // ❌ require.MethodDefinition:true of `jsdoc/require-jsdoc`
     return this.alpha
   }
 
-  get accessorBeta () { // ❌ require.checkGetters:true of `require-jsdoc`
+  get accessorBeta () { // ❌ require.checkGetters:true of `jsdoc/require-jsdoc`
     return this.beta
   }
 
-  set accessorBeta (value) { // ❌ require.checkSetters:true of `require-jsdoc`
+  set accessorBeta (value) { // ❌ require.checkSetters:true of `jsdoc/require-jsdoc`
     this.beta = value
   }
 }
 
-function alphaFunc () { // ❌ require.FunctionDeclaration:true of `require-jsdoc`
+function alphaFunc () { // ❌ require.FunctionDeclaration:true of `jsdoc/require-jsdoc`
   return 999
 }
 
