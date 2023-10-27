@@ -1,11 +1,11 @@
 'use strict'
 
-// ❌ `jsdoc/informative-docs`
+// ✅ `jsdoc/informative-docs`
 /**
  * Informative docs.
  */
 class InformativeDocs {
-  // ❌ `jsdoc/informative-docs`
+  // ✅ `jsdoc/informative-docs`
   /**
    * Constructor.
    */
@@ -13,7 +13,7 @@ class InformativeDocs {
     this.alpha = 1
   }
 
-  // ❌ `jsdoc/informative-docs`
+  // ✅ `jsdoc/informative-docs`
   /**
    * Get alpha.
    *
