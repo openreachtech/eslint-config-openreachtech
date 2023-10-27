@@ -1179,7 +1179,7 @@ rules:
     - error
     - allowAsStatement: false
   no-warning-comments:
-    - error
+    - off # error
     - terms:
         - todo
         - fixme
