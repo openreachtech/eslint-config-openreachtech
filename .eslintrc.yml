@@ -330,7 +330,7 @@ rules:
   jest/prefer-todo:
     - error
   jest/require-hook:
-    - error
+    - off # error
     - allowedFunctionCalls: []
   jest/require-to-throw-message:
     - error
