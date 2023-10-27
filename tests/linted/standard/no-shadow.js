@@ -62,6 +62,22 @@ function zetaFunc () {
 
 const etaFunc = etaFunc => etaFunc() // ❌ ignoreOnInitialization:false of `no-shadow`
 
+///////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Test function.
+ *
+ * @param {{
+ *   test: number
+ * }} params - Name hash.
+ * @returns {string} - Full value.
+ */
+const testFunc = function ({
+  test, // ❌ `no-shadow` (for jest)
+}) {
+  return `test: ${test}`
+}
+
 module.exports = {
   alphaFunc,
   betaFunc,
@@ -70,4 +86,6 @@ module.exports = {
   epsilon,
   zetaFunc,
   etaFunc,
+
+  testFunc,
 }
