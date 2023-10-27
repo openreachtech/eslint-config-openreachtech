@@ -747,7 +747,10 @@ rules:
     - newIsCap: true
       capIsNew: true
       newIsCapExceptions: []
-      capIsNewExceptions: []
+      capIsNewExceptions: # []
+        - DATE
+        - STRING
+        - TINYINT
       properties: true
   new-parens:
     - error
