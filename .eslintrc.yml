@@ -575,7 +575,7 @@ rules:
         - root
       useDefaultObjectProperties: false
   jsdoc/require-param-description:
-    - error
+    - off # error
     - defaultDestructuredRootDescription: The root object
       setDefaultDestructuredRootDescription: false
   jsdoc/require-param-name:
