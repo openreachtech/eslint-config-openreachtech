@@ -1332,7 +1332,7 @@ rules:
     - error
     - allowProperties: false
   require-await:
-    - error
+    - off # error
   require-unicode-regexp:
     - error
   require-yield:
