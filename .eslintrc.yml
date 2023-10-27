@@ -429,7 +429,7 @@ rules:
   jsdoc/imports-as-dependencies:
     - off # error
   jsdoc/informative-docs:
-    - error
+    - off # error
     - aliases:
         - an
         - our
