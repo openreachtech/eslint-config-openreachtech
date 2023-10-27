@@ -427,7 +427,7 @@ rules:
     - error
     # - contexts: []
   jsdoc/imports-as-dependencies:
-    - error
+    - off # error
   jsdoc/informative-docs:
     - error
     - aliases:
