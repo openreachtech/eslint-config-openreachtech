@@ -1231,7 +1231,7 @@ rules:
     - always
     - avoidQuotes: false
       ignoreConstructors: false
-      avoidExplicitReturnArrows: true # false
+      avoidExplicitReturnArrows: false
       # methodsIgnorePattern: ^$
   one-var:
     - error
