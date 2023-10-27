@@ -22,7 +22,7 @@ const clearCityDatabase = () => {
   database.clear()
 }
 
-initializeCityDatabase() // ❌ `jest/require-hook`
+initializeCityDatabase() // ✅ `jest/require-hook`
 
 describe('wrapping to avoid other errors', () => {
   test('that persists cities', () => {
@@ -43,9 +43,9 @@ describe('wrapping to avoid other errors', () => {
 
 describe('when loading cities from the api', () => {
   // eslint-disable-next-line no-restricted-syntax, prefer-const
-  let consoleWarnSpy = jest.spyOn(console, 'warn') // ❌ `jest/require-hook`
+  let consoleWarnSpy = jest.spyOn(console, 'warn') // ✅ `jest/require-hook`
 
-  beta.mockResolvedValue(['Wellington', 'London']) // ❌ `jest/require-hook`
+  beta.mockResolvedValue(['Wellington', 'London']) // ✅ `jest/require-hook`
 
   test('does not duplicate cities', async () => {
     await database.loadCities()
@@ -62,4 +62,4 @@ describe('when loading cities from the api', () => {
   })
 })
 
-clearCityDatabase() // ❌ `jest/require-hook`
+clearCityDatabase() // ✅ `jest/require-hook`
