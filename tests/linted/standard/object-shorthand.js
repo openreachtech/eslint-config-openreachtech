@@ -37,14 +37,14 @@ const gamma = {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// avoidExplicitReturnArrows: true
+// avoidExplicitReturnArrows: false
 
 const delta = {
-  firstFunc: (first, second) => { // ❌ avoidExplicitReturnArrows:true of `object-shorthand`
+  firstFunc: (first, second) => { // ✅ avoidExplicitReturnArrows:true of `object-shorthand`
     return first + second
   },
 
-  secondFunc: first => { // ❌ avoidExplicitReturnArrows:true of `object-shorthand`
+  secondFunc: first => { // ✅ avoidExplicitReturnArrows:true of `object-shorthand`
     return first * 2
   },
 }
