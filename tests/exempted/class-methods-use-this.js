@@ -15,7 +15,7 @@ class ClassMethodUseThis {
    *
    * @returns {number} - Value.
    */
-  getAlpha () { // ❌ `class-methods-use-this`
+  getAlpha () { // ✅ `class-methods-use-this`
     return 999
   }
 }

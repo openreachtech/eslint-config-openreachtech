@@ -109,7 +109,7 @@ rules:
       ignoreConsecutiveComments: false
       ignorePattern: ^$
   class-methods-use-this:
-    - error
+    - off # error
     - enforceForClassFields: true
       exceptMethods: []
   comma-dangle:
