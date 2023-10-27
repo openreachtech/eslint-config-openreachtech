@@ -608,7 +608,7 @@ rules:
       exemptGenerators: false
       reportMissingReturnForUndefinedTypes: false
   jsdoc/require-returns-description:
-    - error
+    - off # error
     # - contexts: []
   jsdoc/require-returns-type:
     - error
