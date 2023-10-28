@@ -1071,7 +1071,9 @@ rules:
       ignoreOnInitialization: true # false
       allow: # []
         - it
+        - length
         - name
+        - status
         - target
   no-shadow-restricted-names:
     - error
