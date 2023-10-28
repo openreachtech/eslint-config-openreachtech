@@ -182,7 +182,7 @@ rules:
     - error
     - consistent # always
   function-paren-newline:
-    - error
+    - off # error
     - consistent # multiline
   generator-star-spacing:
     - error
