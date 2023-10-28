@@ -308,7 +308,7 @@ rules:
   jest/prefer-hooks-on-top:
     - error
   jest/prefer-lowercase-title:
-    - error
+    - off # error
     - ignore: []
       allowedPrefixes: []
       ignoreTopLevelDescribe: true # false
