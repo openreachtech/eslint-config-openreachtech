@@ -320,7 +320,7 @@ rules:
   jest/prefer-spy-on:
     - error
   jest/prefer-strict-equal:
-    - error
+    - off # error
   jest/prefer-to-be:
     - error
   jest/prefer-to-contain:
