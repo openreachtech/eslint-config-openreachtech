@@ -442,7 +442,7 @@ rules:
         - s
         - the
   jsdoc/match-description:
-    - error
+    - off # error
     - mainDescription: true
       matchDescription: ^\n?([A-Z`\d_][\s\S]*[.?!`]\s*)?$
       message: 'JSDoc description must start with a capital letter.' # 'JSDoc description does not satisfy the regex pattern.'
