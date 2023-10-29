@@ -21,9 +21,10 @@
 
 ## Usage
 
-* Add this package to your `.eslintrc.yml` file:
+* After the `eslint-config-openreachtech` package is installed, you can use it by specifying `'@openreachtech'` in the [extends](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
 
-  ```
+* Example as `.eslintrc.yml`.
+  ```yml
   extends
     - '@openreachtech'
   ```
