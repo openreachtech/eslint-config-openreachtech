@@ -1,0 +1,17 @@
+'use strict'
+
+/**
+ * Lint sample for require-await rule.
+ */
+class RequireAwait {
+  /**
+   * Alpha method.
+   *
+   * @returns {Promise<string>} - Alpha string.
+   */
+  async alphaMethod () { // ✅ `require-await`
+    return 'alpha'
+  }
+}
+
+module.exports = RequireAwait

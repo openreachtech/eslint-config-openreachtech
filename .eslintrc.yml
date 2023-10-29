@@ -109,7 +109,7 @@ rules:
       ignoreConsecutiveComments: false
       ignorePattern: ^$
   class-methods-use-this:
-    - error
+    - off # error
     - enforceForClassFields: true
       exceptMethods: []
   comma-dangle:
@@ -182,7 +182,7 @@ rules:
     - error
     - consistent # always
   function-paren-newline:
-    - error
+    - off # error
     - consistent # multiline
   generator-star-spacing:
     - error
@@ -198,8 +198,6 @@ rules:
     - off # error
   id-denylist:
     - error
-    - callback
-    - data
     - item
     - list
     # - callback
@@ -211,7 +209,9 @@ rules:
     - min: 2
       # max: Infinity
       properties: always
-      exceptions: []
+      exceptions: # [] # 👀
+        - _
+        - $
       exceptionPatterns: []
   id-match:
     - error
@@ -308,7 +308,7 @@ rules:
   jest/prefer-hooks-on-top:
     - error
   jest/prefer-lowercase-title:
-    - error
+    - off # error
     - ignore: []
       allowedPrefixes: []
       ignoreTopLevelDescribe: true # false
@@ -320,7 +320,7 @@ rules:
   jest/prefer-spy-on:
     - error
   jest/prefer-strict-equal:
-    - error
+    - off # error
   jest/prefer-to-be:
     - error
   jest/prefer-to-contain:
@@ -330,7 +330,7 @@ rules:
   jest/prefer-todo:
     - error
   jest/require-hook:
-    - error
+    - off # error
     - allowedFunctionCalls: []
   jest/require-to-throw-message:
     - error
@@ -427,9 +427,9 @@ rules:
     - error
     # - contexts: []
   jsdoc/imports-as-dependencies:
-    - error
+    - off # error
   jsdoc/informative-docs:
-    - error
+    - off # error
     - aliases:
         - an
         - our
@@ -442,7 +442,7 @@ rules:
         - s
         - the
   jsdoc/match-description:
-    - error
+    - off # error
     - mainDescription: true
       matchDescription: ^\n?([A-Z`\d_][\s\S]*[.?!`]\s*)?$
       message: 'JSDoc description must start with a capital letter.' # 'JSDoc description does not satisfy the regex pattern.'
@@ -465,6 +465,7 @@ rules:
         - lends
         - type
         - inheritdoc
+        - override
   jsdoc/no-bad-blocks:
     - error
     - ignore:
@@ -556,7 +557,7 @@ rules:
       publicOnly: false
       require:
         ArrowFunctionExpression: false
-        ClassDeclaration: true # false
+        ClassDeclaration: false
         ClassExpression: false
         FunctionDeclaration: true
         FunctionExpression: false
@@ -575,7 +576,7 @@ rules:
         - root
       useDefaultObjectProperties: false
   jsdoc/require-param-description:
-    - error
+    - off # error
     - defaultDestructuredRootDescription: The root object
       setDefaultDestructuredRootDescription: false
   jsdoc/require-param-name:
@@ -608,7 +609,7 @@ rules:
       exemptGenerators: false
       reportMissingReturnForUndefinedTypes: false
   jsdoc/require-returns-description:
-    - error
+    - off # error
     # - contexts: []
   jsdoc/require-returns-type:
     - error
@@ -746,7 +747,10 @@ rules:
     - newIsCap: true
       capIsNew: true
       newIsCapExceptions: []
-      capIsNewExceptions: []
+      capIsNewExceptions: # []
+        - DATE
+        - STRING
+        - TINYINT
       properties: true
   new-parens:
     - error
@@ -1067,7 +1071,9 @@ rules:
       ignoreOnInitialization: true # false
       allow: # []
         - it
+        - length
         - name
+        - status
         - target
   no-shadow-restricted-names:
     - error
@@ -1179,7 +1185,7 @@ rules:
     - error
     - allowAsStatement: false
   no-warning-comments:
-    - error
+    - off # error
     - terms:
         - todo
         - fixme
@@ -1225,7 +1231,7 @@ rules:
     - always
     - avoidQuotes: false
       ignoreConstructors: false
-      avoidExplicitReturnArrows: true # false
+      avoidExplicitReturnArrows: false
       # methodsIgnorePattern: ^$
   one-var:
     - error
@@ -1332,7 +1338,7 @@ rules:
     - error
     - allowProperties: false
   require-await:
-    - error
+    - off # error
   require-unicode-regexp:
     - error
   require-yield:
