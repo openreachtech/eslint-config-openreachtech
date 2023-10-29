@@ -27,7 +27,7 @@ describe('verify ESLint config', () => {
       ],
     })
 
-    const unexpectedLog = await inspector.getFormattedLogIfUnexpected()
+    const unexpectedLog = await inspector.getUnexpectedLog()
 
     expect(unexpectedLog)
       .toBeNull()
