@@ -34,4 +34,4 @@
 
 ## Branch Operation
 
-* Use GitHub Flow.
+* Use Git Flow.
