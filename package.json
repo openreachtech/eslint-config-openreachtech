@@ -1,6 +1,6 @@
 {
   "name": "@openreachtech/eslint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "ESLing config by Open Reach Tech inc.",
   "files": [
     "LICENSE",
