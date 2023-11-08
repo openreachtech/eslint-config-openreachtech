@@ -29,7 +29,7 @@
   "dependencies": {
     "eslint-plugin-jest": "^27.4.2",
     "eslint-plugin-jsdoc": "^46.4.3",
-    "eslint-plugin-openreachtech": "^1.0.0"
+    "eslint-plugin-openreachtech": "^1.0.1"
   },
   "devDependencies": {
     "@openreachtech/eslint-inspector": "^1.0.3",
