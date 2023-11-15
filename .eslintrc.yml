@@ -1017,9 +1017,9 @@ rules:
     # - has some options
   no-restricted-properties:
     - error # with no options
-    # - object: receiverName
-    #   property: propertyName
-    #   message: message
+    - object: expect # 👀
+      property: anything
+      message: Never use `expect.anything()`.
     # - object: receiverName
     #   property: propertyName
     #   message: message
