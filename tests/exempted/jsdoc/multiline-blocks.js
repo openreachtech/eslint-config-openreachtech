@@ -22,4 +22,5 @@ class AlphaLendsClass extends Object {
 
 module.exports = {
   alpha,
+  AlphaLendsClass,
 }
