@@ -1,9 +1,9 @@
 'use strict'
 
-/* eslint-disable brace-style */
+/* eslint-disable @stylistic/brace-style */
 /* eslint-disable curly */
 /* eslint-disable jsdoc/require-jsdoc */
-/* eslint-disable max-statements-per-line */
+/* eslint-disable @stylistic/max-statements-per-line */
 /* eslint-disable no-else-return */
 
 function bodyFunc ({
