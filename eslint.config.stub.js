@@ -374,6 +374,9 @@ module.exports = [
           allowInObjectDestructuring: true,
         },
       ],
+      'no-useless-assignment': [
+        'off', // 'error'
+      ],
       'no-unneeded-ternary': [
         'error',
         {
