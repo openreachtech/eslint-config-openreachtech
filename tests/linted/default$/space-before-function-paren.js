@@ -26,7 +26,6 @@ const epsilon = {
   },
 }
 
-// eslint-disable-next-line require-await
 const zetaFunc = async() => { // ❌ asyncArrow:always of `space-before-blocks`
   const result = 1
 

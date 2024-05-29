@@ -1,6 +1,5 @@
 'use strict'
 
-/* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable jsdoc/no-blank-blocks */
 
 class RequireDescription {
