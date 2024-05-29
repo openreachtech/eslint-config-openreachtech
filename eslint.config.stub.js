@@ -1,12 +1,8 @@
 'use strict'
 
 const allRules = require('@openreachtech/eslint-rules-default')
-const {
-  default: jestPlugin,
-} = require('@openreachtech/eslint-rules-default-jest')
-const {
-  default: jsdocPlugin,
-} = require('@openreachtech/eslint-rules-default-jsdoc')
+const jestPlugin = require('@openreachtech/eslint-rules-default-jest')
+const jsdocPlugin = require('@openreachtech/eslint-rules-default-jsdoc')
 const openreachtechPlugin = require('eslint-plugin-openreachtech')
 
 /**
