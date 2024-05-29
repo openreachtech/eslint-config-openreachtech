@@ -3,7 +3,6 @@
 /* eslint-disable jsdoc/require-jsdoc */
 
 class MatchDescription {
-  /* eslint-disable jsdoc/informative-docs */
   // ✅ matchDescription of `match-description`
   /**
    * Constructor.
@@ -12,7 +11,6 @@ class MatchDescription {
     this.alpha = 1
     this.beta = 'string'
   }
-  /* eslint-enable jsdoc/informative-docs */
 
   /* eslint-disable jsdoc/require-description-complete-sentence */
   // ✅ matchDescription of `match-description` (does not start with capitalized letter)

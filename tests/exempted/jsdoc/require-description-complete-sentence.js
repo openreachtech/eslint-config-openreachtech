@@ -3,7 +3,6 @@
 /* eslint-disable jsdoc/require-jsdoc */
 
 class RequireDescriptionCompleteSentence {
-  /* eslint-disable jsdoc/informative-docs */
   /**
    * Constructor.
    */
@@ -13,7 +12,6 @@ class RequireDescriptionCompleteSentence {
     this.gamma = Symbol('gamma')
     this.delta = null
   }
-  /* eslint-enable jsdoc/informative-docs */
 
   /* eslint-disable jsdoc/match-description */
   // ✅ jsdoc/require-description-complete-sentence (description: Sentences should start with an uppercase character)
