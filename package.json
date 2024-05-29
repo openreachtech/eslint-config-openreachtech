@@ -7,7 +7,7 @@
     "package.json",
     "README.md"
   ],
-  "main": ".eslintrc.yml",
+  "main": "eslint.config.js",
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint . --ignore-pattern 'tests/linted/' --ignore-pattern 'playground/'",
