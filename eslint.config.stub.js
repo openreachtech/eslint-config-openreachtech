@@ -455,6 +455,63 @@ module.exports = [
 
     rules: {
       ...jestPlugin.rules,
+
+      'jest/valid-title': [
+        'error',
+        {
+          ignoreTypeOfDescribeName: false,
+          disallowedWords: [],
+          mustMatch: {},
+          mustNotMatch: [ // {}
+            '\\.$',
+            'Titles should not end with a full-stop (.)',
+          ],
+        },
+      ],
+
+      /////////////////////////////////////////////////////////////////////////
+
+      'jest/consistent-test-it': [
+        'error',
+        {
+          fn: 'test',
+          withinDescribe: 'test', // 'it'
+        },
+      ],
+      'jest/no-hooks': [
+        'off', // 'error'
+        {
+          allow: [
+            'beforeAll',
+            'beforeEach',
+            'afterAll',
+            'afterEach',
+          ],
+        },
+      ],
+      'jest/no-identical-title': [
+        'off', // 'error'
+      ],
+      'jest/prefer-expect-assertions': [
+        'off', // 'error'
+      ],
+      'jest/prefer-lowercase-title': [
+        'off', // 'error'
+        {
+          ignore: [],
+          allowedPrefixes: [],
+          ignoreTopLevelDescribe: true, // false
+        },
+      ],
+      'jest/prefer-strict-equal': [
+        'off', // 'error'
+      ],
+      'jest/require-hook': [
+        'off', // 'error'
+        {
+          allowedFunctionCalls: [],
+        },
+      ],
     },
   },
   {
