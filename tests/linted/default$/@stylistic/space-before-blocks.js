@@ -1,7 +1,7 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
-/* eslint-disable keyword-spacing */
+/* eslint-disable @stylistic/keyword-spacing */
 /* eslint-disable no-restricted-syntax */
 
 ////////////////////////////////////////////////////////////////////////////////

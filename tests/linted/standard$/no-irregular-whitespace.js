@@ -88,12 +88,12 @@ module.exports = {
 
 // ❌ `no-irregular-whitespace`
 // Line Separator (\u2028)
-// eslint-disable-next-line linebreak-style
+// eslint-disable-next-line @stylistic/linebreak-style
 /* 
 */
 
 // ❌ `no-irregular-whitespace`
 // Paragraph Separator (\u2029)
-// eslint-disable-next-line linebreak-style
+// eslint-disable-next-line @stylistic/linebreak-style
 /* 
 */
