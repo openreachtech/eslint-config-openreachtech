@@ -28,7 +28,7 @@ function gammaFunc (teardownFunc) {
 
 function deltaFunc (condition) {
   if (condition) {
-    return undefined // eslint-disable-line no-undefined
+    return undefined
   }
 
   return true // ❌ `consistent-return`

@@ -40,7 +40,6 @@ function continueFunc () {
     if (value > 5) {
       total += value
 
-      // eslint-disable-next-line no-continue
       continue // ❌ */continue of `padding-line-between-statements`
     }
 

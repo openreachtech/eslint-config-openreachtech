@@ -1,7 +1,5 @@
 'use strict'
 
-/* eslint-disable jsdoc/require-jsdoc */
-
 class CheckIndentation {
   /**
    * There is no lint of `jsdoc/check-indentation` for param and returns tags.

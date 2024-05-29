@@ -1,6 +1,6 @@
 'use strict'
 
-/* eslint-disable arrow-parens */
+/* eslint-disable @stylistic/arrow-parens */
 /* eslint-disable no-constant-condition */
 
 const alphaFunc = first => 1 // ❌ `no-confusing-arrow`

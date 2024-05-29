@@ -2,7 +2,6 @@
 
 /* eslint-disable jest/consistent-test-it */
 /* eslint-disable jest/expect-expect */
-/* eslint-disable jest/no-test-prefixes */
 /* eslint-disable jest/require-top-level-describe */
 
 describe.only('foo', () => {}) // ❌ `jest/no-focused-tests`
@@ -13,8 +12,7 @@ it['only']('bar', () => {}) // ❌ `jest/no-focused-tests`
 test.only('foo', () => {}) // ❌ `jest/no-focused-tests`
 test['only']('bar', () => {}) // ❌ `jest/no-focused-tests`
 
-fdescribe('foo', () => {}) // ❌ `jest/no-focused-tests`
-fit('foo', () => {}) // ❌ `jest/no-focused-tests`
+// fdescribe and fit are also not allowed.
 
 /*
  * Old codes.

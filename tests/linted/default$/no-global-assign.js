@@ -6,5 +6,4 @@ Object = class ExtendedObjet extends Object { // ❌ `no-global-assign`
 }
 
 // @ts-expect-error
-// eslint-disable-next-line no-undefined
 undefined = 1 // ❌ `no-global-assign`

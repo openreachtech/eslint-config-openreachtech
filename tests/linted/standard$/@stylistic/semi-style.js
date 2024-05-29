@@ -2,7 +2,7 @@
 
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-restricted-syntax */
-/* eslint-disable semi */
+/* eslint-disable @stylistic/semi */
 
 function alphaFunc () {
   return 'alpha'

@@ -1,7 +1,5 @@
 'use strict'
 
-/* eslint-disable jsdoc/require-jsdoc */
-
 class ClassMethodUseThis {
   /**
    * Definition of property.
