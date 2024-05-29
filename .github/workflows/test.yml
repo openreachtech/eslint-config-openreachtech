@@ -10,22 +10,31 @@ on:
     branches:
       - '**'
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [20.x]
+
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
+
+      - name: 🏗️ Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
           node-version: ${{ matrix.node-version }}
           registry-url: https://npm.pkg.github.com
-      - run: npm ci
+
+      - name: 🔧 setup npm
+        run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.TO_REPO_OF_ORT_PRIVATE }}
-      - run: npm run lint
-      - run: npm test
+
+      - name: 🔬 run lint
+        run: npm run lint
+
+      - name: 🧪 run test
+        run: npm test
