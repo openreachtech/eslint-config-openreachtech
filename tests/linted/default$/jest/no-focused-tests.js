@@ -13,8 +13,7 @@ it['only']('bar', () => {}) // ❌ `jest/no-focused-tests`
 test.only('foo', () => {}) // ❌ `jest/no-focused-tests`
 test['only']('bar', () => {}) // ❌ `jest/no-focused-tests`
 
-fdescribe('foo', () => {}) // ❌ `jest/no-focused-tests`
-fit('foo', () => {}) // ❌ `jest/no-focused-tests`
+// fdescribe and fit are also not allowed.
 
 /*
  * Old codes.
