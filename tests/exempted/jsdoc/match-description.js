@@ -1,7 +1,5 @@
 'use strict'
 
-/* eslint-disable jsdoc/require-jsdoc */
-
 class MatchDescription {
   // ✅ matchDescription of `match-description`
   /**
