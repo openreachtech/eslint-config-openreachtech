@@ -23,7 +23,6 @@ function gammaFunc (first) {
   return first
 }
 
-// eslint-disable-next-line jest/require-hook
 gammaFunc(undefined) // ✅ exempted `no-undefined`
 
 module.exports = {
