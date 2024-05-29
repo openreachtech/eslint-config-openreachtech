@@ -13,7 +13,6 @@ class RequireDescriptionCompleteSentence {
     this.delta = null
   }
 
-  /* eslint-disable jsdoc/match-description */
   // ✅ jsdoc/require-description-complete-sentence (description: Sentences should start with an uppercase character)
   /**
    * get alpha value.
@@ -23,9 +22,7 @@ class RequireDescriptionCompleteSentence {
   firstMethod () {
     return this.alpha
   }
-  /* eslint-enable jsdoc/match-description */
 
-  /* eslint-disable jsdoc/match-description */
   // ✅ jsdoc/require-description-complete-sentence (description: Sentences must end with a period)
   /**
    * Get beta value
@@ -35,7 +32,6 @@ class RequireDescriptionCompleteSentence {
   secondMethod () {
     return this.beta
   }
-  /* eslint-enable jsdoc/match-description */
 
   // ✅ jsdoc/require-description-complete-sentence (@returns: Sentences should start with an uppercase character)
   /**
