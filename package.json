@@ -3,9 +3,8 @@
   "version": "2.0.4",
   "description": "ESLing config by Open Reach Tech inc.",
   "files": [
-    "LICENSE",
-    "package.json",
-    "README.md"
+    "configurations/",
+    "eslint.config.mjs"
   ],
   "main": "eslint.config.js",
   "exports": {
