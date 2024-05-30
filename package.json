@@ -4,7 +4,8 @@
   "description": "ESLint config by Open Reach Tech inc.",
   "files": [
     "configurations/",
-    "eslint.config.mjs"
+    "eslint.config.mjs",
+    "README.ja.md"
   ],
   "main": "eslint.config.js",
   "exports": {
