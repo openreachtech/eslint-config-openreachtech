@@ -1,6 +1,6 @@
 {
   "name": "@openreachtech/eslint-config",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "ESLint config by Open Reach Tech inc.",
   "files": [
     "configurations/",
