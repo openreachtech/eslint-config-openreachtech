@@ -7,19 +7,19 @@
 
 ## Overview
 
-ESLint shareable config for Open Reach Tech inc.
+Open Reach Tech株式会社で使っている ESLint 設定です。
 
-This package is only for Flat Config.
+此のパッケージは、ESLint Flat Config のみ対応しています。
 
 ## Installing
 
-Please add the following line to your `.npmrc` file.
+`.npmrc` に以下を追加してください。
 
 ```
 @openreachtech:registry=https://npm.pkg.github.com
 ```
 
-Install this package alongside ESLint v9 or greater:
+ESLint v9 以降と一緒に此のパッケージをインストールします。
 
 ```
 npm install --save-dev \
@@ -29,7 +29,7 @@ npm install --save-dev \
 
 ## Composition
 
-This package includes some ESLint configurations.
+此のパッケージには、以下の ESLint コンフィギュレーションが含まれます。
 
 | configuration | contains |
 | :-- | :-- |
@@ -43,7 +43,7 @@ This package includes some ESLint configurations.
 
 ### (1) Core Rules as is
 
-When you want to use only core rules as is, please setup your `eslint.config.js` as follows:
+コアルールだけをそのまま使う場合、`eslint.config.js` を以下の様に設定してください。
 
 ```js
 // eslint.config.js
@@ -65,7 +65,8 @@ module.export = [
 
 ### (2) Core Rules with Some Overriding Rules
 
-When you want to use core rules with some overriding rules, please setup your `eslint.config.js` as follows:
+コアルールの一部を上書きして使う場合、`eslint.config.js` を以下の様に設定してください。
+
 
 ```js
 // eslint.config.js
@@ -100,7 +101,7 @@ module.export = [
 
 ### (3) Core and Some Plugins Rules
 
-When you want to use core and some plugins rules, please setup your `eslint.config.js` as follows:
+コアルールとプラグインルールを使う場合、`eslint.config.js` を以下の様に設定してください。
 
 ```js
 // eslint.config.js
@@ -162,7 +163,7 @@ module.export = [
 
 ### (4) All Rules as is
 
-When you want to use our ESLint rules as is, please setup your `eslint.config.js` as follows:
+私達の ESLint ルールをそのまま使う場合、`eslint.config.js` を以下の様に設定してください。
 
 ```js
 // eslint.config.js
@@ -183,11 +184,11 @@ See → [LICENSE](./LICENSE)
 
 ## Contributing
 
-We welcome bug reports, feature requests, and ruleset contributions.
+バグレポート、機能リクエスト、ルールセットの貢献を歓迎します。
 
-Please feel free to contact us through GitHub Issues or Pull Requests.
+GitHub Issues または Pull Request を通じてお気軽にご提案ください。
 
-We strive to meet user expectations and your contributions are highly appreciated!
+私たちはユーザーの期待に応えるよう活動しており、貢献を高く評価します。
 
 ```sh
 % git clone https://github.com/openreachtech/eslint-config.git
@@ -199,4 +200,4 @@ We strive to meet user expectations and your contributions are highly appreciate
 
 ## Copyright
 
-© 2024 [Open Reach Tech inc.](https://openreach.tech)
+© 2024 [Open Reach Tech株式会社](https://openreach.tech)

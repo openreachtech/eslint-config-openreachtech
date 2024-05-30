@@ -4,7 +4,6 @@
  * Lint sample for jsdoc/imports-as-dependencies rule
  */
 class ImportAsDependencies {
-  /* eslint-disable jsdoc/informative-docs */
   /**
    * Constructor.
    */

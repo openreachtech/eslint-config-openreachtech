@@ -1,7 +1,5 @@
 'use strict'
 
-/* eslint-disable function-paren-newline */
-
 /**
  * It function.
  *
