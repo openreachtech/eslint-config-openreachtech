@@ -1,5 +1,10 @@
 # ESLint Config for Open Reach Tech inc.
 
+## Language
+
+* [English](./README.md)
+* [日本語](./README.ja.md)
+
 ## Overview
 
 ESLint shareable config for Open Reach Tech inc.
