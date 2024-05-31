@@ -19,7 +19,7 @@ Please add the following line to your `.npmrc` file.
 @openreachtech:registry=https://npm.pkg.github.com
 ```
 
-Install this package alongside ESLint v9 or greater:
+Install this package alongside ESLint v9.3.0 or greater:
 
 ```
 npm install --save-dev \

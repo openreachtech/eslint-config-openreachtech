@@ -19,7 +19,7 @@ Open Reach Tech株式会社で使っている ESLint 設定です。
 @openreachtech:registry=https://npm.pkg.github.com
 ```
 
-ESLint v9 以降と一緒に此のパッケージをインストールします。
+ESLint v9.3.0 以降と一緒に此のパッケージをインストールします。
 
 ```
 npm install --save-dev \
