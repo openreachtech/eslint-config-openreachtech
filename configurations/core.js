@@ -7,11 +7,6 @@ module.exports = {
     ...configurationHash.core.rules,
     ...configurationHash.disableCoreStylistic.rules, // not required to add after v10
 
-    'no-console': [
-      'error',
-      // { allow: [] }
-    ],
-
     'no-param-reassign': [
       'error',
       {
@@ -184,6 +179,34 @@ module.exports = {
       {
         allow: [],
         int32Hint: false,
+      },
+    ],
+    'no-console': [
+      'error',
+      {
+        allow: undefined, // When disable `allow` field, give undefined instead of empty array
+        // [
+        //   'assert',
+        //   'clear',
+        //   'Console',
+        //   'count',
+        //   'countReset',
+        //   'debug',
+        //   'dir',
+        //   'dirxml',
+        //   'error',
+        //   'group',
+        //   'groupCollapsed',
+        //   'groupEnd',
+        //   'info',
+        //   'log',
+        //   'table',
+        //   'time',
+        //   'timeEnd',
+        //   'timeLog',
+        //   'trace',
+        //   'warn',
+        // ],
       },
     ],
     'no-continue': [
