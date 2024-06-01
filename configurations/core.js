@@ -7,16 +7,6 @@ module.exports = {
     ...configurationHash.core.rules,
     ...configurationHash.disableCoreStylistic.rules, // not required to add after v10
 
-    'no-param-reassign': [
-      'error',
-      {
-        props: true, // false
-        // FIXME: below does not work
-        // ignorePropertyModificationsFor: [],
-        // ignorePropertyModificationsForRegex: [],
-      },
-    ],
-
     'no-warning-comments': [
       'off', // 'error'
       {
@@ -264,6 +254,14 @@ module.exports = {
         ignore: [],
         ignoreArrayIndexes: false,
         ignoreDefaultValues: false,
+      },
+    ],
+    'no-param-reassign': [
+      'error',
+      {
+        props: true, // false
+        ignorePropertyModificationsFor: [],
+        ignorePropertyModificationsForRegex: [],
       },
     ],
     'no-restricted-properties': [
