@@ -8,20 +8,6 @@ module.exports = {
   rules: {
     ...configurationHash.stylisticJs.rules,
 
-    '@stylistic/semi': [
-      'error',
-      'never', // 'always'
-      // {
-      //   omitLastInOneLineBlock: true,
-      //   omitLastInOneLineClassBody: true,
-      // },
-      {
-        beforeStatementContinuationChars: 'never', // 'any'
-      },
-    ],
-
-    /////////////////////////////////////////////////////////////////////////
-
     '@stylistic/array-bracket-newline': [
       'error',
       'consistent', // { multiline: true, minItems: null }
@@ -261,6 +247,19 @@ module.exports = {
       {
         avoidEscape: true,
         allowTemplateLiterals: false,
+      },
+    ],
+    '@stylistic/semi': [
+      'error',
+      'never', // 'always'
+      // When 2nd item of options is 'always', used below object as 3rd item.
+      // {
+      //   omitLastInOneLineBlock: true,
+      //   omitLastInOneLineClassBody: true,
+      // },
+      // When 2nd item of options is 'never', used below object as 3rd item.
+      {
+        beforeStatementContinuationChars: 'never', // 'any'
       },
     ],
     '@stylistic/semi-style': [
