@@ -3,10 +3,10 @@
 const configurationHash = require('@openreachtech/eslint-rules-default')
 
 module.exports = {
-  ...configurationHash.stylisticJs,
+  ...configurationHash.stylistic,
 
   rules: {
-    ...configurationHash.stylisticJs.rules,
+    ...configurationHash.stylistic.rules,
 
     '@stylistic/array-bracket-newline': [
       'error',
