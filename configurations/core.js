@@ -7,22 +7,6 @@ module.exports = {
     ...configurationHash.core.rules,
     ...configurationHash.disableCoreStylistic.rules, // not required to add after v10
 
-    'no-warning-comments': [
-      'off', // 'error'
-      {
-        terms: [
-          'todo',
-          'fixme',
-          'xxx',
-        ],
-        location: 'start',
-        // FIXME: below does not work
-        // decoration: [],
-      },
-    ],
-
-    /////////////////////////////////////////////////////////////////////////
-
     'array-callback-return': [
       'error',
       {
@@ -399,6 +383,18 @@ module.exports = {
     'one-var': [
       'error',
       'never', // 'always'
+    ],
+    'no-warning-comments': [
+      'off', // 'error'
+      {
+        terms: [
+          'todo',
+          'fixme',
+          'xxx',
+        ],
+        location: 'start',
+        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
+      },
     ],
     'prefer-named-capture-group': [
       'off', // 'error'
