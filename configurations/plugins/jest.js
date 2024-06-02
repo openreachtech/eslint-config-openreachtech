@@ -8,21 +8,6 @@ module.exports = {
   rules: {
     ...jestConfiguration.rules,
 
-    'jest/valid-title': [
-      'error',
-      {
-        ignoreTypeOfDescribeName: false,
-        disallowedWords: [],
-        mustMatch: {},
-        mustNotMatch: [ // {}
-          '\\.$',
-          'Titles should not end with a full-stop (.)',
-        ],
-      },
-    ],
-
-    /////////////////////////////////////////////////////////////////////////
-
     'jest/consistent-test-it': [
       'error',
       {
@@ -62,6 +47,19 @@ module.exports = {
       'off', // 'error'
       {
         allowedFunctionCalls: [],
+      },
+    ],
+    'jest/valid-title': [
+      'error',
+      {
+        ignoreSpaces: false,
+        ignoreTypeOfDescribeName: false,
+        disallowedWords: [],
+        mustMatch: {},
+        mustNotMatch: [ // {}
+          '\\.$',
+          'Titles should not end with a full-stop (.)',
+        ],
       },
     ],
   },

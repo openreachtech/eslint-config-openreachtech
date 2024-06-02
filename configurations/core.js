@@ -7,37 +7,6 @@ module.exports = {
     ...configurationHash.core.rules,
     ...configurationHash.disableCoreStylistic.rules, // not required to add after v10
 
-    'no-console': [
-      'error',
-      // { allow: [] }
-    ],
-
-    'no-param-reassign': [
-      'error',
-      {
-        props: true, // false
-        // FIXME: below does not work
-        // ignorePropertyModificationsFor: [],
-        // ignorePropertyModificationsForRegex: [],
-      },
-    ],
-
-    'no-warning-comments': [
-      'off', // 'error'
-      {
-        terms: [
-          'todo',
-          'fixme',
-          'xxx',
-        ],
-        location: 'start',
-        // FIXME: below does not work
-        // decoration: [],
-      },
-    ],
-
-    /////////////////////////////////////////////////////////////////////////
-
     'array-callback-return': [
       'error',
       {
@@ -186,6 +155,34 @@ module.exports = {
         int32Hint: false,
       },
     ],
+    'no-console': [
+      'error',
+      {
+        allow: undefined, // When disable `allow` field, give undefined instead of empty array
+        // [
+        //   'assert',
+        //   'clear',
+        //   'Console',
+        //   'count',
+        //   'countReset',
+        //   'debug',
+        //   'dir',
+        //   'dirxml',
+        //   'error',
+        //   'group',
+        //   'groupCollapsed',
+        //   'groupEnd',
+        //   'info',
+        //   'log',
+        //   'table',
+        //   'time',
+        //   'timeEnd',
+        //   'timeLog',
+        //   'trace',
+        //   'warn',
+        // ],
+      },
+    ],
     'no-continue': [
       'off', // 'error'
     ],
@@ -241,6 +238,14 @@ module.exports = {
         ignore: [],
         ignoreArrayIndexes: false,
         ignoreDefaultValues: false,
+      },
+    ],
+    'no-param-reassign': [
+      'error',
+      {
+        props: true, // false
+        ignorePropertyModificationsFor: [],
+        ignorePropertyModificationsForRegex: [],
       },
     ],
     'no-restricted-properties': [
@@ -378,6 +383,18 @@ module.exports = {
     'one-var': [
       'error',
       'never', // 'always'
+    ],
+    'no-warning-comments': [
+      'off', // 'error'
+      {
+        terms: [
+          'todo',
+          'fixme',
+          'xxx',
+        ],
+        location: 'start',
+        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
+      },
     ],
     'prefer-named-capture-group': [
       'off', // 'error'
