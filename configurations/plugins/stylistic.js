@@ -3,24 +3,10 @@
 const configurationHash = require('@openreachtech/eslint-rules-default')
 
 module.exports = {
-  ...configurationHash.stylisticJs,
+  ...configurationHash.stylistic,
 
   rules: {
-    ...configurationHash.stylisticJs.rules,
-
-    '@stylistic/semi': [
-      'error',
-      'never', // 'always'
-      // {
-      //   omitLastInOneLineBlock: true,
-      //   omitLastInOneLineClassBody: true,
-      // },
-      {
-        beforeStatementContinuationChars: 'never', // 'any'
-      },
-    ],
-
-    /////////////////////////////////////////////////////////////////////////
+    ...configurationHash.stylistic.rules,
 
     '@stylistic/array-bracket-newline': [
       'error',
@@ -261,6 +247,19 @@ module.exports = {
       {
         avoidEscape: true,
         allowTemplateLiterals: false,
+      },
+    ],
+    '@stylistic/semi': [
+      'error',
+      'never', // 'always'
+      // When 2nd item of options is 'always', used below object as 3rd item.
+      // {
+      //   omitLastInOneLineBlock: true,
+      //   omitLastInOneLineClassBody: true,
+      // },
+      // When 2nd item of options is 'never', used below object as 3rd item.
+      {
+        beforeStatementContinuationChars: 'never', // 'any'
       },
     ],
     '@stylistic/semi-style': [

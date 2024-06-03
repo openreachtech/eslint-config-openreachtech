@@ -19,7 +19,7 @@ Please add the following line to your `.npmrc` file.
 @openreachtech:registry=https://npm.pkg.github.com
 ```
 
-Install this package alongside ESLint v9 or greater:
+Install this package alongside ESLint v9.3.0 or greater:
 
 ```
 npm install --save-dev \
@@ -51,7 +51,7 @@ When you want to use only core rules as is, please setup your `eslint.config.js`
 
 const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
 
-module.export = [
+module.exports = [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -74,7 +74,7 @@ When you want to use core rules with some overriding rules, please setup your `e
 const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
 const disableCoreStylisticConfiguration = require('@openreachtech/eslint-config/configurations/disableCoreStylistic')
 
-module.export = [
+module.exports = [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -112,7 +112,7 @@ const jestConfiguration = require('@openreachtech/eslint-config/configurations/p
 const jsdocConfiguration = require('@openreachtech/eslint-config/configurations/plugins/jsdoc')
 const openreachtechConfiguration = require('./configurations/plugins/openreachtech')
 
-module.export = [
+module.exports = [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -170,7 +170,7 @@ When you want to use our ESLint rules as is, please setup your `eslint.config.js
 
 const openreachtechConfig = require('@openreachtech/eslint-config')
 
-module.export = [
+module.exports = [
   ...openreachtechConfig,
 ]
 ```

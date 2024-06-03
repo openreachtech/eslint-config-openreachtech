@@ -19,7 +19,7 @@ Open Reach Tech株式会社で使っている ESLint 設定です。
 @openreachtech:registry=https://npm.pkg.github.com
 ```
 
-ESLint v9 以降と一緒に此のパッケージをインストールします。
+ESLint v9.3.0 以降と一緒に此のパッケージをインストールします。
 
 ```
 npm install --save-dev \
@@ -51,7 +51,7 @@ npm install --save-dev \
 
 const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
 
-module.export = [
+module.exports = [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -75,7 +75,7 @@ module.export = [
 const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
 const disableCoreStylisticConfiguration = require('@openreachtech/eslint-config/configurations/disableCoreStylistic')
 
-module.export = [
+module.exports = [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -113,7 +113,7 @@ const jestConfiguration = require('@openreachtech/eslint-config/configurations/p
 const jsdocConfiguration = require('@openreachtech/eslint-config/configurations/plugins/jsdoc')
 const openreachtechConfiguration = require('./configurations/plugins/openreachtech')
 
-module.export = [
+module.exports = [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -171,7 +171,7 @@ module.export = [
 
 const openreachtechConfig = require('@openreachtech/eslint-config')
 
-module.export = [
+module.exports = [
   ...openreachtechConfig,
 ]
 ```

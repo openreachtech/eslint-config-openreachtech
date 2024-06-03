@@ -8,39 +8,6 @@ module.exports = {
   rules: {
     ...jsdocConfiguration.rules,
 
-    'jsdoc/require-jsdoc': [
-      'error',
-      {
-        checkConstructors: true,
-        checkGetters: true,
-        checkSetters: true,
-        contexts: [
-          // 'ArrowFunctionExpression',
-          // 'ClassDeclaration',
-          // 'ClassExpression',
-          'FunctionDeclaration',
-          // 'FunctionExpression',
-          'MethodDefinition',
-        ],
-        enableFixer: true,
-        exemptEmptyConstructors: false, // true
-        exemptEmptyFunctions: false,
-        fixerMessage: '',
-        minLineCount: undefined, // 'undefined' // FIXME: confirm this
-        publicOnly: false,
-        require: {
-          ArrowFunctionExpression: false,
-          ClassDeclaration: false,
-          ClassExpression: false,
-          FunctionDeclaration: true,
-          FunctionExpression: false,
-          MethodDefinition: true, // false
-        },
-      },
-    ],
-
-    /////////////////////////////////////////////////////////////////////////
-
     'jsdoc/imports-as-dependencies': [
       'off', // 'error'
     ],
@@ -163,6 +130,36 @@ module.exports = {
             mustExist: true,
             preventDuplicates: true,
           },
+        },
+      },
+    ],
+    'jsdoc/require-jsdoc': [
+      'error',
+      {
+        checkConstructors: true,
+        checkGetters: true,
+        checkSetters: true,
+        contexts: [
+          // 'ArrowFunctionExpression',
+          // 'ClassDeclaration',
+          // 'ClassExpression',
+          'FunctionDeclaration',
+          // 'FunctionExpression',
+          'MethodDefinition',
+        ],
+        enableFixer: true,
+        exemptEmptyConstructors: false, // true
+        exemptEmptyFunctions: false,
+        fixerMessage: '',
+        minLineCount: undefined,
+        publicOnly: false,
+        require: {
+          ArrowFunctionExpression: false,
+          ClassDeclaration: false,
+          ClassExpression: false,
+          FunctionDeclaration: true,
+          FunctionExpression: false,
+          MethodDefinition: true, // false
         },
       },
     ],
