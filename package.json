@@ -5,7 +5,8 @@
   "files": [
     "configurations/",
     "eslint.config.mjs",
-    "README.ja.md"
+    "README.ja.md",
+    "types/"
   ],
   "main": "eslint.config.js",
   "exports": {
