@@ -1,5 +1,3 @@
-'use strict'
-
 const object = {
   alpha: 1,
   beta: 2,

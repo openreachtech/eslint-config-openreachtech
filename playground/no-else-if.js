@@ -1,6 +1,4 @@
 // @ts-check
-'use strict'
-
 function noElseIf (condition) {
   if (condition == 1) {
     return 111

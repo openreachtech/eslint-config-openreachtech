@@ -1,5 +1,3 @@
-'use strict'
-
 const jestConfiguration = require('@openreachtech/eslint-rules-default-jest')
 
 export default {

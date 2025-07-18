@@ -1,5 +1,3 @@
-'use strict'
-
 // ❌ preventAtMiddleLines: true of jsdoc/no-multi-asterisks
 /**
  * Create alpha object.

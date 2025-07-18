@@ -1,5 +1,3 @@
-'use strict'
-
 /* \u000B = [] - Line Tabulation (\v) - <VT> */ // ❌ `no-irregular-whitespace`
 /* \u000C = [] - Form Feed (\f) - <FF> */ // ❌ `no-irregular-whitespace`
 /* \u00A0 = [ ] - No-Break Space - <NBSP> */ // ❌ `no-irregular-whitespace`

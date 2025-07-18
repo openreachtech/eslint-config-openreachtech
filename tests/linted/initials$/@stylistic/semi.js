@@ -1,5 +1,3 @@
-'use strict'
-
 // eslint-disable-next-line @stylistic/semi-style
 const MILLISECONDS_PER_ONE_DAY = 86400000; // ❌ `semi`
 

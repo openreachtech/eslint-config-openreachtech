@@ -1,5 +1,3 @@
-'use strict'
-
 class CheckIndentation {
   /**
    * There is no lint of `jsdoc/check-indentation` for param and returns tags.

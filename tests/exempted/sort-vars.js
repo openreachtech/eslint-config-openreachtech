@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable one-var */
 
 const gamma = 3,

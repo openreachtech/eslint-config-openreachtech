@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable openreachtech/indent-in-infix-expression */
 /* eslint-disable openreachtech/no-unexpected-multiline */
 

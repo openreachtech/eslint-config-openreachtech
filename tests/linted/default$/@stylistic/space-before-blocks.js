@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable @stylistic/keyword-spacing */
 /* eslint-disable no-restricted-syntax */

@@ -1,5 +1,3 @@
-'use strict'
-
 // Above line comment ✅ exempted `line-comment-position`
 const ALPHA = 1
 

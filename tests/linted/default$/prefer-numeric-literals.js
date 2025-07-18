@@ -1,5 +1,3 @@
-'use strict'
-
 const array = [
   parseInt('111110111', 2), // ❌ `prefer-numeric-literals`
   parseInt('767', 8), // ❌ `prefer-numeric-literals`

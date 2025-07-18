@@ -1,5 +1,3 @@
-'use strict'
-
 // ✅ `jsdoc/informative-docs`
 /**
  * Informative docs.

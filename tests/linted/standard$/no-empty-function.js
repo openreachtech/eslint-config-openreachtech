@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable getter-return */
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable object-shorthand */

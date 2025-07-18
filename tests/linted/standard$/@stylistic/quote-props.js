@@ -1,5 +1,3 @@
-'use strict'
-
 export default {
   'alpha': 1, // ❌ as-needed:unnecessary of `quote-props`
   beta: 2,

@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = parseInt('071', 10) // ❌ as-needed of `radix`
 // eslint-disable-next-line prefer-numeric-literals
 const beta = parseInt('071', 8) // ✅ as-needed of `radix`

@@ -1,5 +1,3 @@
-'use strict'
-
 const configurationHash = require('@openreachtech/eslint-rules-default')
 
 export default {

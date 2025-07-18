@@ -1,6 +1,4 @@
 // @ts-check
-'use strict'
-
 /** prohibit else if syntax
  *  no-restricted-syntax:
  *    - error

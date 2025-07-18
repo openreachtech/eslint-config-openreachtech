@@ -1,5 +1,3 @@
-'use strict'
-
 // ✅ exempted of `jsdoc/require-example`
 /**
  * There is no lint of `jsdoc/check-example`.

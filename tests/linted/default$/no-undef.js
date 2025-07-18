@@ -1,5 +1,3 @@
-'use strict'
-
 // @ts-expect-error
 const alpha = unknownFunc() // ❌ `no-undef`
 

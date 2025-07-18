@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 class PaddedBlock { // ❌ never `padded-blocks`

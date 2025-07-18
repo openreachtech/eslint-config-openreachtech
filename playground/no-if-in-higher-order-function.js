@@ -1,6 +1,4 @@
 // @ts-check
-'use strict'
-
 const anArray = [1, 2, 3]
 const inventory = [
   { name: 'asparagus', type: 'vegetables', quantity: 5 },

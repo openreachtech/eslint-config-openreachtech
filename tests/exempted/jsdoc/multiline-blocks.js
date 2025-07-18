@@ -1,5 +1,3 @@
-'use strict'
-
 /** @type {string} */ // ✅ singleLineTags:[lends, type, inheritdoc, override] of `jsdoc/multiline-blocks`
 const alpha = 'alpha'
 

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = 1 // ❌ vars:all of `no-unused-vars`

@@ -1,5 +1,3 @@
-'use strict'
-
 const // ❌ never `one-var`
   alpha = 1,
   beta = 2,

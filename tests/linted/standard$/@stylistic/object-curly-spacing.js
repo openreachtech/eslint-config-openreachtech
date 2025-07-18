@@ -1,5 +1,3 @@
-'use strict'
-
 const objectNoSpaceAfterOpened = {alpha: 1 } // ❌ object-curly-spacing
 const objectNoSpaceBeforeClosed = { beta: 1} // ❌ object-curly-spacing
 const objectNoSpaceBoth = {gamma: 1} // ❌ object-curly-spacing

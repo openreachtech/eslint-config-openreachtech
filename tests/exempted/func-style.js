@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const expressionFunc = function () { // ✅ exempted `func-style`

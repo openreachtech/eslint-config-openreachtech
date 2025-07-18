@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alphaFunc = (it) => {} // ❌ as-needed of `arrow-parens`

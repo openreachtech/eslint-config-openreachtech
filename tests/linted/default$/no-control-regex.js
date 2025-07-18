@@ -1,5 +1,3 @@
-'use strict'
-
 const alphaRegExp = /\x00/u // ❌ `no-control-regex`
 const betaRegExp = /\x1F/u // ❌ `no-control-regex`
 const gammaRegExp = /\u000C/u // ❌ `no-control-regex`

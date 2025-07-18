@@ -1,6 +1,4 @@
 // @ts-check
-'use strict'
-
 /** indent
  *  indent: ["error", 2, { "CallExpression": {"arguments": 1}, MemberExpression: 1, ObjectExpression: 1}]
  *  npx eslint playground\indent.js --no-ignore

@@ -1,5 +1,3 @@
-'use strict'
-
 const jsdocConfiguration = require('@openreachtech/eslint-rules-default-jsdoc')
 
 export default {

@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = [] // ✅ built-in exceptions of `array-bracket-spacing`
 const beta = [ 'first', 'second' ] // ❌ never of `array-bracket-spacing`
 const gamma = [ 'first', 'second'] // ❌ never of `array-bracket-spacing`
