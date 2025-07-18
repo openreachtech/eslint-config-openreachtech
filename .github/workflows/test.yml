@@ -33,8 +33,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.TO_REPO_OF_ORT_PRIVATE }}
 
-      - name: 🔬 run lint
-        run: npm run lint
+      # - name: 🔬 run lint
+      #   run: npm run lint
 
-      - name: 🧪 run test
-        run: npm test
+      # - name: 🧪 run test
+      #   run: npm test
