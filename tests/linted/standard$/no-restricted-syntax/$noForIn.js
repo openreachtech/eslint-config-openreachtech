@@ -12,6 +12,6 @@ function noForInFunc (array) {
   return total
 }
 
-module.exports = {
+export default {
   noForInFunc,
 }

@@ -20,4 +20,4 @@ class TextEscaping {
   }
 }
 
-module.exports = TextEscaping
+export default TextEscaping

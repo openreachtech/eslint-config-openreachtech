@@ -12,6 +12,6 @@ function noForEachFunc (array) {
   return result
 }
 
-module.exports = {
+export default {
   noForEachFunc,
 }

@@ -19,6 +19,6 @@ function alphaFunc (hashes, ...values) {
 
 const beta = alphaFunc`Hello, ${'world'}!` // ❌ `template-tag-spacing`
 
-module.exports = {
+export default {
   beta,
 }

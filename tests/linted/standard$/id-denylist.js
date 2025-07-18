@@ -46,7 +46,7 @@ class Gamma {
   }
 }
 
-module.exports = {
+export default {
   extraFunc,
   callback, // ✅ ['callback'] of `id-denylist`
   alpha,

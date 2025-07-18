@@ -11,7 +11,7 @@ const openreachtechConfiguration = require('./configurations/plugins/openreachte
  *
  * @type {Array<import('eslint').Linter.FlatConfig>}
  */
-module.exports = [
+export default [
   {
     languageOptions: {
       globals: {

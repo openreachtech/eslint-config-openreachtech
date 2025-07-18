@@ -12,6 +12,6 @@ function noLetFunc (condition) {
   return total
 }
 
-module.exports = {
+export default {
   noLetFunc,
 }

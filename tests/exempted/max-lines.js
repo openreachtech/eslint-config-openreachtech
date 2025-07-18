@@ -303,4 +303,4 @@ const array = [
   1000300,
 ]
 
-module.exports = array
+export default array

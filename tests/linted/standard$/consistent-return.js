@@ -34,7 +34,7 @@ function deltaFunc (condition) {
   return true // ❌ `consistent-return`
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

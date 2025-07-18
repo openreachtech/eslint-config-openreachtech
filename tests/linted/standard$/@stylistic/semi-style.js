@@ -41,6 +41,6 @@ class Gamma {
   }
 }
 
-module.exports = {
+export default {
   Gamma,
 }

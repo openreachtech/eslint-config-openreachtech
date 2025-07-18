@@ -2,6 +2,6 @@
 
 const alphaRegExp = /alpha/ // ❌ `require-unicode-regexp`
 
-module.exports = {
+export default {
   alphaRegExp,
 }

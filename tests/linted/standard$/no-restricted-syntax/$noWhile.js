@@ -15,6 +15,6 @@ function noWhileFunc (array) {
   return total
 }
 
-module.exports = {
+export default {
   noWhileFunc,
 }

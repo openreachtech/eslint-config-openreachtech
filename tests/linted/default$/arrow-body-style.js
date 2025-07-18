@@ -12,7 +12,7 @@ const betaFunc = () => { // ❌ as-needed & requireReturnForObjectLiteral:false 
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

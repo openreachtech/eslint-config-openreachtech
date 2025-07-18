@@ -11,4 +11,4 @@ for (let index = 0; index < 10; index += 1) {
   array.push(index)
 }
 
-module.exports = array
+export default array

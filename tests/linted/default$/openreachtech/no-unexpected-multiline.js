@@ -19,6 +19,6 @@ function die () {
   // noop
 }
 
-module.exports = {
+export default {
   MILLISECONDS_PER_HOUR,
 }

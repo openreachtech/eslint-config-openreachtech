@@ -14,7 +14,7 @@ const beta = first
   + second // ❌ `no-mixed-operators`
   * third
 
-module.exports = {
+export default {
   alpha,
   beta,
 }

@@ -45,7 +45,7 @@ const Delta = class {
   }
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   Gamma,

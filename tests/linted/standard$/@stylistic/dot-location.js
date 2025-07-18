@@ -13,6 +13,6 @@ function betaFunc () {
     method()
 }
 
-module.exports = {
+export default {
   betaFunc,
 }

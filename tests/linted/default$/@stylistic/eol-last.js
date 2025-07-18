@@ -2,4 +2,4 @@
 
 const alpha = 100
 
-module.exports = alpha
+export default alpha

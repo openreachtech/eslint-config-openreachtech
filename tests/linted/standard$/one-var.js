@@ -5,7 +5,7 @@ const // ❌ never `one-var`
   beta = 2,
   gamma = 3
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

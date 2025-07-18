@@ -18,7 +18,7 @@ const gamma = [
   'second', 'third',
 ]
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -134,7 +134,7 @@ async function psiFunc () {
   ]
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

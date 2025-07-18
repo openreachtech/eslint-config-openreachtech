@@ -24,7 +24,7 @@ const thetaFunc = () =>{ // ❌ after:true of `arrow-spacing`
   '\n'
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

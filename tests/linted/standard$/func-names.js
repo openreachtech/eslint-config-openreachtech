@@ -14,7 +14,7 @@ const namedGammaFunc = function namedGammaFunc () { // ✅ as-needed of `func-na
   return 'I am named gamma function'
 }
 
-module.exports = {
+export default {
   alphaFunc,
   beta,
   namedGammaFunc,

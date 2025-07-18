@@ -69,7 +69,7 @@ const theta = alpha && Boolean(bool) // ❌ `no-extra-boolean-cast`
 
 const iota = Boolean(!!alpha || beta) // ❌ `no-extra-boolean-cast`
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

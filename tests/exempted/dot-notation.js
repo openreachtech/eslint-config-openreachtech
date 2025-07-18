@@ -16,7 +16,7 @@ function gammaFunc () {
   return alpha['method']() // ✅ exempted `dot-notation`
 }
 
-module.exports = {
+export default {
   betaFunc,
   gammaFunc,
 }

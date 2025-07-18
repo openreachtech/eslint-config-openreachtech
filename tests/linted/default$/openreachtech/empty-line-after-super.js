@@ -29,7 +29,7 @@ class GammaClass extends BaseClass {
   }
 }
 
-module.exports = {
+export default {
   AlphaClass,
   BetaClass,
   GammaClass,

@@ -10,4 +10,4 @@ const array = [
   Number.parseInt('1F7', 16), // ❌ `prefer-numeric-literals`
 ]
 
-module.exports = array
+export default array

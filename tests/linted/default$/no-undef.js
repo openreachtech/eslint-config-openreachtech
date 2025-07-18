@@ -11,7 +11,7 @@ if (typeof UndefinedIdentifier === 'undefined') { // ✅ typeof:false of `no-und
   // noop
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
 }

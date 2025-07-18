@@ -49,4 +49,4 @@ class IdLength {
   }
 }
 
-module.exports = IdLength
+export default IdLength

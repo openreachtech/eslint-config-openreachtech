@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = function doubleValue (
+export default function doubleValue (
   value,
   ignore
 ) {

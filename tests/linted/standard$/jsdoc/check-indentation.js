@@ -65,7 +65,7 @@ class CheckIndentation {
   }
 }
 
-module.exports = CheckIndentation
+export default CheckIndentation
 
 /**
  * There is no lint of `jsdoc/check-indentation` for typedef tag.

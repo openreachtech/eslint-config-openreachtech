@@ -24,4 +24,4 @@ class ImportAsDependencies {
   }
 }
 
-module.exports = ImportAsDependencies
+export default ImportAsDependencies

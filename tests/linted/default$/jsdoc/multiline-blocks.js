@@ -31,7 +31,7 @@ function alphaFunc () {
   return 'alpha'
 }
 
-module.exports = {
+export default {
   alpha,
   alphaFunc,
   AlphaLendsClass,

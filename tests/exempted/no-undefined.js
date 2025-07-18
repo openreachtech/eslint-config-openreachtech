@@ -25,7 +25,7 @@ function gammaFunc (first) {
 
 gammaFunc(undefined) // ✅ exempted `no-undefined`
 
-module.exports = {
+export default {
   alpha,
   betaFunc,
   gammaFunc,

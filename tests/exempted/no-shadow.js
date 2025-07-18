@@ -75,7 +75,7 @@ const targetFunc = function ({
   return `target: ${target}`
 }
 
-module.exports = {
+export default {
   itFunc,
   lengthFunc,
   nameFunc,

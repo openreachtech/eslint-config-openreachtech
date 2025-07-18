@@ -12,7 +12,7 @@ function declarationFunc () { // ✅ exempted `func-style`
   return 'I am declaration function'
 }
 
-module.exports = {
+export default {
   expressionFunc,
   arrowFunc,
   declarationFunc,

@@ -14,4 +14,4 @@ class RequireAwait {
   }
 }
 
-module.exports = RequireAwait
+export default RequireAwait

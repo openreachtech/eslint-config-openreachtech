@@ -40,7 +40,7 @@ class DerivedNoUnderscoreDangle extends NoUnderscoreDangle {
   }
 }
 
-module.exports = {
+export default {
   alpha_,
   _bate,
   __spy__,

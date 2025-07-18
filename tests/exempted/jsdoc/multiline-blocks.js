@@ -20,7 +20,7 @@ class AlphaLendsClass extends Object {
   }
 }
 
-module.exports = {
+export default {
   alpha,
   AlphaLendsClass,
 }

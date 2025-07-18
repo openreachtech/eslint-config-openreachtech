@@ -56,7 +56,7 @@ class Gamma{ // ❌ classes:always of `space-before-blocks`
   // noop
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   Gamma,

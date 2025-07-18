@@ -21,6 +21,6 @@ function alphaFunc (
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
 }

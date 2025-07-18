@@ -21,7 +21,7 @@ alpha.data = function () { // ✅ ['data'] of `id-denylist`
   // noop
 }
 
-module.exports = {
+export default {
   extraFunc,
   callback, // ✅ ['callback'] of `id-denylist`
   alpha,

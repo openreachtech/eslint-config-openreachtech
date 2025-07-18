@@ -32,7 +32,7 @@ const zetaFunc = async() => { // ❌ asyncArrow:always of `space-before-blocks`
   return result
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

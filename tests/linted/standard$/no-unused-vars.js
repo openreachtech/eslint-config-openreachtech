@@ -24,7 +24,7 @@ const [
   zeta,
 ] = [1, 3, 5]
 
-module.exports = {
+export default {
   betaFunc,
   gamma,
   zeta,

@@ -78,7 +78,7 @@ const testFunc = function ({
   return `test: ${test}`
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

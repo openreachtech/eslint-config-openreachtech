@@ -31,4 +31,4 @@ class MatchDescription {
   }
 }
 
-module.exports = MatchDescription
+export default MatchDescription

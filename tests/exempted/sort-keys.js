@@ -7,4 +7,4 @@ const object = {
   delta: 4, // ✅ exempted `sort-keys`
 }
 
-module.exports = object
+export default object

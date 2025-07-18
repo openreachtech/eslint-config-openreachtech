@@ -4,6 +4,6 @@ class RequireJsdoc { // ✅ require.ClassDeclaration:false of `jsdoc/require-jsd
   // noop
 }
 
-module.exports = {
+export default {
   RequireJsdoc,
 }

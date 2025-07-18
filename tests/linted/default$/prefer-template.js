@@ -8,7 +8,7 @@ function helloLog (name) {
   return 'Hello, ' + name + '!' // ❌ prefer-template
 }
 
-module.exports = {
+export default {
   helloLog,
   timeLog,
 }

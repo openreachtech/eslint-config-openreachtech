@@ -8,6 +8,6 @@ function noTernaryFunc (value) {
     : 'not one'
 }
 
-module.exports = {
+export default {
   noTernaryFunc,
 }

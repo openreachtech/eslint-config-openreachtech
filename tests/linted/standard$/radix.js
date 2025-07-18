@@ -8,7 +8,7 @@ const delta = parseInt('0xabc') // ✅  s-needed of `radix`
 const epsilon = parseInt('0b100101') // ✅ as-needed of `radix`
 const zeta = parseInt('0o123') // ✅ as-needed of `radix`
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,
