@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable eqeqeq */
 /* eslint-disable jsdoc/require-jsdoc */
 

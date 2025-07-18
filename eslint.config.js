@@ -1,5 +1,3 @@
-'use strict'
-
 const coreConfiguration = require('./configurations/core')
 const stylisticConfiguration = require('./configurations/plugins/stylistic')
 const jestConfiguration = require('./configurations/plugins/jest')

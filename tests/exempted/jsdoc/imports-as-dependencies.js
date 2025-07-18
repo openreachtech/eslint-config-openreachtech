@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Lint sample for jsdoc/imports-as-dependencies rule
  */

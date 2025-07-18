@@ -1,5 +1,3 @@
-'use strict'
-
 class RequireJsdoc { // ✅ require.ClassDeclaration:true of `jsdoc/require-jsdoc`
   constructor () { // ❌ checkConstructors:true, require.exemptEmptyConstructors:false of `jsdoc/require-jsdoc`
     this.alpha = 1

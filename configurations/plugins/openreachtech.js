@@ -1,5 +1,3 @@
-'use strict'
-
 const openreachtechPlugin = require('eslint-plugin-openreachtech')
 
 export default {

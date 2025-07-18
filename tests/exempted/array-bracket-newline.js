@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = []
 
 const beta = ['first'] // ✅ consistent of `array-bracket-newline`

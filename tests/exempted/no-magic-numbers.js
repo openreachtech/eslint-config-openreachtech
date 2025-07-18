@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = 60 * 60 * 24 * 1000 // ✅ `no-magic-numbers`

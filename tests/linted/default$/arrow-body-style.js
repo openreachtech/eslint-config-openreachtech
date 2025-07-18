@@ -1,5 +1,3 @@
-'use strict'
-
 const alphaFunc = () => { // ❌ as-needed of `arrow-body-style`
   return 0
 }

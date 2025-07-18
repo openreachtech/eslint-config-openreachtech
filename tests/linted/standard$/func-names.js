@@ -1,5 +1,3 @@
-'use strict'
-
 const alphaFunc = function () { // ✅ as-needed of `func-names`
   return 'I am alpha function'
 }

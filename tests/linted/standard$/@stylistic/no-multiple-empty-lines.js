@@ -1,6 +1,5 @@
 
 
-'use strict'
 // ❌ maxBOF:0 of `no-multiple-empty-lines`
 // Too many blank lines at the beginning of file. Max of 0 allowed
 

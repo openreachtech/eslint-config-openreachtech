@@ -1,5 +1,3 @@
-'use strict' // eslint-disable-line max-classes-per-file
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc (first) {

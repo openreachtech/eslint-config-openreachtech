@@ -1,5 +1,3 @@
-'use strict'
-
 class MatchDescription {
   // ✅ matchDescription of `match-description`
   /**

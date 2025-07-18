@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable @stylistic/brace-style */
 /* eslint-disable curly */
 /* eslint-disable jsdoc/require-jsdoc */

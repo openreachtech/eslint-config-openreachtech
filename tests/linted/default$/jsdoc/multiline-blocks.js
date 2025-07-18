@@ -1,5 +1,3 @@
-'use strict'
-
 // ❌ noZeroLineText:true of `jsdoc/multiline-blocks`
 /** Reported up here
  * because the rest is multiline

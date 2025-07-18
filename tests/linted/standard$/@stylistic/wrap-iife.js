@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable func-names */
 /* eslint-disable jsdoc/require-jsdoc */
 

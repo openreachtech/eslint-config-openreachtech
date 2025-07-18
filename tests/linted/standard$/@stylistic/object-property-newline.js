@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = {
   first: '1st',
   second: '2nd', third: '3rd', // ❌ allowAllPropertiesOnSameLine:true of `object-property-newline`

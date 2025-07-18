@@ -1,5 +1,3 @@
-'use strict'
-
 const {
   ESLintInspector,
 } = require('@openreachtech/eslint-inspector')

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/tag-lines */
 
 // ❌ `jsdoc/sort-tags`

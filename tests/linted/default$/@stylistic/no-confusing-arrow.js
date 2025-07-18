@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable @stylistic/arrow-parens */
 /* eslint-disable no-constant-condition */
 

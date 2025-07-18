@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 /* eslint-disable-next-line openreachtech/newline-per-parameter */

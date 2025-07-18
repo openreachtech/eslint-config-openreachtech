@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable arrow-body-style */
 
 const extraMethodName = 'extraMethodName'

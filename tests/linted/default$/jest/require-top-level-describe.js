@@ -1,5 +1,3 @@
-'use strict'
-
 // Above a describe block
 test.todo('alpha test', () => {}) // ❌ `jest/require-top-level-describe`
 

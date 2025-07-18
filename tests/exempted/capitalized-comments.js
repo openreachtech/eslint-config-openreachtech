@@ -1,5 +1,3 @@
-'use strict'
-
 // Alpha value // ✅ exempted `capitalized-comments`
 const alpha = 1
 

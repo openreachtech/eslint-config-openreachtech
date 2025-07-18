@@ -1,5 +1,3 @@
-'use strict'
-
 const array = []
 
 /* eslint-disable-next-line no-restricted-syntax */

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-shadow */
 /* eslint-disable no-shadow-restricted-names */

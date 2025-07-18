@@ -1,5 +1,3 @@
-'use strict'
-
 const alphaFunc = ()=> {} // ❌ before:true of `arrow-spacing`
 const betaFunc = () =>{} // ❌ after:true of `arrow-spacing`
 

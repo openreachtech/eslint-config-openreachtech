@@ -1,5 +1,3 @@
-'use strict'
-
 const array = []
 const object = {}
 

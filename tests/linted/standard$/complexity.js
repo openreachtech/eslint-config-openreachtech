@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-restricted-syntax */
