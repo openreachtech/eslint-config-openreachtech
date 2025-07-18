@@ -1,4 +1,4 @@
-const configurationHash = require('@openreachtech/eslint-rules-default')
+import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default {
   rules: {

@@ -1,4 +1,4 @@
-const jestConfiguration = require('@openreachtech/eslint-rules-default-jest')
+import jestConfiguration from '@openreachtech/eslint-rules-default-jest'
 
 export default {
   ...jestConfiguration,

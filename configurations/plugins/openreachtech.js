@@ -1,4 +1,4 @@
-const openreachtechPlugin = require('eslint-plugin-openreachtech')
+import openreachtechPlugin from 'eslint-plugin-openreachtech'
 
 export default {
   plugins: {

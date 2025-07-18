@@ -1,4 +1,4 @@
-const jsdocConfiguration = require('@openreachtech/eslint-rules-default-jsdoc')
+import jsdocConfiguration from '@openreachtech/eslint-rules-default-jsdoc'
 
 export default {
   ...jsdocConfiguration,
