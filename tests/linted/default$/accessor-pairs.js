@@ -20,7 +20,7 @@ class AccessorPairs {
   }
 }
 
-module.exports = {
+export default {
   alpha,
   AccessorPairs,
 }

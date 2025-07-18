@@ -28,4 +28,4 @@ function maxStatementsFunc (it) { // ❌ max-statements
   ]
 }
 
-module.exports = maxStatementsFunc
+export default maxStatementsFunc

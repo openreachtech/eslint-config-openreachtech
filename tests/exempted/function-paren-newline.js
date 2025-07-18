@@ -25,7 +25,7 @@ function deltaFunc (
   return alpha + beta + gamma
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

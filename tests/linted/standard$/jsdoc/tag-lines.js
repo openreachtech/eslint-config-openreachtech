@@ -30,4 +30,4 @@ class TagLines {
   }
 }
 
-module.exports = TagLines
+export default TagLines

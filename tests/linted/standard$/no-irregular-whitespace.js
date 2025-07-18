@@ -75,7 +75,7 @@ const regExps = [
   /\u3000 = [　] - Ideographic Space/u, // ❌ skipStrings:false of `no-irregular-whitespace`
 ]
 
-module.exports = {
+export default {
   strings,
   regExps,
 }

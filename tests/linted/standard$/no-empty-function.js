@@ -48,7 +48,7 @@ class Eta {
   static set value (value) {} // ❌ `no-empty-function`
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

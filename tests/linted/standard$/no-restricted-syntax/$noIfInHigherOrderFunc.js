@@ -130,7 +130,7 @@ function reduceRightFunc (array) {
   )
 }
 
-module.exports = {
+export default {
   everyFunc,
   someFunc,
 

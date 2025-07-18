@@ -37,7 +37,7 @@ function extraFunc () {
   }
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -17,6 +17,6 @@ function noForFunc () {
   return total
 }
 
-module.exports = {
+export default {
   noForFunc,
 }

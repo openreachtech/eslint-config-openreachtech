@@ -14,7 +14,7 @@ class BetaClass {
   }
 }
 
-module.exports = {
+export default {
   AlphaClass,
   BetaClass,
 }

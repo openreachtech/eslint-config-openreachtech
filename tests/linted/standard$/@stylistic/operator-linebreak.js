@@ -101,7 +101,7 @@ const strictEqualResult = alphaText === // ❌ before of `operator-linebreak`
 const strictNotEqualResult = alphaText !== // ❌ before of `operator-linebreak`
   betaText
 
-module.exports = {
+export default {
   alpha,
   alphaFunc,
   orResult,

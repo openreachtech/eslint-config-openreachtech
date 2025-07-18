@@ -31,7 +31,7 @@ const eta = (function () { // ❌ inside of `wrap-iife`
 }
   .call(targetThis))
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

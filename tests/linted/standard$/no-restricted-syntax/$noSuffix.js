@@ -30,4 +30,4 @@ class NoSuffixManager { // ❌ { selector: 'Identifier[name="Manager"]' } of `no
   }
 }
 
-module.exports = NoSuffixManager // ❌ { selector: 'Identifier[name="Manager"]' } of `no-restricted-syntax`
+export default NoSuffixManager // ❌ { selector: 'Identifier[name="Manager"]' } of `no-restricted-syntax`

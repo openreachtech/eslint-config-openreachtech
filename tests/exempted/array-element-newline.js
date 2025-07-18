@@ -24,7 +24,7 @@ const delta = [ // ✅ consistent, multiline:true of `array-element-newline`
   'third',
 ]
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

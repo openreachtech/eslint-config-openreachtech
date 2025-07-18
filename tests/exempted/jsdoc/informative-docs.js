@@ -24,4 +24,4 @@ class InformativeDocs {
   }
 }
 
-module.exports = InformativeDocs
+export default InformativeDocs

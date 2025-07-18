@@ -176,7 +176,7 @@ class AllmanStyle
 
 /* -------------------------------------------------------------------------- */
 
-module.exports = {
+export default {
   oneTabBraceStyleFunc,
   stroustrupStyleFunc,
   allmanStyleFunc,

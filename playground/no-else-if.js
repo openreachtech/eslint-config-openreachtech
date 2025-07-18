@@ -12,6 +12,6 @@ function noElseIf (condition) {
   }
 }
 
-module.exports = {
+export default {
   noElseIf
 }

@@ -12,7 +12,7 @@ function * betaFunc () {
   yield * [1, 3, 5] // ✅ before:true of `yield-star-spacing`
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

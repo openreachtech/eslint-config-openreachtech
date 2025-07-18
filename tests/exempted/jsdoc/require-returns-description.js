@@ -43,7 +43,7 @@ function alphaMethod (first) {
   }
 }
 
-module.exports = {
+export default {
   RequireDescription: RequireReturnsDescription,
   alphaMethod,
 }

@@ -30,7 +30,7 @@ function extraFunc () {
   return gamma
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   extraFunc,

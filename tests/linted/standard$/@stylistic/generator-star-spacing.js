@@ -22,7 +22,7 @@ function * deltaFunc () { // ✅ before:false,after:false of `generator-star-spa
   yield 'four'
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

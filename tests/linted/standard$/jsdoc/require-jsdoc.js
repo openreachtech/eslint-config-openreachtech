@@ -25,7 +25,7 @@ function alphaFunc () { // ❌ require.FunctionDeclaration:true of `jsdoc/requir
   return 999
 }
 
-module.exports = {
+export default {
   RequireJsdoc,
   alphaFunc,
 }

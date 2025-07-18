@@ -13,6 +13,6 @@ function noDoWhileFunc () {
   return index
 }
 
-module.exports = {
+export default {
   noDoWhileFunc,
 }

@@ -63,7 +63,7 @@ const Iota = class {
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

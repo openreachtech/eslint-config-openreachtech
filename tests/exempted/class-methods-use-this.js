@@ -18,4 +18,4 @@ class ClassMethodUseThis {
   }
 }
 
-module.exports = ClassMethodUseThis
+export default ClassMethodUseThis

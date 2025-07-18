@@ -31,7 +31,7 @@ function alphaMethod () {
   // noop
 }
 
-module.exports = {
+export default {
   RequireDescription,
   alphaMethod,
 }

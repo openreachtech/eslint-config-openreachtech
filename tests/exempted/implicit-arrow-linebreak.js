@@ -5,7 +5,7 @@ const alphaArrow = () => 'I am alpha arrow function' // ✅ below of `implicit-a
 const betaArrow = () =>
   'I am beta arrow function' // ✅ beside of `implicit-arrow-linebreak`
 
-module.exports = {
+export default {
   alphaArrow,
   betaArrow,
 }

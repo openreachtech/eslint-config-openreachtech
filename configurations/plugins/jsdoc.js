@@ -2,7 +2,7 @@
 
 const jsdocConfiguration = require('@openreachtech/eslint-rules-default-jsdoc')
 
-module.exports = {
+export default {
   ...jsdocConfiguration,
 
   rules: {

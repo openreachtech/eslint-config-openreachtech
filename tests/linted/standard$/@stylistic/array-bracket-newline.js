@@ -17,7 +17,7 @@ const epsilon = [
   'third',
   'fourth'] // ❌ consistent of `array-bracket-newline`
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

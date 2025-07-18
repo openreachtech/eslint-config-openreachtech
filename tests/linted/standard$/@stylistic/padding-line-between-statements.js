@@ -74,7 +74,7 @@ function etaFunc (arg) {
   return 0
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   breakFunc,

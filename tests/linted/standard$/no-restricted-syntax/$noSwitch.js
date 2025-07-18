@@ -13,6 +13,6 @@ function noSwitchFunc (condition) {
   }
 }
 
-module.exports = {
+export default {
   noSwitchFunc,
 }

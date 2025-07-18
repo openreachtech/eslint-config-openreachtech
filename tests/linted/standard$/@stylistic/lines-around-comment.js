@@ -34,7 +34,7 @@ const zetaObject = {
   first: 'first',
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gammaArray,

@@ -46,7 +46,7 @@ const kappaFunc = (...first) => 1 // ❌ onlyOneSimpleParam:false of `no-confusi
   ? 2
   : 3
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

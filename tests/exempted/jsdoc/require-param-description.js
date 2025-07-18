@@ -44,7 +44,7 @@ function alphaMethod (first) {
   }
 }
 
-module.exports = {
+export default {
   RequireParamDescription,
   alphaMethod,
 }

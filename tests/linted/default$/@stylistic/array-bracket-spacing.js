@@ -24,7 +24,7 @@ const xi = [ // ✅ never of `array-bracket-newline`
   ['1st', 1000],
 ]
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

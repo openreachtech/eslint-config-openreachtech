@@ -46,7 +46,7 @@ const proxy = new Proxy({}, {
   },
 })
 
-module.exports = {
+export default {
   fourParameters,
   fiveParameters,
   proxy,

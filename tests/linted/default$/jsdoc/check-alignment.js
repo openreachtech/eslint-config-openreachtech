@@ -38,7 +38,7 @@ function deltaFunc (first) {
 
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

@@ -2,7 +2,7 @@
 
 const jestConfiguration = require('@openreachtech/eslint-rules-default-jest')
 
-module.exports = {
+export default {
   ...jestConfiguration,
 
   rules: {

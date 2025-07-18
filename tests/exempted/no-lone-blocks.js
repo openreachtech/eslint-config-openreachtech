@@ -20,4 +20,4 @@ function noLonelyBlocksFunc (code) {
   }
 }
 
-module.exports = noLonelyBlocksFunc
+export default noLonelyBlocksFunc

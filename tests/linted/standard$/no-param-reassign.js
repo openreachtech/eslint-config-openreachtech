@@ -55,7 +55,7 @@ function iotaFunc (it) {
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

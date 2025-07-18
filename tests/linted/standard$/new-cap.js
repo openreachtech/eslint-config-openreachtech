@@ -12,6 +12,6 @@ function NewCap () {
 
 const newCap = NewCap() // ❌ `new-cap`
 
-module.exports = {
+export default {
   newCap,
 }

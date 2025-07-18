@@ -76,7 +76,7 @@ const { // ❌ `object-curly-newline`
 //   minProperties: Infinity,
 // }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

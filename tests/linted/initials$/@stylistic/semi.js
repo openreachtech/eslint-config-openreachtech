@@ -12,6 +12,6 @@ const MILLISECONDS_PER_ONE_DAY = 86400000; // ❌ `semi`
   })(first, second)
 }
 
-module.exports = {
+export default {
   MILLISECONDS_PER_ONE_DAY,
 }

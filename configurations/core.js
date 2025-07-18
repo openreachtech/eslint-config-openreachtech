@@ -2,7 +2,7 @@
 
 const configurationHash = require('@openreachtech/eslint-rules-default')
 
-module.exports = {
+export default {
   rules: {
     ...configurationHash.core.rules,
     ...configurationHash.disableCoreStylistic.rules, // not required to add after v10

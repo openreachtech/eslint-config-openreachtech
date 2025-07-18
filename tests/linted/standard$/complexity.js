@@ -46,7 +46,7 @@ function betaFunc ({ // ❌ max:8 of `complexity`
   eighth ??= 1
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

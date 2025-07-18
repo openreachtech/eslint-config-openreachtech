@@ -46,4 +46,4 @@ class PaddedBlock { // ❌ never `padded-blocks`
 
 }
 
-module.exports = PaddedBlock
+export default PaddedBlock

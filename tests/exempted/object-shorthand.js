@@ -8,6 +8,6 @@ const object = {
   secondFunc: first => first * 2, // ✅ avoidExplicitReturnArrows:false of `object-shorthand`
 }
 
-module.exports = {
+export default {
   object,
 }

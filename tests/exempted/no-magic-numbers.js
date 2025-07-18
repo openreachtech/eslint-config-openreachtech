@@ -19,7 +19,7 @@ function noMagicNumber (arg = 9999) { // ✅ ignoreDefaultValues:true of `no-mag
   }
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   noMagicNumber,

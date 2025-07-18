@@ -49,7 +49,7 @@ const delta = {
   },
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

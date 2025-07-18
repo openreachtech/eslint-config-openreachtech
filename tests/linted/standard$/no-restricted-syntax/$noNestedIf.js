@@ -40,7 +40,7 @@ function betaFunc (condition) {
   return response
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

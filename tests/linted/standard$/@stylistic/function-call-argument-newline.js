@@ -29,7 +29,7 @@ const epsilon = functionCallArgumentNewline( // ✅ consistent of `function-call
   300
 )
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

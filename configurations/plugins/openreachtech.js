@@ -2,7 +2,7 @@
 
 const openreachtechPlugin = require('eslint-plugin-openreachtech')
 
-module.exports = {
+export default {
   plugins: {
     openreachtech: openreachtechPlugin,
   },

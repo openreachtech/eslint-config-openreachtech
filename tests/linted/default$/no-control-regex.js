@@ -11,7 +11,7 @@ const epsilonRegExp = new RegExp('\x0C', unicodeFlag)// ❌ `no-control-regex`
 // \x0C pattern
 const zetaRegExp = new RegExp('\\x0C', unicodeFlag) // ❌ `no-control-regex`
 
-module.exports = {
+export default {
   alphaRegExp,
   betaRegExp,
   gammaRegExp,

@@ -27,6 +27,6 @@ function bodyFunc ({
   else return beta
 }
 
-module.exports = {
+export default {
   bodyFunc,
 }
