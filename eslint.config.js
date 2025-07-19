@@ -1,3 +1,5 @@
+import globals from 'globals'
+
 import coreConfiguration from './configurations/core.js'
 import stylisticConfiguration from './configurations/plugins/stylistic.js'
 import jestConfiguration from './configurations/plugins/jest.js'
@@ -13,7 +15,8 @@ export default [
   {
     languageOptions: {
       globals: {
-        console: 'readonly',
+        ...globals.browser,
+        ...globals.node,
       },
       parserOptions: {
         ecmaVersion: 'latest',
