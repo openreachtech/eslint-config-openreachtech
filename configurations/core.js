@@ -43,7 +43,7 @@ export default {
     complexity: [
       'error',
       {
-        max: 8, // 20
+        max: 12, // 20
       },
     ],
     'consistent-return': [
