@@ -1,4 +1,4 @@
-# ESLint Config for Open Reach Tech inc.
+# ESLint Config for Open Reach Tech Inc.
 
 ## Language
 
@@ -37,7 +37,7 @@ npm install --save-dev \
 | stylistic | ESLint stylistic plugin rules |
 | jest | ESLint Jest plugin rules |
 | jsdoc | ESLint JSDoc plugin rules |
-| openreachtech | ESLint Open Reach Tech inc. plugin rules |
+| openreachtech | ESLint Open Reach Tech Inc. plugin rules |
 
 ##  Usage
 

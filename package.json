@@ -1,7 +1,7 @@
 {
   "name": "@openreachtech/eslint-config",
   "version": "3.0.2",
-  "description": "ESLint config by Open Reach Tech inc.",
+  "description": "ESLint config by Open Reach Tech Inc.",
   "files": [
     "configurations/",
     "README.ja.md",
@@ -21,7 +21,7 @@
   "keywords": [
     "ESLint"
   ],
-  "author": "Open Reach Tech inc.",
+  "author": "Open Reach Tech Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/openreachtech/eslint-config-openreachtech/issues"
