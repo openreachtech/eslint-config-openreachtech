@@ -329,9 +329,6 @@ export default {
     'no-ternary': [
       'off', // 'error'
     ],
-    'no-undefined': [
-      'off', // 'error'
-    ],
     'no-underscore-dangle': [
       'off', // 'error'
       {
