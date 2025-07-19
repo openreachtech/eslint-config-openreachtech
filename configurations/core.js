@@ -1,9 +1,11 @@
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default {
   rules: {
     ...configurationHash.core.rules,
-    ...configurationHash.disableCoreStylistic.rules, // not required to add after v10
+    ...stylistic.configs['disable-legacy'].rules, // not required to add after v10
 
     'array-callback-return': [
       'error',
@@ -403,6 +405,21 @@ export default {
     ],
     'require-await': [
       'off', // 'error'
+    ],
+    'sort-imports': [
+      'off', // 'error'
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: [
+          'none',
+          'all',
+          'multiple',
+          'single',
+        ],
+        allowSeparatedGroups: false,
+      },
     ],
     'sort-keys': [
       'off', // 'error'
