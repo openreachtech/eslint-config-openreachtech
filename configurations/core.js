@@ -406,6 +406,21 @@ export default {
     'require-await': [
       'off', // 'error'
     ],
+    'sort-imports': [
+      'off', // 'error'
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: [
+          'none',
+          'all',
+          'multiple',
+          'single',
+        ],
+        allowSeparatedGroups: false,
+      },
+    ],
     'sort-keys': [
       'off', // 'error'
       'asc',
