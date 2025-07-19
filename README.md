@@ -47,7 +47,7 @@ When you want to use only core rules as is, please setup your `eslint.config.js`
 
 ```js
 // eslint.config.js
-const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
+import coreConfiguration from '@openreachtech/eslint-config/configurations/core.js'
 
 export default [
   // Configuration of core rules
@@ -67,8 +67,8 @@ When you want to use core rules with some overriding rules, please setup your `e
 
 ```js
 // eslint.config.js
-const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
-const disableCoreStylisticConfiguration = require('@openreachtech/eslint-config/configurations/disableCoreStylistic')
+import coreConfiguration from '@openreachtech/eslint-config/configurations/core.js'
+import disableCoreStylisticConfiguration from '@openreachtech/eslint-config/configurations/disableCoreStylistic.js'
 
 export default [
   // Configuration of core rules
@@ -100,11 +100,11 @@ When you want to use core and some plugins rules, please setup your `eslint.conf
 
 ```js
 // eslint.config.js
-const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
-const stylisticConfiguration = require('@openreachtech/eslint-config/configurations/plugins/stylistic')
-const jestConfiguration = require('@openreachtech/eslint-config/configurations/plugins/jest')
-const jsdocConfiguration = require('@openreachtech/eslint-config/configurations/plugins/jsdoc')
-const openreachtechConfiguration = require('./configurations/plugins/openreachtech')
+import coreConfiguration from '@openreachtech/eslint-config/configurations/core.js'
+import stylisticConfiguration from '@openreachtech/eslint-config/configurations/plugins/stylistic.js'
+import jestConfiguration from '@openreachtech/eslint-config/configurations/plugins/jest.js'
+import jsdocConfiguration from '@openreachtech/eslint-config/configurations/plugins/jsdoc.js'
+import openreachtechConfiguration from './configurations/plugins/openreachtech.js'
 
 export default [
   // Configuration of core rules
@@ -160,7 +160,7 @@ When you want to use our ESLint rules as is, please setup your `eslint.config.js
 
 ```js
 // eslint.config.js
-const openreachtechConfig = require('@openreachtech/eslint-config')
+import openreachtechConfig from '@openreachtech/eslint-config.js'
 
 export default [
   ...openreachtechConfig,
