@@ -4,19 +4,10 @@
   "description": "ESLint config by Open Reach Tech inc.",
   "files": [
     "configurations/",
-    "eslint.config.mjs",
     "README.ja.md",
     "types/"
   ],
   "main": "eslint.config.js",
-  "exports": {
-    ".": {
-      "import": "./eslint.config.mjs",
-      "require": "./eslint.config.js",
-      "node": "./eslint.config.js",
-      "default": "./eslint.config.js"
-    }
-  },
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint . --ignore-pattern 'tests/linted/' --ignore-pattern 'playground/'",
