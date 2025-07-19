@@ -36,5 +36,5 @@ jobs:
       - name: 🔬 run lint
         run: npm run lint
 
-      # - name: 🧪 run test
-      #   run: npm test
+      - name: 🧪 run test
+        run: npm test

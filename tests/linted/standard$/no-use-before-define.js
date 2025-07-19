@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc (first) {
