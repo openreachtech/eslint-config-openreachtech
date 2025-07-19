@@ -1,9 +1,11 @@
+import stylistic from '@stylistic/eslint-plugin'
+
 import configurationHash from '@openreachtech/eslint-rules-default'
 
 export default {
   rules: {
     ...configurationHash.core.rules,
-    ...configurationHash.disableCoreStylistic.rules, // not required to add after v10
+    ...stylistic.configs['disable-legacy'].rules, // not required to add after v10
 
     'array-callback-return': [
       'error',
