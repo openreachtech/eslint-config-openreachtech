@@ -302,8 +302,24 @@ export default {
         message: 'Never use for',
       },
       {
-        selector: 'Identifier[name=/.+(Data|Info|Item|List|Manager)$/]',
-        message: 'Not allowed to use "Data", "Info", "Item", "List", and "Manager" as suffix of identifier.',
+        selector: 'Identifier[name=/.+(?<!Form)Data$/]',
+        message: 'Not allowed to use "Data" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+(?<!Request)Info$/]',
+        message: 'Not allowed to use "Info" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+(?<!get|set|remove|named)Item$/]',
+        message: 'Not allowed to use "Item" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+(?<!class|RadioNode)List$/]',
+        message: 'Not allowed to use "List" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+Manager$/]',
+        message: 'Not allowed to use "Manager" as suffix of identifier',
       },
       {
         selector: 'IfStatement IfStatement',
