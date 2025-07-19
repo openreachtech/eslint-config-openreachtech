@@ -267,6 +267,11 @@ export default {
         property: 'anything',
         message: 'Never use `expect.anything()`',
       },
+      {
+        object: 'Object',
+        property: 'assign',
+        message: 'Never use `Object.assign()`',
+      },
     ],
     'no-restricted-syntax': [
       'error',

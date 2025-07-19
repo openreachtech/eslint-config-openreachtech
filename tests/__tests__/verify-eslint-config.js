@@ -16,6 +16,10 @@ const messageHash = {
     noSwitch: 'Never use switch',
     noWhile: 'Never use while',
   },
+  'no-restricted-properties': {
+    expectAnything: "'expect.anything' is restricted from being used. Never use `expect.anything\\(\\)`", // \\(\\) meaning: this message will be passed new RegExp() as is in Analyzer.
+    ObjectAssign: "'Object.assign' is restricted from being used. Never use `Object.assign\\(\\)`",
+  },
 }
 
 describe('verify ESLint config', () => {
