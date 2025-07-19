@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Lint sample for jsdoc/imports-as-dependencies rule
  */
@@ -24,4 +22,4 @@ class ImportAsDependencies {
   }
 }
 
-module.exports = ImportAsDependencies
+export default ImportAsDependencies

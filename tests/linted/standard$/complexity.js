@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-restricted-syntax */
@@ -46,7 +44,7 @@ function betaFunc ({ // ❌ max:8 of `complexity`
   eighth ??= 1
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

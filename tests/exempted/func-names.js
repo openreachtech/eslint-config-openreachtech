@@ -1,5 +1,3 @@
-'use strict'
-
 const alphaFunc = function () { // ✅ as-needed of `func-names`
   return 'I am alpha function'
 }
@@ -14,7 +12,7 @@ const gammaFunc = function gammaFunc () { // ✅ as-needed of `func-names`
   return 'I am named gamma function'
 }
 
-module.exports = {
+export default {
   alphaFunc,
   beta,
   gammaFunc,

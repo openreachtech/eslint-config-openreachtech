@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Lint sample for require-await rule.
  */
@@ -14,4 +12,4 @@ class RequireAwait {
   }
 }
 
-module.exports = RequireAwait
+export default RequireAwait

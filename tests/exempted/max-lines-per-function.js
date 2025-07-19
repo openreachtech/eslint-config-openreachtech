@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function maxLinesPerFunctionFunc (it) {
@@ -63,4 +61,4 @@ function maxLinesPerFunctionFunc (it) {
   return array.concat(it)
 }
 
-module.exports = maxLinesPerFunctionFunc
+export default maxLinesPerFunctionFunc

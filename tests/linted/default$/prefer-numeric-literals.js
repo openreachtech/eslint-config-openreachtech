@@ -1,5 +1,3 @@
-'use strict'
-
 const array = [
   parseInt('111110111', 2), // ❌ `prefer-numeric-literals`
   parseInt('767', 8), // ❌ `prefer-numeric-literals`
@@ -10,4 +8,4 @@ const array = [
   Number.parseInt('1F7', 16), // ❌ `prefer-numeric-literals`
 ]
 
-module.exports = array
+export default array

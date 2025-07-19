@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable func-names */
 /* eslint-disable jsdoc/require-jsdoc */
 
@@ -31,7 +29,7 @@ const eta = (function () { // ❌ inside of `wrap-iife`
 }
   .call(targetThis))
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

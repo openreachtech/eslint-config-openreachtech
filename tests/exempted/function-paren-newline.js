@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable openreachtech/newline-per-parameter */
 
@@ -25,7 +23,7 @@ function deltaFunc (
   return alpha + beta + gamma
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

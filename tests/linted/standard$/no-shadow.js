@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const ninja = 'ninja'
@@ -78,7 +76,7 @@ const testFunc = function ({
   return `test: ${test}`
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

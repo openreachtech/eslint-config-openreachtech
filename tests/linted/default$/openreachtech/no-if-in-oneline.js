@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable @stylistic/brace-style */
 /* eslint-disable curly */
 /* eslint-disable jsdoc/require-jsdoc */
@@ -27,6 +25,6 @@ function bodyFunc ({
   else return beta
 }
 
-module.exports = {
+export default {
   bodyFunc,
 }

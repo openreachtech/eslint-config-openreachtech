@@ -1,5 +1,3 @@
-'use strict'
-
 // ❌ preventAtMiddleLines: true of jsdoc/no-multi-asterisks
 /**
  * Create alpha object.
@@ -52,7 +50,7 @@ function gammaFunc (fourth) {
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

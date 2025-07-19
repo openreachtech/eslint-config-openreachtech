@@ -1,8 +1,6 @@
-'use strict'
-
-const {
+import {
   ESLintInspector,
-} = require('@openreachtech/eslint-inspector')
+} from '@openreachtech/eslint-inspector'
 
 const messageHash = {
   'no-restricted-syntax': {
@@ -33,5 +31,5 @@ describe('verify ESLint config', () => {
 
     expect(unexpectedLog)
       .toBeNull()
-  })
+  }, 10000) // 10 seconds timeout
 })

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-unused-private-class-members */
 
@@ -46,7 +44,7 @@ class Gamma {
   }
 }
 
-module.exports = {
+export default {
   extraFunc,
   callback, // ✅ ['callback'] of `id-denylist`
   alpha,

@@ -1,17 +1,15 @@
-'use strict'
-
-const coreConfiguration = require('./configurations/core')
-const stylisticConfiguration = require('./configurations/plugins/stylistic')
-const jestConfiguration = require('./configurations/plugins/jest')
-const jsdocConfiguration = require('./configurations/plugins/jsdoc')
-const openreachtechConfiguration = require('./configurations/plugins/openreachtech')
+import coreConfiguration from './configurations/core.js'
+import stylisticConfiguration from './configurations/plugins/stylistic.js'
+import jestConfiguration from './configurations/plugins/jest.js'
+import jsdocConfiguration from './configurations/plugins/jsdoc.js'
+import openreachtechConfiguration from './configurations/plugins/openreachtech.js'
 
 /**
  * ESLint Config
  *
  * @type {Array<import('eslint').Linter.FlatConfig>}
  */
-module.exports = [
+export default [
   {
     languageOptions: {
       globals: {
@@ -20,7 +18,7 @@ module.exports = [
       parserOptions: {
         ecmaVersion: 'latest',
       },
-      sourceType: 'commonjs',
+      sourceType: 'module',
     },
   },
 
@@ -32,7 +30,6 @@ module.exports = [
   {
     ignores: [
       '**/node_modules/**',
-      'eslint.config.mjs',
     ],
   },
 

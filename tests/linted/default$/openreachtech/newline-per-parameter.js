@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 /*
@@ -35,7 +33,7 @@ function deltaFunc ({
     + fourth
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

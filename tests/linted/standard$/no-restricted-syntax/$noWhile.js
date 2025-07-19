@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function noWhileFunc (array) {
@@ -15,6 +13,6 @@ function noWhileFunc (array) {
   return total
 }
 
-module.exports = {
+export default {
   noWhileFunc,
 }

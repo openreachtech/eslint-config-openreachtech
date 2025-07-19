@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable no-restricted-syntax */
 
 const alpha = 0
@@ -65,7 +63,7 @@ const array = [1, 3, 5]
 const beta = array.indexOf(NaN) // ❌ enforceForIndexOf:true of `use-isnan`
 const gamma = array.lastIndexOf(NaN) // ❌ enforceForIndexOf:true of `use-isnan`
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

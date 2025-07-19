@@ -1,5 +1,3 @@
-'use strict'
-
 const object = {
   alpha: 1,
   beta: 2,
@@ -7,4 +5,4 @@ const object = {
   delta: 4, // ✅ exempted `sort-keys`
 }
 
-module.exports = object
+export default object

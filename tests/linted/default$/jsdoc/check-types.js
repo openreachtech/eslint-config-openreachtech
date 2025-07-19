@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable no-empty-function */
 
 /**
@@ -86,7 +84,7 @@ function iotaFunc (first) {
 
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

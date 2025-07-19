@@ -1,8 +1,6 @@
-'use strict'
+import jsdocConfiguration from '@openreachtech/eslint-rules-default-jsdoc'
 
-const jsdocConfiguration = require('@openreachtech/eslint-rules-default-jsdoc')
-
-module.exports = {
+export default {
   ...jsdocConfiguration,
 
   rules: {

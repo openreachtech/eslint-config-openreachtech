@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = 60 * 60 * 24 * 1000 // ✅ `no-magic-numbers`
@@ -19,7 +17,7 @@ function noMagicNumber (arg = 9999) { // ✅ ignoreDefaultValues:true of `no-mag
   }
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   noMagicNumber,

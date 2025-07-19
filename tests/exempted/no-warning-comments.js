@@ -1,5 +1,3 @@
-'use strict'
-
 // TODO: must declaration gamma = 3 ✅ `no-warning-comments`
 const alpha = 1
 const bate = 2
@@ -24,7 +22,7 @@ function deltaFunc () {
   return 4
 }
 
-module.exports = {
+export default {
   alpha,
   bate,
   gammaFunc,

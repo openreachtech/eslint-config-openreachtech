@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 /** @type {*} */
@@ -37,7 +35,7 @@ function extraFunc () {
   }
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 class PaddedBlock { // ❌ never `padded-blocks`
@@ -46,4 +44,4 @@ class PaddedBlock { // ❌ never `padded-blocks`
 
 }
 
-module.exports = PaddedBlock
+export default PaddedBlock

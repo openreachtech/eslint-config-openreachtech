@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = {
@@ -13,6 +11,6 @@ function betaFunc () {
     method()
 }
 
-module.exports = {
+export default {
   betaFunc,
 }

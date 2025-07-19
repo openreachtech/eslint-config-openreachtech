@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 // import {
@@ -32,7 +30,7 @@ function commaDangle (
   return [first, second] // ✅ always-multiline `comma-dangle`
 }
 
-module.exports = {
+export default {
   oneLineArray,
   oneLineObject,
   commaDangle // ❌ always-multiline `comma-dangle`

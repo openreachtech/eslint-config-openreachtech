@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * DATE constructor.
  *
@@ -33,7 +31,7 @@ function TINYINT () {
 
 const tinyint = TINYINT() // ✅ `new-cap`
 
-module.exports = {
+export default {
   date,
   string,
   tinyint,

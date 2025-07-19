@@ -1,5 +1,4 @@
-'use strict' // eslint-disable-line max-classes-per-file
-
+/* eslint-disable max-classes-per-file */
 /* eslint-disable jsdoc/require-jsdoc */
 
 class BaseClass {
@@ -29,7 +28,7 @@ class GammaClass extends BaseClass {
   }
 }
 
-module.exports = {
+export default {
   AlphaClass,
   BetaClass,
   GammaClass,

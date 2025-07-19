@@ -1,11 +1,11 @@
-'use strict'
+import stylistic from '@stylistic/eslint-plugin'
 
-const configurationHash = require('@openreachtech/eslint-rules-default')
+import configurationHash from '@openreachtech/eslint-rules-default'
 
-module.exports = {
+export default {
   rules: {
     ...configurationHash.core.rules,
-    ...configurationHash.disableCoreStylistic.rules, // not required to add after v10
+    ...stylistic.configs['disable-legacy'].rules, // not required to add after v10
 
     'array-callback-return': [
       'error',
@@ -405,6 +405,21 @@ module.exports = {
     ],
     'require-await': [
       'off', // 'error'
+    ],
+    'sort-imports': [
+      'off', // 'error'
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: [
+          'none',
+          'all',
+          'multiple',
+          'single',
+        ],
+        allowSeparatedGroups: false,
+      },
     ],
     'sort-keys': [
       'off', // 'error'

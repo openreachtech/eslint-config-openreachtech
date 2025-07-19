@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Lint sample for require-returns-description rule.
  */
@@ -43,7 +41,7 @@ function alphaMethod (first) {
   }
 }
 
-module.exports = {
+export default {
   RequireDescription: RequireReturnsDescription,
   alphaMethod,
 }

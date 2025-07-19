@@ -1,8 +1,6 @@
-'use strict'
+import jestConfiguration from '@openreachtech/eslint-rules-default-jest'
 
-const jestConfiguration = require('@openreachtech/eslint-rules-default-jest')
-
-module.exports = {
+export default {
   ...jestConfiguration,
 
   rules: {

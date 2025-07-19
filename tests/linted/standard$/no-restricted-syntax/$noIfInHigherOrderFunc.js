@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function everyFunc (array) {
@@ -130,7 +128,7 @@ function reduceRightFunc (array) {
   )
 }
 
-module.exports = {
+export default {
   everyFunc,
   someFunc,
 
