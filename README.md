@@ -1,4 +1,4 @@
-# ESLint Config for Open Reach Tech inc.
+# ESLint Config for Open Reach Tech Inc.
 
 ## Language
 
@@ -7,7 +7,7 @@
 
 ## Overview
 
-ESLint shareable config for Open Reach Tech inc.
+ESLint shareable config for Open Reach Tech Inc.
 
 This package is only for Flat Config.
 
@@ -37,7 +37,7 @@ This package includes some ESLint configurations.
 | stylistic | ESLint stylistic plugin rules |
 | jest | ESLint Jest plugin rules |
 | jsdoc | ESLint JSDoc plugin rules |
-| openreachtech | ESLint Open Reach Tech inc. plugin rules |
+| openreachtech | ESLint Open Reach Tech Inc. plugin rules |
 
 ##  Usage
 
@@ -191,4 +191,4 @@ We strive to meet user expectations and your contributions are highly appreciate
 
 ## Copyright
 
-© 2024 [Open Reach Tech inc.](https://openreach.tech)
+© 2024 [Open Reach Tech Inc.](https://openreach.tech)
