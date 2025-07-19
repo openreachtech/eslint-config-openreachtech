@@ -1,11 +1,9 @@
-'use strict'
-
 const // ❌ never `one-var`
   alpha = 1,
   beta = 2,
   gamma = 3
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

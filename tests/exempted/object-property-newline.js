@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = {
   first: '1st',
   second: '2nd',
@@ -12,7 +10,7 @@ const gamma = {
   seventh: '7th', eighth: '8th', ninth: '9th', // ✅ allowAllPropertiesOnSameLine:true of `object-property-newline`
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = [] // ✅ built-in exceptions of `array-bracket-spacing`
 const beta = [ 'first', 'second' ] // ❌ never of `array-bracket-spacing`
 const gamma = [ 'first', 'second'] // ❌ never of `array-bracket-spacing`
@@ -24,7 +22,7 @@ const xi = [ // ✅ never of `array-bracket-newline`
   ['1st', 1000],
 ]
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

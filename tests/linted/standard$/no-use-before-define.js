@@ -1,5 +1,3 @@
-'use strict' // eslint-disable-line max-classes-per-file
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc (first) {
@@ -63,7 +61,7 @@ const Iota = class {
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

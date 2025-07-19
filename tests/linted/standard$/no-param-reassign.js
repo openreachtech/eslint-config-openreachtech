@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-restricted-syntax */
 
@@ -55,7 +53,7 @@ function iotaFunc (it) {
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

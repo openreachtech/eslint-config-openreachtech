@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-shadow */
 /* eslint-disable no-shadow-restricted-names */
@@ -25,7 +23,7 @@ function gammaFunc (first) {
 
 gammaFunc(undefined) // ✅ exempted `no-undefined`
 
-module.exports = {
+export default {
   alpha,
   betaFunc,
   gammaFunc,

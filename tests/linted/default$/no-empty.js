@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable no-restricted-syntax */
 
 const alpha = false
@@ -19,7 +17,7 @@ try /* ❌ `no-empty` */ {
 } finally /* ❌ `no-empty` */ {
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
 }

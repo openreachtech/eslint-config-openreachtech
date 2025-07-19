@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Lint sample for id-length rule.
  */
@@ -49,4 +47,4 @@ class IdLength {
   }
 }
 
-module.exports = IdLength
+export default IdLength

@@ -1,8 +1,6 @@
-'use strict'
-
-const {
+import {
   ESLintInspector,
-} = require('@openreachtech/eslint-inspector')
+} from '@openreachtech/eslint-inspector'
 
 const messageHash = {
   'no-restricted-syntax': {

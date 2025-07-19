@@ -1,5 +1,3 @@
-'use strict'
-
 // ✅ separate-lines of `multiline-comment-style`
 // first comment
 // second comment

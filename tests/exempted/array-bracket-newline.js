@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = []
 
 const beta = ['first'] // ✅ consistent of `array-bracket-newline`
@@ -17,7 +15,7 @@ const epsilon = [ // ✅ consistent of `array-bracket-newline`
   'fourth',
 ]
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -1,5 +1,3 @@
-'use strict'
-
 describe('Sample', () => { // ✅ { ignoreTopLevelDescribe: true } of `jest/prefer-lowercase-title`
   describe('#method()', () => {
     const cases = [

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 /* eslint-disable-next-line openreachtech/newline-per-parameter */
@@ -19,6 +17,6 @@ function alphaFunc (hashes, ...values) {
 
 const beta = alphaFunc`Hello, ${'world'}!` // ❌ `template-tag-spacing`
 
-module.exports = {
+export default {
   beta,
 }

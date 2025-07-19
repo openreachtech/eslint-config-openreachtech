@@ -1,5 +1,3 @@
-'use strict'
-
 class MatchDescription {
   // ✅ matchDescription of `match-description`
   /**
@@ -31,4 +29,4 @@ class MatchDescription {
   }
 }
 
-module.exports = MatchDescription
+export default MatchDescription

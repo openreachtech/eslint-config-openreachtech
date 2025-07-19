@@ -1,5 +1,3 @@
-'use strict'
-
 describe('a test', () => {
   expect(1) // ❌ `jest/no-standalone-expect`
     .toBe(1)

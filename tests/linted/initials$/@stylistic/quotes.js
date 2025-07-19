@@ -1,3 +1,1 @@
-'use strict'
-
-module.exports = "quotes" // ❌ single of `quotes`
+export default "quotes" // ❌ single of `quotes`

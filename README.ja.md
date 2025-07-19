@@ -47,11 +47,9 @@ npm install --save-dev \
 
 ```js
 // eslint.config.js
-'use strict'
-
 const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
 
-module.exports = [
+export default [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -70,12 +68,10 @@ module.exports = [
 
 ```js
 // eslint.config.js
-'use strict'
-
 const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
 const disableCoreStylisticConfiguration = require('@openreachtech/eslint-config/configurations/disableCoreStylistic')
 
-module.exports = [
+export default [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -105,15 +101,13 @@ module.exports = [
 
 ```js
 // eslint.config.js
-'use strict'
-
 const coreConfiguration = require('@openreachtech/eslint-config/configurations/core')
 const stylisticConfiguration = require('@openreachtech/eslint-config/configurations/plugins/stylistic')
 const jestConfiguration = require('@openreachtech/eslint-config/configurations/plugins/jest')
 const jsdocConfiguration = require('@openreachtech/eslint-config/configurations/plugins/jsdoc')
 const openreachtechConfiguration = require('./configurations/plugins/openreachtech')
 
-module.exports = [
+export default [
   // Configuration of core rules
   {
     ...coreConfiguration,
@@ -167,11 +161,9 @@ module.exports = [
 
 ```js
 // eslint.config.js
-'use strict'
-
 const openreachtechConfig = require('@openreachtech/eslint-config')
 
-module.exports = [
+export default [
   ...openreachtechConfig,
 ]
 ```

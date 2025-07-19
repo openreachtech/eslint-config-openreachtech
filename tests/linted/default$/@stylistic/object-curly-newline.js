@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable object-shorthand */
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -76,7 +74,7 @@ const { // ❌ `object-curly-newline`
 //   minProperties: Infinity,
 // }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc() { // ❌ named:always of `space-before-blocks`
@@ -32,7 +30,7 @@ const zetaFunc = async() => { // ❌ asyncArrow:always of `space-before-blocks`
   return result
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

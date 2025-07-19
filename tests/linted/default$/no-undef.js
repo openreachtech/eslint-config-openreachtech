@@ -1,5 +1,3 @@
-'use strict'
-
 // @ts-expect-error
 const alpha = unknownFunc() // ❌ `no-undef`
 
@@ -11,7 +9,7 @@ if (typeof UndefinedIdentifier === 'undefined') { // ✅ typeof:false of `no-und
   // noop
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
 }

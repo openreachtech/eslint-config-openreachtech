@@ -1,5 +1,3 @@
-'use strict'
-
 const alphaFunc = () => { // ❌ as-needed of `arrow-body-style`
   return 0
 }
@@ -12,7 +10,7 @@ const betaFunc = () => { // ❌ as-needed & requireReturnForObjectLiteral:false 
   }
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

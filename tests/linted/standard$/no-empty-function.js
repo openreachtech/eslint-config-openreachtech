@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable getter-return */
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable object-shorthand */
@@ -48,7 +46,7 @@ class Eta {
   static set value (value) {} // ❌ `no-empty-function`
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

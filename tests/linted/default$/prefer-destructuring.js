@@ -1,5 +1,3 @@
-'use strict'
-
 const array = []
 const object = {}
 
@@ -10,7 +8,7 @@ const gamma = object['gamma'] // ❌ { object: true } of prefer-destructuring
 
 const delta = object.epsilon // ✅ { object: true }, { enforceForRenamedProperties: false } of prefer-destructuring
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

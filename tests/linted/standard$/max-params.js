@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function fourParameters ( // ✅ `max-params`
@@ -46,7 +44,7 @@ const proxy = new Proxy({}, {
   },
 })
 
-module.exports = {
+export default {
   fourParameters,
   fiveParameters,
   proxy,

@@ -1,4 +1,3 @@
-'use strict'
 const alpha = 1 // ❌ directive/* of `padding-line-between-statements`
 
 /* eslint-disable jsdoc/require-jsdoc */
@@ -74,7 +73,7 @@ function etaFunc (arg) {
   return 0
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   breakFunc,

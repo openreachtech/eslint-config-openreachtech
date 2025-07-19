@@ -1,8 +1,6 @@
-'use strict'
+import configurationHash from '@openreachtech/eslint-rules-default'
 
-const configurationHash = require('@openreachtech/eslint-rules-default')
-
-module.exports = {
+export default {
   ...configurationHash.stylistic,
 
   rules: {

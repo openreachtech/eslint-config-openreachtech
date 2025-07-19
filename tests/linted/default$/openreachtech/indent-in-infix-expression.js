@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable @stylistic/indent-binary-ops */
 /* eslint-disable openreachtech/no-unexpected-multiline */
 
@@ -65,7 +63,7 @@ const sigma = alpha === 100
   && beta === 100 // ✅ `openreachtech/indent-in-infix-expression`
     && gamma === 100 // ❌ `openreachtech/indent-in-infix-expression`
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

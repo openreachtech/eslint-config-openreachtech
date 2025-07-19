@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-restricted-syntax */
 
@@ -176,7 +174,7 @@ class AllmanStyle
 
 /* -------------------------------------------------------------------------- */
 
-module.exports = {
+export default {
   oneTabBraceStyleFunc,
   stroustrupStyleFunc,
   allmanStyleFunc,

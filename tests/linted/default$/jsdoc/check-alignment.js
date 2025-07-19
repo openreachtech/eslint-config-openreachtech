@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable no-empty-function */
 
 /**
@@ -38,7 +36,7 @@ function deltaFunc (first) {
 
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

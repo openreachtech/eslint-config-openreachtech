@@ -1,5 +1,3 @@
-'use strict'
-
 describe('Target', () => {
   test('to be same', () => {
     expect(true)

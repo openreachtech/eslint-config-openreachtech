@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable openreachtech/indent-in-infix-expression */
 /* eslint-disable @stylistic/indent-binary-ops */
@@ -19,6 +17,6 @@ function die () {
   // noop
 }
 
-module.exports = {
+export default {
   MILLISECONDS_PER_HOUR,
 }
