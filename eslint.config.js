@@ -36,6 +36,15 @@ export default [
     ],
   },
 
+  {
+    files: [
+      '**/*.cjs',
+    ],
+    languageOptions: {
+      sourceType: 'commonjs',
+    },
+  },
+
   // Configuration of core rules
   {
     ...coreConfiguration,
