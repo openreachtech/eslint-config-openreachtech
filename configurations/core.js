@@ -14,6 +14,16 @@ export default {
         checkForEach: true, // false
       },
     ],
+    camelcase: [
+      'off', // 'error'
+      {
+        properties: 'always',
+        ignoreDestructuring: false,
+        ignoreImports: false,
+        ignoreGlobals: false,
+        allow: [],
+      },
+    ],
     'capitalized-comments': [
       'off', // 'error'
       'always',
