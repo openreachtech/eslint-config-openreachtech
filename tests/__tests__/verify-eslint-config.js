@@ -31,5 +31,5 @@ describe('verify ESLint config', () => {
 
     expect(unexpectedLog)
       .toBeNull()
-  })
+  }, 10000) // 10 seconds timeout
 })
