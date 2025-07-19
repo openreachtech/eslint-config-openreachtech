@@ -244,7 +244,7 @@ export default {
       'single', // 'double'
       {
         avoidEscape: true,
-        allowTemplateLiterals: false,
+        allowTemplateLiterals: 'never',
       },
     ],
     '@stylistic/semi': [
