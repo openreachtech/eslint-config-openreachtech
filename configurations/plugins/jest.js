@@ -13,6 +13,12 @@ export default {
         withinDescribe: 'test', // 'it'
       },
     ],
+    'jest/max-expects': [
+      'off', // 'error'
+      {
+        max: 5,
+      },
+    ],
     'jest/no-hooks': [
       'off', // 'error'
       {
