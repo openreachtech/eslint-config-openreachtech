@@ -410,5 +410,14 @@ export default {
         escapeMarkdown: false,
       },
     ],
+    'jsdoc/valid-types': [
+      /*
+       * Syntax error in type: X extends typeof SampleClass ? X : never  jsdoc/valid-types
+       */
+      'off', // 'error'
+      {
+        allowEmptyNamepaths: true,
+      },
+    ],
   },
 }
