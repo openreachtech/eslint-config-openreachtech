@@ -14,6 +14,16 @@ export default {
         checkForEach: true, // false
       },
     ],
+    camelcase: [
+      'off', // 'error'
+      {
+        properties: 'always',
+        ignoreDestructuring: false,
+        ignoreImports: false,
+        ignoreGlobals: false,
+        allow: [],
+      },
+    ],
     'capitalized-comments': [
       'off', // 'error'
       'always',
@@ -33,7 +43,7 @@ export default {
     complexity: [
       'error',
       {
-        max: 8, // 20
+        max: 12, // 20
       },
     ],
     'consistent-return': [
@@ -155,34 +165,6 @@ export default {
         int32Hint: false,
       },
     ],
-    'no-console': [
-      'error',
-      {
-        allow: undefined, // When disable `allow` field, give undefined instead of empty array
-        // [
-        //   'assert',
-        //   'clear',
-        //   'Console',
-        //   'count',
-        //   'countReset',
-        //   'debug',
-        //   'dir',
-        //   'dirxml',
-        //   'error',
-        //   'group',
-        //   'groupCollapsed',
-        //   'groupEnd',
-        //   'info',
-        //   'log',
-        //   'table',
-        //   'time',
-        //   'timeEnd',
-        //   'timeLog',
-        //   'trace',
-        //   'warn',
-        // ],
-      },
-    ],
     'no-continue': [
       'off', // 'error'
     ],
@@ -257,6 +239,11 @@ export default {
         property: 'anything',
         message: 'Never use `expect.anything()`',
       },
+      {
+        object: 'Object',
+        property: 'assign',
+        message: 'Never use `Object.assign()`',
+      },
     ],
     'no-restricted-syntax': [
       'error',
@@ -287,8 +274,24 @@ export default {
         message: 'Never use for',
       },
       {
-        selector: 'Identifier[name=/.+(Data|Info|Item|List|Manager)$/]',
-        message: 'Not allowed to use "Data", "Info", "Item", "List", and "Manager" as suffix of identifier.',
+        selector: 'Identifier[name=/.+(?<!Form)Data$/]',
+        message: 'Not allowed to use "Data" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+(?<!Request)Info$/]',
+        message: 'Not allowed to use "Info" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+(?<!get|set|remove|named)Item$/]',
+        message: 'Not allowed to use "Item" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+(?<!class|RadioNode)List$/]',
+        message: 'Not allowed to use "List" as suffix of identifier',
+      },
+      {
+        selector: 'Identifier[name=/.+Manager$/]',
+        message: 'Not allowed to use "Manager" as suffix of identifier',
       },
       {
         selector: 'IfStatement IfStatement',
@@ -324,9 +327,6 @@ export default {
       },
     ],
     'no-ternary': [
-      'off', // 'error'
-    ],
-    'no-undefined': [
       'off', // 'error'
     ],
     'no-underscore-dangle': [
@@ -393,7 +393,7 @@ export default {
           'xxx',
         ],
         location: 'start',
-        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
+        decoration: [],
       },
     ],
     'prefer-named-capture-group': [
