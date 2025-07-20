@@ -396,7 +396,7 @@ export default {
           'xxx',
         ],
         location: 'start',
-        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
+        decoration: [],
       },
     ],
     'prefer-named-capture-group': [
