@@ -6,6 +6,15 @@ export default {
   rules: {
     ...jsdocConfiguration.rules,
 
+    'jsdoc/check-tag-names': [
+      'off', // 'error'
+      {
+        definedTags: [],
+        enableFixer: true,
+        jsxTags: false,
+        typed: false,
+      },
+    ],
     'jsdoc/imports-as-dependencies': [
       'off', // 'error'
     ],
