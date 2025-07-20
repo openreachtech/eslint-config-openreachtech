@@ -103,6 +103,14 @@ export default {
         ],
       },
     ],
+    'jsdoc/no-undefined-types': [
+      'off', // 'error'
+      {
+        definedTypes: [],
+        disableReporting: false,
+        markVariablesAsUsed: true,
+      },
+    ],
     'jsdoc/require-description': [
       // Since exists `jsdoc/no-blank-blocks`, so this rule is unnecessary.
       'off', // 'error'
