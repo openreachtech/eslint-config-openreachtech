@@ -75,11 +75,13 @@ export default {
         noMultilineBlocks: false,
         noSingleLineBlocks: true, // false // FIXME: confirm this
         noZeroLineText: true,
-        singleLineTags: [
+        singleLineTags: [ // ['lends', 'type']
           'lends',
           'type',
-          'inheritdoc',
-          'override',
+
+          'extends', // added
+          'inheritdoc', // added
+          'override', // added
         ],
       },
     ],
