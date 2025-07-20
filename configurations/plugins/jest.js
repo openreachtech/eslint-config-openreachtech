@@ -19,6 +19,12 @@ export default {
         max: 5,
       },
     ],
+    'jest/max-nested-describe': [
+      'error',
+      {
+        max: 8, // 5
+      },
+    ],
     'jest/no-hooks': [
       'off', // 'error'
       {
