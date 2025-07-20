@@ -6,6 +6,23 @@ export default {
   rules: {
     ...jsdocConfiguration.rules,
 
+    'jsdoc/check-indentation': [
+      'error',
+      {
+        excludeTags: [ // ['example']
+          'description',
+          'example',
+          'extends',
+          'note',
+          'param',
+          'returns',
+          'template',
+          'type',
+          'typedef',
+          'yields',
+        ],
+      },
+    ],
     'jsdoc/check-tag-names': [
       'off', // 'error'
       {
