@@ -149,7 +149,7 @@ export default {
         exemptEmptyConstructors: false, // true
         exemptEmptyFunctions: false,
         fixerMessage: '',
-        minLineCount: undefined,
+        minLineCount: -Infinity, // undefined
         publicOnly: false,
         require: {
           ArrowFunctionExpression: false,

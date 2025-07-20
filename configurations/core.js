@@ -165,34 +165,6 @@ export default {
         int32Hint: false,
       },
     ],
-    'no-console': [
-      'error',
-      {
-        allow: undefined, // When disable `allow` field, give undefined instead of empty array
-        // [
-        //   'assert',
-        //   'clear',
-        //   'Console',
-        //   'count',
-        //   'countReset',
-        //   'debug',
-        //   'dir',
-        //   'dirxml',
-        //   'error',
-        //   'group',
-        //   'groupCollapsed',
-        //   'groupEnd',
-        //   'info',
-        //   'log',
-        //   'table',
-        //   'time',
-        //   'timeEnd',
-        //   'timeLog',
-        //   'trace',
-        //   'warn',
-        // ],
-      },
-    ],
     'no-continue': [
       'off', // 'error'
     ],
@@ -357,9 +329,6 @@ export default {
     'no-ternary': [
       'off', // 'error'
     ],
-    'no-undefined': [
-      'off', // 'error'
-    ],
     'no-underscore-dangle': [
       'off', // 'error'
       {
@@ -424,7 +393,7 @@ export default {
           'xxx',
         ],
         location: 'start',
-        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
+        decoration: [],
       },
     ],
     'prefer-named-capture-group': [
