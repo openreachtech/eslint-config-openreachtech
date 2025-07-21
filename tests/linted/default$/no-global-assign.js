@@ -6,4 +6,4 @@ Object = class ExtendedObjet extends Object { // ❌ `no-global-assign`
 }
 
 // @ts-expect-error
-undefined = 1 // ❌ `no-global-assign`
+window = 1 // ❌ `no-global-assign`

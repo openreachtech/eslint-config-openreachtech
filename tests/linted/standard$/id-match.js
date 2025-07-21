@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 /* eslint-disable jsdoc/require-jsdoc */
 
 const 漢字 = 'kanji' // ❌ ^[\$\w]+$ of `id-match`

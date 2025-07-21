@@ -1,17 +1,16 @@
 {
   "name": "@openreachtech/eslint-config",
   "version": "3.0.2",
-  "description": "ESLint config by Open Reach Tech inc.",
+  "description": "ESLint config by Open Reach Tech Inc.",
   "files": [
-    "configurations/",
-    "README.ja.md",
+    "lib/",
     "types/"
   ],
-  "main": "eslint.config.js",
+  "main": "index.js",
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint . --ignore-pattern 'tests/linted/' --ignore-pattern 'playground/'",
-    "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --forceExit --detectOpenHandles"
+    "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --detectOpenHandles"
   },
   "type": "module",
   "repository": {
@@ -21,7 +20,7 @@
   "keywords": [
     "ESLint"
   ],
-  "author": "Open Reach Tech inc.",
+  "author": "Open Reach Tech Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/openreachtech/eslint-config-openreachtech/issues"
@@ -31,6 +30,7 @@
     "@openreachtech/eslint-rules-default": "^2.0.0",
     "@openreachtech/eslint-rules-default-jest": "^1.0.1",
     "@openreachtech/eslint-rules-default-jsdoc": "^1.0.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-openreachtech": "^1.0.1"
   },
   "devDependencies": {
