@@ -73,6 +73,7 @@ const abbreviationHash = {
   opt: null, // ❌ ['opt'] of `id-denylist`
   pos: null, // ❌ ['pos'] of `id-denylist`
   prod: 'product', // ❌ ['prod'] of `id-denylist`
+  ret: null, // ❌ ['ret'] of `id-denylist`
   str: '', // ❌ ['str'] of `id-denylist`
   usr: null, // ❌ ['usr'] of `id-denylist`
   temp: null, // ❌ ['temp'] of `id-denylist`
