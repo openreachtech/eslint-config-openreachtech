@@ -53,6 +53,7 @@ const abbreviationHash = {
   cate: null, // ❌ ['cate'] of `id-denylist`
   cfg: {}, // ❌ ['cfg'] of `id-denylist`
   cnt: 0, // ❌ ['cnt'] of `id-denylist`
+  col: null, // ❌ ['col'] of `id-denylist`
   cond: false, // ❌ ['cond'] of `id-denylist`
   ctx: null, // ❌ ['ctx'] of `id-denylist`
   err: null, // ❌ ['err'] of `id-denylist`
