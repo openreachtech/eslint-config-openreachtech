@@ -44,10 +44,38 @@ class Gamma {
   }
 }
 
+const abbreviationHash = {
+  attr: null, // ❌️ ['attr'] of `id-denylist`
+  attrs: [], // ❌ ['attrs'] of `id-denylist`
+  btn: null, // ❌ ['btn'] of `id-denylist`
+  cfg: {}, // ❌ ['cfg'] of `id-denylist`
+  cnt: 0, // ❌ ['cnt'] of `id-denylist`
+  ctx: null, // ❌ ['ctx'] of `id-denylist`
+  err: null, // ❌ ['err'] of `id-denylist`
+  el: null, // ❌ ['el'] of `id-denylist`
+  ev: null, // ❌ ['ev'] of `id-denylist`
+  evt: null, // ❌ ['evt'] of `id-denylist`
+  idx: 0, // ❌ ['idx'] of `id-denylist`
+  img: null, // ❌ ['img'] of `id-denylist`
+  info: null, // ❌ ['info'] of `id-denylist`
+  len: 0, // ❌ ['len'] of `id-denylist`
+  msg: '', // ❌ ['msg'] of `id-denylist`
+  num: 0, // ❌ ['num'] of `id-denylist`
+  obj: {}, // ❌ ['obj'] of `id-denylist`
+  opt: null, // ❌ ['opt'] of `id-denylist`
+  pos: null, // ❌ ['pos'] of `id-denylist`
+  str: '', // ❌ ['str'] of `id-denylist`
+  usr: null, // ❌ ['usr'] of `id-denylist`
+  temp: null, // ❌ ['temp'] of `id-denylist`
+  tmp: null, // ❌ ['tmp'] of `id-denylist`
+  val: null, // ❌ ['val'] of `id-denylist`
+}
+
 export default {
   extraFunc,
   callback, // ✅ ['callback'] of `id-denylist`
   alpha,
   beta,
   Gamma,
+  abbreviationHash,
 }
