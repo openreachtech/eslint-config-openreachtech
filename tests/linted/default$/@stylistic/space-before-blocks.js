@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable @stylistic/keyword-spacing */
 /* eslint-disable no-restricted-syntax */
@@ -56,7 +54,7 @@ class Gamma{ // ❌ classes:always of `space-before-blocks`
   // noop
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   Gamma,

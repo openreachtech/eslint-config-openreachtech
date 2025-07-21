@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function noForEachFunc (array) {
@@ -12,6 +10,6 @@ function noForEachFunc (array) {
   return result
 }
 
-module.exports = {
+export default {
   noForEachFunc,
 }

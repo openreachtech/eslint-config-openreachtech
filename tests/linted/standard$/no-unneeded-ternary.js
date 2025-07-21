@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc (target) {
@@ -30,7 +28,7 @@ function extraFunc () {
   return gamma
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   extraFunc,

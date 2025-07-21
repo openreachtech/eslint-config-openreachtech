@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 { // ✅ exempted `no-lone-blocks
@@ -20,4 +18,4 @@ function noLonelyBlocksFunc (code) {
   }
 }
 
-module.exports = noLonelyBlocksFunc
+export default noLonelyBlocksFunc

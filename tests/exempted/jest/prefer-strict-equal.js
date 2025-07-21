@@ -1,5 +1,3 @@
-'use strict'
-
 describe('Sample', () => {
   test('sample', () => {
     const expected = {

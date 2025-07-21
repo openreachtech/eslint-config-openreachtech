@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable eqeqeq */
 /* eslint-disable jsdoc/require-jsdoc */
 
@@ -101,7 +99,7 @@ const strictEqualResult = alphaText === // ❌ before of `operator-linebreak`
 const strictNotEqualResult = alphaText !== // ❌ before of `operator-linebreak`
   betaText
 
-module.exports = {
+export default {
   alpha,
   alphaFunc,
   orResult,

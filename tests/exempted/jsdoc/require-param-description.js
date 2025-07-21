@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Lint sample for require-param-description rule.
  */
@@ -44,7 +42,7 @@ function alphaMethod (first) {
   }
 }
 
-module.exports = {
+export default {
   RequireParamDescription,
   alphaMethod,
 }

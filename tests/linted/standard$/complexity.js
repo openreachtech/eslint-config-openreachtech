@@ -1,10 +1,8 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-restricted-syntax */
 
-function alphaFunc (arg) { // ❌ max:8 of `complexity`
+function alphaFunc (arg) { // ❌ max:12 of `complexity`
   if (arg === 0) {
     return 'zero' // first path
   } else if (arg === 1) {
@@ -21,12 +19,20 @@ function alphaFunc (arg) { // ❌ max:8 of `complexity`
     return 'six' // seventh path
   } else if (arg === 7) {
     return 'seven' // eighth path
+  } else if (arg === 8) {
+    return 'eight' // ninth path
+  } else if (arg === 9) {
+    return 'nine' // tenth path
+  } else if (arg === 10) {
+    return 'ten' // eleventh path
+  } else if (arg === 11) {
+    return 'eleven' // twelfth path
   } else { // eslint-disable-line no-else-return
-    return 'unknown' // ninth path
+    return 'unknown' // thirteenth path
   }
 }
 
-function betaFunc ({ // ❌ max:8 of `complexity`
+function betaFunc ({ // ❌ max:12 of `complexity`
   first,
   second,
   third,
@@ -35,6 +41,10 @@ function betaFunc ({ // ❌ max:8 of `complexity`
   sixth,
   seventh,
   eighth,
+  ninth,
+  tenth,
+  eleventh,
+  twelfth,
 }) {
   first ||= 1
   second &&= 1
@@ -44,9 +54,13 @@ function betaFunc ({ // ❌ max:8 of `complexity`
   sixth ??= 1
   seventh ??= 1
   eighth ??= 1
+  ninth ??= 1
+  tenth ??= 1
+  eleventh ??= 1
+  twelfth ??= 1
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

@@ -1,83 +1,20 @@
-'use strict'
+import openreachtechEslintConfig from './lib/eslint.config.js'
 
-const coreConfiguration = require('./configurations/core')
-const stylisticConfiguration = require('./configurations/plugins/stylistic')
-const jestConfiguration = require('./configurations/plugins/jest')
-const jsdocConfiguration = require('./configurations/plugins/jsdoc')
-const openreachtechConfiguration = require('./configurations/plugins/openreachtech')
+export default [
+  ...openreachtechEslintConfig,
 
-/**
- * ESLint Config
- *
- * @type {Array<import('eslint').Linter.FlatConfig>}
- */
-module.exports = [
+  // Disable ESLint Comments rules for CI
   {
-    languageOptions: {
-      globals: {
-        console: 'readonly',
-      },
-      parserOptions: {
-        ecmaVersion: 'latest',
-      },
-      sourceType: 'commonjs',
-    },
-  },
-
-  /*
-   * If ignores is used without any other keys in the configuration object, then the patterns act as global ignores. Here’s an example:
-   *
-   * https://eslint.org/docs/latest/use/configure/configuration-files#globally-ignoring-files-with-ignores
-   */
-  {
-    ignores: [
-      '**/node_modules/**',
-      'eslint.config.mjs',
-    ],
-  },
-
-  // Configuration of core rules
-  {
-    ...coreConfiguration,
-
     rules: {
-      ...coreConfiguration.rules,
-    },
-  },
-
-  // Configuration of stylistic rules
-  {
-    ...stylisticConfiguration,
-
-    rules: {
-      ...stylisticConfiguration.rules,
-    },
-  },
-
-  // Configuration of Jest rules
-  {
-    ...jestConfiguration,
-
-    rules: {
-      ...jestConfiguration.rules,
-    },
-  },
-
-  // Configuration of JSDoc rules
-  {
-    ...jsdocConfiguration,
-
-    rules: {
-      ...jsdocConfiguration.rules,
-    },
-  },
-
-  // Configuration of OpenreachTech rules
-  {
-    ...openreachtechConfiguration,
-
-    rules: {
-      ...openreachtechConfiguration.rules,
+      'eslint-comments/disable-enable-pair': 'off',
+      'eslint-comments/no-aggregating-enable': 'off',
+      'eslint-comments/no-duplicate-disable': 'off',
+      'eslint-comments/no-unlimited-disable': 'off',
+      'eslint-comments/no-unused-disable': 'off',
+      'eslint-comments/no-unused-enable': 'off',
+      'eslint-comments/no-restricted-disable': 'off',
+      'eslint-comments/no-use': 'off',
+      'eslint-comments/require-description': 'off',
     },
   },
 ]

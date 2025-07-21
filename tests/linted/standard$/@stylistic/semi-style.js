@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable @stylistic/semi */
@@ -41,6 +39,6 @@ class Gamma {
   }
 }
 
-module.exports = {
+export default {
   Gamma,
 }

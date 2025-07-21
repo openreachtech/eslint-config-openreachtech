@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const expressionFunc = function () { // ✅ exempted `func-style`
@@ -12,7 +10,7 @@ function declarationFunc () { // ✅ exempted `func-style`
   return 'I am declaration function'
 }
 
-module.exports = {
+export default {
   expressionFunc,
   arrowFunc,
   declarationFunc,

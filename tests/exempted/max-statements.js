@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function maxStatementsFunc (it) { // ❌ max-statements
@@ -28,4 +26,4 @@ function maxStatementsFunc (it) { // ❌ max-statements
   ]
 }
 
-module.exports = maxStatementsFunc
+export default maxStatementsFunc

@@ -1,5 +1,3 @@
-'use strict'
-
 //First comment. // ❌ `spaced-comment`
 
 /*Second comment. */ // ❌ `spaced-comment`

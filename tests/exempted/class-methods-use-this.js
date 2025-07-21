@@ -1,5 +1,3 @@
-'use strict'
-
 class ClassMethodUseThis {
   /**
    * Definition of property.
@@ -18,4 +16,4 @@ class ClassMethodUseThis {
   }
 }
 
-module.exports = ClassMethodUseThis
+export default ClassMethodUseThis

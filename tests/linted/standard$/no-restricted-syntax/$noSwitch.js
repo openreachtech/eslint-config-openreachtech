@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function noSwitchFunc (condition) {
@@ -13,6 +11,6 @@ function noSwitchFunc (condition) {
   }
 }
 
-module.exports = {
+export default {
   noSwitchFunc,
 }

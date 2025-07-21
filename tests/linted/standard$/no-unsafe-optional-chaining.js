@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-implicit-coercion */
 /* eslint-disable no-restricted-syntax */
@@ -134,7 +132,7 @@ async function psiFunc () {
   ]
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -1,5 +1,3 @@
-'use strict'
-
 // Alpha value // ✅ exempted `capitalized-comments`
 const alpha = 1
 
@@ -17,7 +15,7 @@ const delta = 4
 const epsilon = 5 // epsilon value // ✅ exempted `capitalized-comments`
 const zeta = 6 // Zeta value // ✅ exempted `capitalized-comments`
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-implicit-coercion */
 /* eslint-disable no-restricted-syntax */
@@ -69,7 +67,7 @@ const theta = alpha && Boolean(bool) // ❌ `no-extra-boolean-cast`
 
 const iota = Boolean(!!alpha || beta) // ❌ `no-extra-boolean-cast`
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

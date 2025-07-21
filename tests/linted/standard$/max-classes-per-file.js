@@ -1,4 +1,4 @@
-'use strict' // ❌ max:1 of `max-classes-per-file`
+// ❌ max:1 of `max-classes-per-file`
 
 /* eslint-disable jsdoc/require-jsdoc */
 
@@ -14,7 +14,7 @@ class BetaClass {
   }
 }
 
-module.exports = {
+export default {
   AlphaClass,
   BetaClass,
 }

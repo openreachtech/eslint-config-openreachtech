@@ -1,6 +1,4 @@
 // @ts-check
-'use strict'
-
 /**
  * openreachtech/empty-line-after-super
  * openreachtech/indent-in-infix-expression

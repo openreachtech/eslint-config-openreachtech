@@ -1,5 +1,3 @@
-'use strict'
-
 describe('Sample', () => {
   test('never use "expect.anything()"', () => {
     expect({})

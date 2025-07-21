@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function noDoWhileFunc () {
@@ -13,6 +11,6 @@ function noDoWhileFunc () {
   return index
 }
 
-module.exports = {
+export default {
   noDoWhileFunc,
 }

@@ -1,5 +1,3 @@
-'use strict'
-
 const alpha = []
 
 const beta = [
@@ -18,7 +16,7 @@ const gamma = [
   'second', 'third',
 ]
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

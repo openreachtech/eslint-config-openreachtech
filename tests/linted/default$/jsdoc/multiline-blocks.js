@@ -1,5 +1,3 @@
-'use strict'
-
 // ❌ noZeroLineText:true of `jsdoc/multiline-blocks`
 /** Reported up here
  * because the rest is multiline
@@ -31,7 +29,7 @@ function alphaFunc () {
   return 'alpha'
 }
 
-module.exports = {
+export default {
   alpha,
   alphaFunc,
   AlphaLendsClass,

@@ -1,5 +1,3 @@
-'use strict'
-
 const alphaRegExp = /\x00/u // ❌ `no-control-regex`
 const betaRegExp = /\x1F/u // ❌ `no-control-regex`
 const gammaRegExp = /\u000C/u // ❌ `no-control-regex`
@@ -11,7 +9,7 @@ const epsilonRegExp = new RegExp('\x0C', unicodeFlag)// ❌ `no-control-regex`
 // \x0C pattern
 const zetaRegExp = new RegExp('\\x0C', unicodeFlag) // ❌ `no-control-regex`
 
-module.exports = {
+export default {
   alphaRegExp,
   betaRegExp,
   gammaRegExp,

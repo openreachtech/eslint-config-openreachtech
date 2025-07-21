@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/no-blank-blocks */
 
 class RequireDescription {
@@ -31,7 +29,7 @@ function alphaMethod () {
   // noop
 }
 
-module.exports = {
+export default {
   RequireDescription,
   alphaMethod,
 }

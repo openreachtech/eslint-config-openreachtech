@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = {
@@ -20,7 +18,7 @@ class AccessorPairs {
   }
 }
 
-module.exports = {
+export default {
   alpha,
   AccessorPairs,
 }

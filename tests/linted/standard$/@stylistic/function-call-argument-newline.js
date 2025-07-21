@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 /* eslint-disable-next-line openreachtech/newline-per-parameter */
@@ -29,7 +27,7 @@ const epsilon = functionCallArgumentNewline( // ✅ consistent of `function-call
   300
 )
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

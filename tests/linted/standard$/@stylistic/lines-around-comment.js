@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = 'alpha'
@@ -34,7 +32,7 @@ const zetaObject = {
   first: 'first',
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gammaArray,

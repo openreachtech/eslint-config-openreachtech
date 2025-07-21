@@ -1,6 +1,4 @@
 // @ts-check
-'use strict'
-
 /** func-call-spacing
  *  func-call-spacing: ["error", "never"]
  *  npx eslint playground\func-call-spacing.js --no-ignore

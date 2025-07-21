@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function noLetFunc (condition) {
@@ -12,6 +10,6 @@ function noLetFunc (condition) {
   return total
 }
 
-module.exports = {
+export default {
   noLetFunc,
 }

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc (condition) {
@@ -40,7 +38,7 @@ function betaFunc (condition) {
   return response
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

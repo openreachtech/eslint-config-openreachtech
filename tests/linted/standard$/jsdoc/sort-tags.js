@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/tag-lines */
 
 // ❌ `jsdoc/sort-tags`
@@ -28,7 +26,7 @@ function betaFunc (value) {
   return 1 / value
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
 }

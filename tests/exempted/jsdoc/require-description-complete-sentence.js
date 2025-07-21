@@ -1,5 +1,3 @@
-'use strict'
-
 class RequireDescriptionCompleteSentence {
   /**
    * Constructor.
@@ -52,4 +50,4 @@ class RequireDescriptionCompleteSentence {
   }
 }
 
-module.exports = RequireDescriptionCompleteSentence
+export default RequireDescriptionCompleteSentence

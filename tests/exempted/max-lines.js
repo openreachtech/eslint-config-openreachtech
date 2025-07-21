@@ -1,5 +1,3 @@
-'use strict'
-
 const array = [
   1000001,
   1000002,
@@ -303,4 +301,4 @@ const array = [
   1000300,
 ]
 
-module.exports = array
+export default array

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc (condition) {
@@ -28,13 +26,13 @@ function gammaFunc (teardownFunc) {
 
 function deltaFunc (condition) {
   if (condition) {
-    return undefined
+    return undefined // eslint-disable-line no-undefined
   }
 
   return true // ❌ `consistent-return`
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,

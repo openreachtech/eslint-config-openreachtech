@@ -1,5 +1,3 @@
-'use strict'
-
 // ✅ `jsdoc/informative-docs`
 /**
  * Informative docs.
@@ -24,4 +22,4 @@ class InformativeDocs {
   }
 }
 
-module.exports = InformativeDocs
+export default InformativeDocs

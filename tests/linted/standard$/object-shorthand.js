@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable arrow-body-style */
 
 const extraMethodName = 'extraMethodName'
@@ -49,7 +47,7 @@ const delta = {
   },
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   gamma,

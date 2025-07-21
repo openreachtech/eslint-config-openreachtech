@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function noForFunc () {
@@ -17,6 +15,6 @@ function noForFunc () {
   return total
 }
 
-module.exports = {
+export default {
   noForFunc,
 }

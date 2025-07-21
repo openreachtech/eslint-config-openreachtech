@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = {
@@ -45,7 +43,7 @@ const Delta = class {
   }
 }
 
-module.exports = {
+export default {
   alpha,
   beta,
   Gamma,

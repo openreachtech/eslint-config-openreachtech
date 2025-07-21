@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jest/consistent-test-it */
 /* eslint-disable jest/expect-expect */
 /* eslint-disable jest/require-top-level-describe */

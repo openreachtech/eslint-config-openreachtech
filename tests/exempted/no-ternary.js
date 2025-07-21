@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 function noTernaryFunc (value) {
@@ -8,6 +6,6 @@ function noTernaryFunc (value) {
     : 'not one'
 }
 
-module.exports = {
+export default {
   noTernaryFunc,
 }

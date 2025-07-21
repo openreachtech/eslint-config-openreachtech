@@ -1,6 +1,3 @@
-'use strict'
-
-/* eslint-disable camelcase */
 /* eslint-disable jsdoc/require-jsdoc */
 
 const 漢字 = 'kanji' // ❌ ^[\$\w]+$ of `id-match`
@@ -24,7 +21,7 @@ const {
   分割代入, // ❌ ignoreDestructuring:true, ^[\$\w]+$ of `id-match`
 } = extra
 
-module.exports = {
+export default {
   漢字, // ❌ properties:tre, ^[\$\w]+$ of `id-match`
   関数, // ❌ properties:tre, ^[\$\w]+$ of `id-match`
 

@@ -1,5 +1,3 @@
-'use strict'
-
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alphaFunc = (it) => {} // ❌ as-needed of `arrow-parens`
@@ -27,7 +25,7 @@ function zetaFunc (it) {
   })
 }
 
-module.exports = {
+export default {
   alphaFunc,
   betaFunc,
   gammaFunc,
