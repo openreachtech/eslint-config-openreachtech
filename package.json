@@ -3,7 +3,7 @@
   "version": "3.0.2",
   "description": "ESLint config by Open Reach Tech Inc.",
   "files": [
-    "configurations/",
+    "lib/",
     "types/"
   ],
   "main": "eslint.config.js",
