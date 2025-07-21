@@ -21,6 +21,7 @@ const messageHash = {
     noWhile: 'Never use while',
   },
   'no-restricted-properties': {
+    ArrayReverse: "'reverse' is restricted from being used. Use `Array#toReversed\\(\\)` instead of `Array#reverse\\(\\)`",
     expectAnything: "'expect.anything' is restricted from being used. Never use `expect.anything\\(\\)`", // \\(\\) meaning: this message will be passed new RegExp() as is in Analyzer.
     ObjectAssign: "'Object.assign' is restricted from being used. Never use `Object.assign\\(\\)`",
   },
