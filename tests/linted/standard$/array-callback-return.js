@@ -26,7 +26,7 @@ const arrayReduceRight = array.reduceRight(/** @type {() => number} */ (
 ))
 const arraySome = array.some(it => {}) // ❌ `array-callback-return`
 const arraySort = array.sort(/** @type {() => number} */ ((alpha, beta) => {})) // ❌ `array-callback-return`
-// const arrayToSort = array.toSort(/** @type {() => number} */ ((alpha, beta) => {})) // ❌ `array-callback-return`
+const arrayToSort = array.toSorted(/** @type {() => number} */ ((alpha, beta) => {})) // ❌ `array-callback-return`
 
 export default {
   arrayFrom,
@@ -43,5 +43,5 @@ export default {
   arrayReduceRight,
   arraySome,
   arraySort,
-  // arrayToSort,
+  arrayToSort,
 }
