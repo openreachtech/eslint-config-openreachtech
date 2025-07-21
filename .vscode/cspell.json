@@ -2,6 +2,13 @@
   "words": [
     "datetime",
     "linebreak",
-    "openreachtech"
+    "openreachtech",
+
+    "tinyint",
+    "mediumint",
+    "dateonly",
+    "macaddr",
+    "citext",
+    "tsvector"
   ]
 }
