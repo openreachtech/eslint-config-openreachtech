@@ -45,29 +45,40 @@ class Gamma {
 }
 
 const abbreviationHash = {
+  acc: null, // ❌ ['acc'] of `id-denylist`
+  arr: [], // ❌ ['arr'] of `id-denylist`
   attr: null, // ❌️ ['attr'] of `id-denylist`
   attrs: [], // ❌ ['attrs'] of `id-denylist`
   btn: null, // ❌ ['btn'] of `id-denylist`
+  cate: null, // ❌ ['cate'] of `id-denylist`
   cfg: {}, // ❌ ['cfg'] of `id-denylist`
   cnt: 0, // ❌ ['cnt'] of `id-denylist`
   ctx: null, // ❌ ['ctx'] of `id-denylist`
+  cond: false, // ❌ ['cond'] of `id-denylist`
   err: null, // ❌ ['err'] of `id-denylist`
   el: null, // ❌ ['el'] of `id-denylist`
   ev: null, // ❌ ['ev'] of `id-denylist`
   evt: null, // ❌ ['evt'] of `id-denylist`
+  ex: null, // ❌ ['ex'] of `id-denylist`
+  ext: null, // ❌ ['ext'] of `id-denylist`
+  fmt: 'format', // ❌ ['fmt'] of `id-denylist`
   idx: 0, // ❌ ['idx'] of `id-denylist`
   img: null, // ❌ ['img'] of `id-denylist`
   info: null, // ❌ ['info'] of `id-denylist`
   len: 0, // ❌ ['len'] of `id-denylist`
   msg: '', // ❌ ['msg'] of `id-denylist`
+  no: null, // ❌ ['no'] of `id-denylist`
   num: 0, // ❌ ['num'] of `id-denylist`
   obj: {}, // ❌ ['obj'] of `id-denylist`
   opt: null, // ❌ ['opt'] of `id-denylist`
   pos: null, // ❌ ['pos'] of `id-denylist`
+  prod: 'product', // ❌ ['prod'] of `id-denylist`
   str: '', // ❌ ['str'] of `id-denylist`
   usr: null, // ❌ ['usr'] of `id-denylist`
   temp: null, // ❌ ['temp'] of `id-denylist`
   tmp: null, // ❌ ['tmp'] of `id-denylist`
+  tx: null, // ❌ ['tx'] of `id-denylist`
+  txt: '', // ❌ ['txt'] of `id-denylist`
   val: null, // ❌ ['val'] of `id-denylist`
 }
 
