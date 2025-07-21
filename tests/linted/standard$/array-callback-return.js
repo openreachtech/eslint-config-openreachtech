@@ -8,7 +8,7 @@ const arrayFilter = array.filter(it => {}) // ❌ `array-callback-return`
 const arrayFind = array.find(it => {}) // ❌ `array-callback-return`
 const arrayFindIndex = array.findIndex(it => {}) // ❌ `array-callback-return`
 const arrayFindLast = array.findLast(it => {}) // ❌ `array-callback-return`
-// const arrayFindLastIndex = array.findLastIndex(it => {}) // ❌ `array-callback-return`
+const arrayFindLastIndex = array.findLastIndex(it => {}) // ❌ `array-callback-return`
 const arrayFlatMap = array.flatMap(it => {}) // ❌ `array-callback-return`
 
 // eslint-disable-next-line no-restricted-syntax
@@ -35,7 +35,7 @@ export default {
   arrayFind,
   arrayFindIndex,
   arrayFindLast,
-  // arrayFindLastIndex,
+  arrayFindLastIndex,
   arrayFlatMap,
   arrayForEach,
   arrayMap,
