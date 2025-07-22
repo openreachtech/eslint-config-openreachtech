@@ -1,5 +1,4 @@
 /* eslint-disable jest/consistent-test-it */
-/* eslint-disable jest/require-top-level-describe */
 
 ////////////////////////////////////////////////////////////////////////////////
 // Empty Title
