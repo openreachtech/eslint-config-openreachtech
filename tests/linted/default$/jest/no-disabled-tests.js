@@ -2,7 +2,6 @@
 /* eslint-disable jest/expect-expect */
 /* eslint-disable jest/no-test-prefixes */
 /* eslint-disable jest/prefer-todo */
-/* eslint-disable jest/require-top-level-describe */
 
 /*
  * Disabled test suite

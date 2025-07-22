@@ -1,6 +1,5 @@
 /* eslint-disable jest/consistent-test-it */
 /* eslint-disable jest/expect-expect */
-/* eslint-disable jest/require-top-level-describe */
 
 describe.only('foo', () => {}) // ❌ `jest/no-focused-tests`
 it.only('foo', () => {}) // ❌ `jest/no-focused-tests`
