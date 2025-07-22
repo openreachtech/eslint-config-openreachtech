@@ -33,7 +33,7 @@ function foo2 () {
 }
 
 // error code "CallExpression": {"arguments": 1}
-function test () {
+function test1 () {
   foo(bar,
       baz,
         qux
