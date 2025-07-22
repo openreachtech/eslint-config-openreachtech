@@ -14,6 +14,15 @@ document.createElement('div')
   .add('unit-layout')
 const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore Identifier[name=/.+(?<!class|RadioNode)List$/] of `no-restricted-syntax` against RadioNodeList
 
+/*
+ * For members of DataTransfer
+ */
+const transfer = new DataTransfer()
+
+transfer.getData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear)Data$/]' } of `no-restricted-syntax`
+transfer.setData('text/plain', 'value') // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear)Data$/]' } of `no-restricted-syntax`
+transfer.clearData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear)Data$/]' } of `no-restricted-syntax`
+
 export default {
   alpha,
   RequestInfo,
