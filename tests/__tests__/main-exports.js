@@ -6,6 +6,8 @@ import {
   jsdocPluginConfig,
   openreachtechPluginConfig,
   stylisticPluginConfig,
+
+  coreRuleOptionHash,
 } from '../../index.js'
 
 import configAll from '../../lib/eslint.config.js'
@@ -15,6 +17,8 @@ import expectedJestConfig from '../../lib/configurations/plugins/jest.js'
 import expectedJsdocConfig from '../../lib/configurations/plugins/jsdoc.js'
 import expectedOpenreachtechConfig from '../../lib/configurations/plugins/openreachtech.js'
 import expectedStylisticConfig from '../../lib/configurations/plugins/stylistic.js'
+
+import expectedCoreRuleOptionHash from '../../lib/configurations/core-rule-option-hash.js'
 
 describe('main exports', () => {
   describe('export default', () => {
@@ -56,6 +60,13 @@ describe('main exports', () => {
     test('should export the stylistic plugin config', () => {
       expect(stylisticPluginConfig)
         .toBe(expectedStylisticConfig)
+    })
+  })
+
+  describe('export coreRuleOptionHash', () => {
+    test('should export the core rule option hash', () => {
+      expect(expectedCoreRuleOptionHash)
+        .toBe(coreRuleOptionHash)
     })
   })
 })
