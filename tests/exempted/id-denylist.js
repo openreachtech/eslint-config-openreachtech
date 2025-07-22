@@ -19,6 +19,8 @@ alpha.data = function () { // ✅ ['data'] of `id-denylist`
   // noop
 }
 
+alpha.attrs = {} // ✅️ ['attrs'] of `id-denylist`
+
 export default {
   extraFunc,
   callback, // ✅ ['callback'] of `id-denylist`

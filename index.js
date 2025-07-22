@@ -6,4 +6,6 @@ export { default as jsdocPluginConfig } from './lib/configurations/plugins/jsdoc
 export { default as openreachtechPluginConfig } from './lib/configurations/plugins/openreachtech.js'
 export { default as stylisticPluginConfig } from './lib/configurations/plugins/stylistic.js'
 
+export { default as coreRuleOptionHash } from './lib/configurations/core-rule-option-hash.js'
+
 export default configAll

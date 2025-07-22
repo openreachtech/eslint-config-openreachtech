@@ -9,8 +9,8 @@
  * @returns {Array<*>} - Flat items.
  */
 function itFunc (array) {
-  return array.map(it => // ✅ allow: [it, length, name, status, target] of `no-shadow`
-    it.table.map(it => // ✅ allow: [it, length, name, status, target] of `no-shadow`
+  return array.map(it => // ✅ allow: [it, length, name, parent, status, target] of `no-shadow`
+    it.table.map(it => // ✅ allow: [it, length, name, parent, status, target] of `no-shadow`
       it.column
     )
   )
@@ -26,7 +26,7 @@ function itFunc (array) {
  * @returns {string} - Full value.
  */
 const lengthFunc = function ({
-  length, // ✅ allow: [it, length, name, status, target] of `no-shadow`
+  length, // ✅ allow: [it, length, name, parent, status, target] of `no-shadow`
 }) {
   return `length: ${length}`
 }
@@ -40,9 +40,23 @@ const lengthFunc = function ({
  * @returns {string} - Full value.
  */
 const nameFunc = function ({
-  name, // ✅ allow: [it, length, name, status, target] of `no-shadow`
+  name, // ✅ allow: [it, length, name, parent, status, target] of `no-shadow`
 }) {
   return `name: ${name}`
+}
+
+/**
+ * Parent function.
+ *
+ * @param {{
+ *   parent: object
+ * }} params - Name hash.
+ * @returns {string} - Full value.
+ */
+const parentFunc = function ({
+  parent, // ✅ allow: [it, length, name, parent, status, target] of `no-shadow`
+}) {
+  return `parent: ${parent}`
 }
 
 /**
@@ -54,7 +68,7 @@ const nameFunc = function ({
  * @returns {string} - Full value.
  */
 const statusFunc = function ({
-  status, // ✅ allow: [it, length, name, status, target] of `no-shadow`
+  status, // ✅ allow: [it, length, name, parent, status, target] of `no-shadow`
 }) {
   return `status: ${status}`
 }
@@ -68,7 +82,7 @@ const statusFunc = function ({
  * @returns {string} - Full value.
  */
 const targetFunc = function ({
-  target, // ✅ allow: [it, length, name, status, target] of `no-shadow`
+  target, // ✅ allow: [it, length, name, parent, status, target] of `no-shadow`
 }) {
   return `target: ${target}`
 }
@@ -77,6 +91,7 @@ export default {
   itFunc,
   lengthFunc,
   nameFunc,
+  parentFunc,
   statusFunc,
   targetFunc,
 }
