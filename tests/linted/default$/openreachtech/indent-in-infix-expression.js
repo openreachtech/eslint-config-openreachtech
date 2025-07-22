@@ -1,5 +1,4 @@
 /* eslint-disable @stylistic/indent-binary-ops */
-/* eslint-disable openreachtech/no-unexpected-multiline */
 
 /*
  * Binary expressions
