@@ -1,4 +1,3 @@
-// eslint-disable-next-line jest/require-top-level-describe
 it('never use it()', () => { // ❌ `jest/consistent-test-it`
   expect(true)
     .toBeTruthy()
