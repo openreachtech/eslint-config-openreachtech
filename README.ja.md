@@ -9,7 +9,7 @@
 
 Open Reach Tech株式会社で使っている ESLint 設定です。
 
-此のパッケージは、ESLint Flat Config のみ対応しています。
+此のパッケージは、ESLint Flat Config と ECMAScript modules のみ対応しています。
 
 ## Installing
 
@@ -37,6 +37,7 @@ npm install --save-dev \
 | stylistic | ESLint stylistic plugin rules |
 | jest | ESLint Jest plugin rules |
 | jsdoc | ESLint JSDoc plugin rules |
+| eslint-comments | ESLint eslint-comments plugin rules |
 | openreachtech | ESLint Open Reach Tech Inc. plugin rules |
 
 ##  Usage
@@ -47,7 +48,7 @@ npm install --save-dev \
 
 ```js
 // eslint.config.js
-import coreConfiguration from '@openreachtech/eslint-config/configurations/core.js'
+import coreConfiguration from '@openreachtech/eslint-config'
 
 export default [
   // Configuration of core rules
@@ -68,8 +69,7 @@ export default [
 
 ```js
 // eslint.config.js
-import coreConfiguration from '@openreachtech/eslint-config/configurations/core.js'
-import disableCoreStylisticConfiguration from '@openreachtech/eslint-config/configurations/disableCoreStylistic.js'
+import coreConfiguration from '@openreachtech/eslint-config'
 
 export default [
   // Configuration of core rules
@@ -78,7 +78,6 @@ export default [
 
     rules: {
       ...coreConfiguration.rules,
-      ...disableCoreStylisticConfiguration.rules, // Not required after v10.
 
       'id-length': [
         'error',
@@ -101,55 +100,67 @@ export default [
 
 ```js
 // eslint.config.js
-import coreConfiguration from '@openreachtech/eslint-config/configurations/core.js'
-import stylisticConfiguration from '@openreachtech/eslint-config/configurations/plugins/stylistic.js'
-import jestConfiguration from '@openreachtech/eslint-config/configurations/plugins/jest.js'
-import jsdocConfiguration from '@openreachtech/eslint-config/configurations/plugins/jsdoc.js'
-import openreachtechConfiguration from './configurations/plugins/openreachtech.js'
+import {
+  coreConfig,
+  stylisticPluginConfig,
+  jestPluginConfig,
+  jsdocPluginConfig,
+  eslintCommentsPluginConfig,
+  openreachtechPluginConfig,
+} from '@openreachtech/eslint-config'
 
 export default [
   // Configuration of core rules
   {
-    ...coreConfiguration,
+    ...coreConfig,
 
     rules: {
-      ...coreConfiguration.rules,
+      ...coreConfig.rules,
     },
   },
 
   // Configuration of stylistic rules
   {
-    ...stylisticConfiguration,
+    ...stylisticPluginConfig,
 
     rules: {
-      ...stylisticConfiguration.rules,
+      ...stylisticPluginConfig.rules,
     },
   },
 
   // Configuration of Jest rules
   {
-    ...jestConfiguration,
+    ...jestPluginConfig,
 
     rules: {
-      ...jestConfiguration.rules,
+      ...jestPluginConfig.rules,
     },
   },
 
   // Configuration of JSDoc rules
   {
-    ...jsdocConfiguration,
+    ...jsdocPluginConfig,
 
     rules: {
-      ...jsdocConfiguration.rules,
+      ...jsdocPluginConfig.rules,
     },
   },
 
-  // Configuration of OpenreachTech rules
+  // Configuration of eslint-comments rules
   {
-    ...openreachtechConfiguration,
+    ...eslintCommentsPluginConfig,
 
     rules: {
-      ...openreachtechConfiguration.rules,
+      ...eslintCommentsPluginConfig.rules,
+    },
+  },
+
+  // Configuration of OpenReachTech rules
+  {
+    ...openreachtechPluginConfig,
+
+    rules: {
+      ...openreachtechPluginConfig.rules,
     },
   },
 ]
