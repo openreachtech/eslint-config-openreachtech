@@ -1,4 +1,4 @@
-/* eslint-disable no-restricted-properties */
+/* eslint-disable no-restricted-syntax */
 
 const array = [1, 2, 3]
 
@@ -11,7 +11,6 @@ const arrayFindLast = array.findLast(it => {}) // ❌ `array-callback-return`
 const arrayFindLastIndex = array.findLastIndex(it => {}) // ❌ `array-callback-return`
 const arrayFlatMap = array.flatMap(it => {}) // ❌ `array-callback-return`
 
-// eslint-disable-next-line no-restricted-syntax
 const arrayForEach = array.forEach(it => {
   const over = it > 2
 
