@@ -40,10 +40,16 @@ const gammaPayload = {
   },
 }
 
+/*
+ * For FFUtils
+ */
+const FFUtils = null // ✅️ ignore Identifier[name=/.+(?<!FF)Utils?$/] of `no-restricted-syntax` against FFUtils
+
 export default {
   alpha,
   betaValue,
   RequestInfo,
   isRadioNodeList,
   gammaPayload,
+  FFUtils,
 }
