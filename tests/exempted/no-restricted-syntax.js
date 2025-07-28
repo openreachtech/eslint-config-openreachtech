@@ -29,13 +29,21 @@ const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore
  */
 const transfer = new DataTransfer()
 
-transfer.getData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear)Data$/]' } of `no-restricted-syntax`
-transfer.setData('text/plain', 'value') // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear)Data$/]' } of `no-restricted-syntax`
-transfer.clearData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear)Data$/]' } of `no-restricted-syntax`
+transfer.getData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
+transfer.setData('text/plain', 'value') // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
+transfer.clearData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
+
+const gammaPayload = {
+  inlineData: { // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
+    mimeType: 'text/plain',
+    data: 'Hello World',
+  },
+}
 
 export default {
   alpha,
   betaValue,
   RequestInfo,
   isRadioNodeList,
+  gammaPayload,
 }
