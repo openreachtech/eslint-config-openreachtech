@@ -6,7 +6,7 @@ const messageHash = {
   'no-restricted-syntax': {
     noDoWhile: 'Never use do-while',
     noFor: 'Never use for',
-    noForEach: 'Never use forEach method',
+    noForEachContainsAssignment: 'Do not use assignment inside Array#forEach\\(\\)',
     noForIn: 'Never use for-in',
     noForOf: 'Never use for-of',
     noIfInHigherOrderFunc: 'Never use if in higher-order function',
