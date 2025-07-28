@@ -17,6 +17,7 @@ const messageHash = {
     noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier',
     noIdentifierWithListSuffix: 'Not allowed to use "List" as suffix of identifier',
     noIdentifierWithManagerSuffix: 'Not allowed to use "Manager" as suffix of identifier',
+    noShortCircuitEvaluation: 'Do not use short-circuit evaluation with \\|\\| operator',
     noSwitch: 'Never use switch',
     noWhile: 'Never use while',
   },
