@@ -1,5 +1,15 @@
 const alpha = new FormData() // ✅️ ignore Identifier[name=/.+(?<!Form)Data$/] of `no-restricted-syntax` against FormData
 
+// -----------------------------------------------------------------------------
+
+// For no short-circuit evaluation with || operator
+/** @type {number} */
+const shortCircuitBaseValue = 999
+
+const betaValue = shortCircuitBaseValue === 0 || alpha.values // ✅️ { selector: 'LogicalExpression[operator=||] > Literal' } of `no-restricted-syntax`
+
+// -----------------------------------------------------------------------------
+
 const RequestInfo = class {} // ✅️ ignore Identifier[name=/.+(?<!Request)Info$/] of `no-restricted-syntax` against RequestInfo
 
 localStorage.getItem('key') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against getItem
@@ -25,6 +35,7 @@ transfer.clearData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|
 
 export default {
   alpha,
+  betaValue,
   RequestInfo,
   isRadioNodeList,
 }
