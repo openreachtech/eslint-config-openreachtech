@@ -6,7 +6,7 @@ const messageHash = {
   'no-restricted-syntax': {
     noDoWhile: 'Never use do-while',
     noFor: 'Never use for',
-    noForEach: 'Never use forEach method',
+    noForEachContainsAssignment: 'Do not use assignment inside Array#forEach\\(\\)',
     noForIn: 'Never use for-in',
     noForOf: 'Never use for-of',
     noIfInHigherOrderFunc: 'Never use if in higher-order function',
@@ -17,6 +17,7 @@ const messageHash = {
     noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier',
     noIdentifierWithListSuffix: 'Not allowed to use "List" as suffix of identifier',
     noIdentifierWithManagerSuffix: 'Not allowed to use "Manager" as suffix of identifier',
+    noShortCircuitEvaluation: 'Use `\\?\\?` instead of short-circuit evaluation with `\\|\\|` operator',
     noSwitch: 'Never use switch',
     noWhile: 'Never use while',
   },

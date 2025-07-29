@@ -5,7 +5,7 @@ class NoSuffix {
     this.array = []
   }
 
-  getLastData () { // ❌ { selector: 'Identifier[name=/.+(?<!Form)Data$/]' } of `no-restricted-syntax`
+  getLastData () { // ❌ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
     return this.array
       .at(-1)
   }

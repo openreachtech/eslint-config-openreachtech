@@ -83,7 +83,7 @@ function flatMapFunc (array) {
 function forEachFunc (array) {
   const result = []
 
-  array.forEach(it => { // eslint-disable-line no-restricted-syntax
+  array.forEach(it => {
     if (it % 2 === 0) { // ❌ { selector: 'CallExpression[callee.property.name=forEach] IfStatement' } of `no-restricted-syntax`
       result.push(it)
     }
