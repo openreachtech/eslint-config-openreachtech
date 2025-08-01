@@ -1,4 +1,5 @@
 /* eslint-disable max-classes-per-file */
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable jsdoc/require-jsdoc */
 
 function alphaFunc (first) {
@@ -29,7 +30,7 @@ const gamma = 3
   // @ts-expect-error
   alphaFunc(delta) // ❌ { variables: true } of `no-use-before-define`
 
-  let delta = 1 // eslint-disable-line no-restricted-syntax, prefer-const
+  let delta = 1 // eslint-disable-line prefer-const
 }
 
 // @ts-expect-error

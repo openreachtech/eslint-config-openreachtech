@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = {

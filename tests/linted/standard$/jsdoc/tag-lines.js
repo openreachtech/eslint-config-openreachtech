@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-syntax */
+
 class TagLines {
   /**
    * There is empty line between `param` and `returns` (8: Expected no lines between tags).
