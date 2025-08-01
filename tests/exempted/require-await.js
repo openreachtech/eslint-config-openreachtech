@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-syntax */
+
 /**
  * Lint sample for require-await rule.
  */

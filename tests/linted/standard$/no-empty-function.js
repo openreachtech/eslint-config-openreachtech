@@ -1,4 +1,5 @@
 /* eslint-disable getter-return */
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable object-shorthand */
 

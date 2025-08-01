@@ -27,6 +27,7 @@ const messageHash = {
     noIdentifierWithManagerSuffix: 'Not allowed to use "Manager" as suffix of identifier',
     noShortCircuitEvaluation: 'Use `\\?\\?` instead of short-circuit evaluation with `\\|\\|` operator',
     noConstructorPassedToHigherOrderFunc: 'Do not pass constructors \\(e\\.g\\., Boolean, Number, String\\) to higher-order functions',
+    noStaticClass: 'Do not declare static class',
     noSwitch: 'Never use switch',
     noTernaryInForEach: 'Never use ternary operator inside `Array#forEach\\(\\)`',
     noWhile: 'Never use while',
