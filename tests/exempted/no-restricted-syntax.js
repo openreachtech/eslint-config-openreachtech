@@ -76,6 +76,65 @@ class EpsilonClass extends DeltaClass {
   }
 }
 
+// -----------------------------------------------------------------------------
+
+/**
+ * Zeta class. (not static class)
+ */
+class ZetaClass { // ✅️ { selector: 'xxx' } of `no-restricted-syntax`
+  /**
+   * Constructor of this class.
+   *
+   * @param {{
+   *   value: number
+   * }} params - Parameters for the constructor.
+   */
+  constructor ({
+    value,
+  }) {
+    this.value = value
+  }
+
+  /**
+   * Factory method.
+   *
+   * @template {X extends typeof ZetaClass ? X : never} T, X
+   * @param {{
+   *   value: number
+   * }} params - Parameters for the factory method.
+   * @returns {InstanceType<T>} Instance of the class.
+   * @this {T}
+   */
+  static create ({
+    value,
+  }) {
+    return /** @type {InstanceType<T>} */ (
+      new this({
+        value,
+      })
+    )
+  }
+}
+
+/**
+ * Ita class.
+ */
+class ItaClass extends ZetaClass { // ✅️ { selector: 'xxx' } of `no-restricted-syntax`
+  /**
+   * Do first.
+   */
+  static doFirst () {
+    // Do something
+  }
+
+  /**
+   * Do second.
+   */
+  static doSecond () {
+    // Do something else
+  }
+}
+
 export default {
   alpha,
   betaValue,
@@ -85,4 +144,7 @@ export default {
   FFUtils,
   DeltaClass,
   EpsilonClass,
+
+  ZetaClass,
+  ItaClass,
 }
