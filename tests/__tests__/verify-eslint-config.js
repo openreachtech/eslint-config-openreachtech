@@ -12,6 +12,7 @@ const messageHash = {
     noIfInHigherOrderFunc: 'Never use if in higher-order function',
     noLet: 'Never use let',
     noNestedIf: 'Never use nested-if including else-if',
+    noConstructorWithCallingFunction: 'Do not call methods or functions in constructor',
     noConstructorWithIfStatements: 'Do not use `if` statements in constructor',
     noConstructorWithTernaryOperator: 'Do not use ternary operator in constructor',
     noExpectAnyWithObject: 'Do not use expect.any\\(Object\\)',
