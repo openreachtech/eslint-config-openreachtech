@@ -4,6 +4,7 @@ import {
 
 const messageHash = {
   'no-restricted-syntax': {
+    noAwaitInIfCondition: 'Do not use await in if condition',
     noDoWhile: 'Never use do-while',
     noFor: 'Never use for',
     noForEachContainsAssignment: 'Do not use assignment inside Array#forEach\\(\\)',
