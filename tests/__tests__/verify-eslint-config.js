@@ -16,6 +16,8 @@ const messageHash = {
     noConstructorWithCallingFunction: 'Do not call methods or functions in constructor',
     noConstructorWithIfStatements: 'Do not use `if` statements in constructor',
     noConstructorWithTernaryOperator: 'Do not use ternary operator in constructor',
+    noDescribeWithIfStatements: 'Do not use `if` statements in `describe\\(\\)`',
+    noDescribeWithTernaryOperator: 'Do not use ternary operator in `describe\\(\\)`',
     noExpectAnyWithObject: 'Do not use expect.any\\(Object\\)',
     noIdentifierByCanceled: 'Use "canceled" instead of "cancelled" as identifier',
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier',
