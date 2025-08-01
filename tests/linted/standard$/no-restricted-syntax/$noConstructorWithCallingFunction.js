@@ -12,6 +12,8 @@ class Alpha {
     object.getValue(this) // ❌ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
 
     betaFunction(this) // ❌ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+
+    this.alpha = null
   }
 
   /**
