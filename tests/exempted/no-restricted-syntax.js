@@ -1,3 +1,5 @@
+/* eslint-disable max-classes-per-file */
+
 const alpha = new FormData() // ✅️ ignore Identifier[name=/.+(?<!Form)Data$/] of `no-restricted-syntax` against FormData
 
 // -----------------------------------------------------------------------------
@@ -45,6 +47,35 @@ const gammaPayload = {
  */
 const FFUtils = null // ✅️ ignore Identifier[name=/.+(?<!FF)Utils?$/] of `no-restricted-syntax` against FFUtils
 
+// -----------------------------------------------------------------------------
+
+// For no constructor with calling function
+class DeltaClass {
+  /**
+   * Constructor of this class.
+   */
+  constructor () {
+    this.first = new Map() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.second = new Set() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.third = new WeakMap() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.fourth = new WeakSet() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+
+    this.fifth = new Date() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.sixth = new Error('message') // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+  }
+}
+
+class EpsilonClass extends DeltaClass {
+  /**
+   * Constructor of this class.
+   */
+  constructor () {
+    super() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+
+    this.last = []
+  }
+}
+
 export default {
   alpha,
   betaValue,
@@ -52,4 +83,6 @@ export default {
   isRadioNodeList,
   gammaPayload,
   FFUtils,
+  DeltaClass,
+  EpsilonClass,
 }
