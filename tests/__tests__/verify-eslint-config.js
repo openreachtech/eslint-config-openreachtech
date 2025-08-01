@@ -12,6 +12,7 @@ const messageHash = {
     noIfInHigherOrderFunc: 'Never use if in higher-order function',
     noLet: 'Never use let',
     noNestedIf: 'Never use nested-if including else-if',
+    noIdentifierByCanceled: 'Use "canceled" instead of "cancelled" as identifier',
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier',
     noIdentifierWithInfoSuffix: 'Not allowed to use "Info" as suffix of identifier',
     noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier',
