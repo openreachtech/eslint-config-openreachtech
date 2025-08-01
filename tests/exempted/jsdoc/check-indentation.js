@@ -1,4 +1,5 @@
 /* eslint-disable max-classes-per-file */
+/* eslint-disable no-restricted-syntax */
 
 /**
  * Base class for testing JSDoc indentation.
