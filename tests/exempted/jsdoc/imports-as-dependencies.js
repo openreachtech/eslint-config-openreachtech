@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-syntax */
+
 /**
  * Lint sample for jsdoc/imports-as-dependencies rule
  */
