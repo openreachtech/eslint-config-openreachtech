@@ -14,6 +14,7 @@ const messageHash = {
     noNestedIf: 'Never use nested-if including else-if',
     noConstructorWithIfStatements: 'Do not use `if` statements in constructor',
     noConstructorWithTernaryOperator: 'Do not use ternary operator in constructor',
+    noExpectAnyWithObject: 'Do not use expect.any\\(Object\\)',
     noIdentifierByCanceled: 'Use "canceled" instead of "cancelled" as identifier',
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier',
     noIdentifierWithInfoSuffix: 'Not allowed to use "Info" as suffix of identifier',
