@@ -31,7 +31,7 @@ const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore
  */
 const transfer = new DataTransfer()
 
-transfer.getData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
+transfer.getData('value') // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
 transfer.setData('text/plain', 'value') // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
 transfer.clearData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
 
@@ -117,9 +117,9 @@ class ZetaClass { // ✅️ { selector: 'xxx' } of `no-restricted-syntax`
 }
 
 /**
- * Ita class.
+ * Eta class.
  */
-class ItaClass extends ZetaClass { // ✅️ { selector: 'xxx' } of `no-restricted-syntax`
+class EtaClass extends ZetaClass { // ✅️ { selector: 'xxx' } of `no-restricted-syntax`
   /**
    * Do first.
    */
@@ -146,5 +146,5 @@ export default {
   EpsilonClass,
 
   ZetaClass,
-  ItaClass,
+  EtaClass,
 }

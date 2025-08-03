@@ -17,4 +17,14 @@ export default [
       'eslint-comments/require-description': 'off',
     },
   },
+
+  {
+    files: [
+      'lib/configurations/plugins/openreachtech.js',
+      'tests/__tests__/verify-eslint-config.js',
+    ],
+    rules: {
+      'openreachtech/prefer-american-spell': 'off',
+    },
+  },
 ]

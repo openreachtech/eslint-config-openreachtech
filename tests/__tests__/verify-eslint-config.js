@@ -19,7 +19,6 @@ const messageHash = {
     noDescribeWithIfStatements: 'Do not use `if` statements in `describe\\(\\)`',
     noDescribeWithTernaryOperator: 'Do not use ternary operator in `describe\\(\\)`',
     noExpectAnyWithObject: 'Do not use expect.any\\(Object\\)',
-    noIdentifierByCanceled: 'Use "canceled" instead of "cancelled" as identifier',
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier',
     noIdentifierWithInfoSuffix: 'Not allowed to use "Info" as suffix of identifier',
     noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier',
@@ -37,6 +36,10 @@ const messageHash = {
     ArraySort: "'sort' is restricted from being used. Use `Array#toSorted\\(\\)` instead of `Array#sort\\(\\)`",
     expectAnything: "'expect.anything' is restricted from being used. Never use `expect.anything\\(\\)`", // \\(\\) meaning: this message will be passed new RegExp() as is in Analyzer.
     ObjectAssign: "'Object.assign' is restricted from being used. Never use `Object.assign\\(\\)`",
+  },
+  'openreachtech/prefer-american-spell': {
+    analyse: 'Use American spell "analyze" instead of "analyse"',
+    cancelled: 'Use American spell "canceled" instead of "cancelled"',
   },
 }
 
