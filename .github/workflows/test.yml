@@ -34,8 +34,6 @@ jobs:
 
       - name: 🔧 setup npm
         run: npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.TO_REPO_OF_ORT_PRIVATE }}
 
       - name: 🔬 run lint
         run: npm run lint
