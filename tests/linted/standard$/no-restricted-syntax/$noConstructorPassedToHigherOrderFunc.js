@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/require-jsdoc */
 
-const callback = () => {}
+const handler = () => {}
 
 function everyFunc (array) {
   return array.every(Boolean) // ❌ { selector: 'CallExpression[callee.property.name=every][arguments.0.type=Identifier]' } of `no-restricted-syntax`
@@ -35,7 +35,7 @@ function flatMapFunc (array) {
 }
 
 function forEachFunc (array) {
-  array.forEach(callback) // ❌ { selector: 'CallExpression[callee.property.name=forEach][arguments.0.type=Identifier]' } of `no-restricted-syntax`
+  array.forEach(handler) // ❌ { selector: 'CallExpression[callee.property.name=forEach][arguments.0.type=Identifier]' } of `no-restricted-syntax`
 }
 
 function mapFunc (array) {
@@ -43,11 +43,11 @@ function mapFunc (array) {
 }
 
 function reduceFunc (array) {
-  return array.reduce(callback) // ❌ { selector: 'CallExpression[callee.property.name=reduce][arguments.0.type=Identifier]' } of `no-restricted-syntax`
+  return array.reduce(handler) // ❌ { selector: 'CallExpression[callee.property.name=reduce][arguments.0.type=Identifier]' } of `no-restricted-syntax`
 }
 
 function reduceRightFunc (array) {
-  return array.reduceRight(callback) // ❌ { selector: 'CallExpression[callee.property.name=reduceRight][arguments.0.type=Identifier]' } of `no-restricted-syntax`  )
+  return array.reduceRight(handler) // ❌ { selector: 'CallExpression[callee.property.name=reduceRight][arguments.0.type=Identifier]' } of `no-restricted-syntax`  )
 }
 
 export default {
