@@ -36,7 +36,7 @@
   "devDependencies": {
     "@openreachtech/eslint-inspector": "^2.1.2",
     "@types/jest": "^30.0.0",
-    "eslint": "^9.31.0",
-    "jest": "^30.0.4"
+    "eslint": "^9.39.4",
+    "jest": "^30.4.2"
   }
 }
