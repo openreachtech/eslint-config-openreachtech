@@ -38,7 +38,7 @@ transfer.clearData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|
 const gammaPayload = {
   inlineData: { // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
     mimeType: 'text/plain',
-    data: 'Hello World',
+    value: 'Hello World',
   },
 }
 
