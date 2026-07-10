@@ -1,4 +1,5 @@
 /* eslint-disable max-classes-per-file */
+/* eslint-disable no-restricted-syntax */
 
 /**
  * Base class for testing JSDoc indentation.
@@ -84,11 +85,18 @@ const deltaObject = {
   second: 'string',
 }
 
+/** @type {Epsilon} */
+const epsilonObject = {
+  first: 1,
+  second: 2,
+}
+
 export default {
   AlphaClass,
   betaFunction,
   gammaFunction,
   deltaObject,
+  epsilonObject,
 }
 
 /**
@@ -96,4 +104,10 @@ export default {
  *   first: number
  *   second: string
  * }} OmegaType // ✅️ { excludeTags: ['typedef'] } of `jsdoc/check-indentation`
+ */
+
+/**
+ * @import {
+ *   Epsilon,
+ * } from '../../../types/fixtures.js' // ✅️ { excludeTags: ['import'] } of `jsdoc/check-indentation`
  */

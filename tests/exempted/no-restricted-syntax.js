@@ -1,3 +1,5 @@
+/* eslint-disable max-classes-per-file */
+
 const alpha = new FormData() // ✅️ ignore Identifier[name=/.+(?<!Form)Data$/] of `no-restricted-syntax` against FormData
 
 // -----------------------------------------------------------------------------
@@ -36,7 +38,7 @@ transfer.clearData() // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|
 const gammaPayload = {
   inlineData: { // ✅️ { selector: 'Identifier[name=/.+(?<!Form|get|set|clear|inline)Data$/]' } of `no-restricted-syntax`
     mimeType: 'text/plain',
-    data: 'Hello World',
+    value: 'Hello World',
   },
 }
 
@@ -45,6 +47,94 @@ const gammaPayload = {
  */
 const FFUtils = null // ✅️ ignore Identifier[name=/.+(?<!FF)Utils?$/] of `no-restricted-syntax` against FFUtils
 
+// -----------------------------------------------------------------------------
+
+// For no constructor with calling function
+class DeltaClass {
+  /**
+   * Constructor of this class.
+   */
+  constructor () {
+    this.first = new Map() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.second = new Set() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.third = new WeakMap() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.fourth = new WeakSet() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+
+    this.fifth = new Date() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+    this.sixth = new Error('message') // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+  }
+}
+
+class EpsilonClass extends DeltaClass {
+  /**
+   * Constructor of this class.
+   */
+  constructor () {
+    super() // ✅️ { selector: 'MethodDefinition[kind=constructor] BlockStatement CallExpression:not([callee.type=Super])' } of `no-restricted-syntax`
+
+    this.last = []
+  }
+}
+
+// -----------------------------------------------------------------------------
+
+/**
+ * Zeta class. (not static class)
+ */
+class ZetaClass { // ✅️ { selector: 'xxx' } of `no-restricted-syntax`
+  /**
+   * Constructor of this class.
+   *
+   * @param {{
+   *   value: number
+   * }} params - Parameters for the constructor.
+   */
+  constructor ({
+    value,
+  }) {
+    this.value = value
+  }
+
+  /**
+   * Factory method.
+   *
+   * @template {X extends typeof ZetaClass ? X : never} T, X
+   * @param {{
+   *   value: number
+   * }} params - Parameters for the factory method.
+   * @returns {InstanceType<T>} Instance of the class.
+   * @this {T}
+   */
+  static create ({
+    value,
+  }) {
+    return /** @type {InstanceType<T>} */ (
+      new this({
+        value,
+      })
+    )
+  }
+}
+
+/**
+ * Ita class.
+ */
+class ItaClass extends ZetaClass { // ✅️ { selector: 'xxx' } of `no-restricted-syntax`
+  /**
+   * Do first.
+   */
+  static doFirst () {
+    // Do something
+  }
+
+  /**
+   * Do second.
+   */
+  static doSecond () {
+    // Do something else
+  }
+}
+
 export default {
   alpha,
   betaValue,
@@ -52,4 +142,9 @@ export default {
   isRadioNodeList,
   gammaPayload,
   FFUtils,
+  DeltaClass,
+  EpsilonClass,
+
+  ZetaClass,
+  ItaClass,
 }
