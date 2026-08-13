@@ -34,11 +34,11 @@ jobs:
           package-manager-cache: false
           node-version: lts/*
 
-      - name: 🔧 setup npm
+      - name: 📦 Install packages
         run: npm ci
 
-      - name: 🔬 run lint
+      - name: 🧵 ESLint
         run: npm run lint
 
-      - name: 🧪 run test
+      - name: 🧪 Jest
         run: npm test
