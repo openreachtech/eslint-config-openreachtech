@@ -28,7 +28,6 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
           node-version: lts/*
-          registry-url: https://npm.pkg.github.com
 
       - name: 🔧 setup npm
         run: npm ci
