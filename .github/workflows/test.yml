@@ -18,6 +18,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    timeout-minutes: 60
+
     steps:
       - name: 🛎 Checkout repository code
         uses: actions/checkout@v7
