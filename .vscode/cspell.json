@@ -9,6 +9,8 @@
     "dateonly",
     "macaddr",
     "citext",
-    "tsvector"
+    "tsvector",
+
+    "esac"
   ]
 }
