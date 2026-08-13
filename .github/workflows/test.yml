@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 60
 
     steps:
-      - name: 🛎 Checkout repository code
+      - name: 🛎️ Checkout repository code
         uses: actions/checkout@v7
 
       - name: 🏗️ Use Node.js
@@ -35,7 +35,7 @@ jobs:
           package-manager-cache: false
           node-version: lts/*
 
-      - name: 🖨 Print runtime versions
+      - name: 🖨️ Print runtime versions
         run: |
           node -v
           npm -v
