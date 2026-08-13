@@ -34,6 +34,11 @@ jobs:
           package-manager-cache: false
           node-version: lts/*
 
+      - name: 🖨 Print runtime versions
+        run: |
+          node -v
+          npm -v
+
       - name: 📦 Install packages
         run: npm ci
 
