@@ -3,6 +3,24 @@ import openreachtechEslintConfig from './lib/eslint.config.js'
 export default [
   ...openreachtechEslintConfig,
 
+  {
+    files: [
+      'tests/**/*.js',
+    ],
+    rules: {
+      'max-classes-per-file': [
+        'error',
+        {
+          max: 1,
+          ignoreExpressions: true, // false
+        },
+      ],
+      'no-undefined': [
+        'error',
+      ],
+    },
+  },
+
   // Disable ESLint Comments rules for CI
   {
     rules: {
