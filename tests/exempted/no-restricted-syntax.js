@@ -27,6 +27,8 @@ document.createElement('div')
 const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore Identifier[name=/.+(?<!class|databaseInclude|RadioNode)List$/] of `no-restricted-syntax` against RadioNodeList
 const databaseIncludeList = [true] // ✅️ { selector: 'Identifier[name=/.+(?<!class|databaseInclude|databaseInclude|RadioNode)List$/]' } of `no-restricted-syntax` against databaseIncludeList
 
+const googleTagManager = {} // ✅️ ignore Identifier[name=/.+(?<!googleTag)Manager$/] of `no-restricted-syntax` against googleTagManager
+
 /*
  * For members of DataTransfer
  */
@@ -142,6 +144,7 @@ export default {
   RequestInfo,
   isRadioNodeList,
   databaseIncludeList,
+  googleTagManager,
 
   gammaPayload,
   FFUtils,
