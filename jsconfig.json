@@ -2,7 +2,7 @@
   "compilerOptions": {
     "checkJs": true,
     "moduleResolution": "nodenext",
-    "module": "es2022",
+    "module": "nodenext",
     "target": "es2023"
   },
   "exclude": [
