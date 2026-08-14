@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "checkJs": true,
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "module": "es2022",
     "target": "es2023"
   },
