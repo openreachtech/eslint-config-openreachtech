@@ -181,9 +181,9 @@ export default [
 
 ## License
 
-This project is released under the MIT License.
+本プロジェクトは Apache License 2.0 で公開されています。
 
-See → [LICENSE](./LICENSE)
+詳細は [LICENSE ファイル](./LICENSE) を参照してください。
 
 ## Contributing
 
