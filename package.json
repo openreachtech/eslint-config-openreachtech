@@ -41,10 +41,15 @@
   },
   "overrides": {
     "brace-expansion": "^5.0.9",
+    "eslint-plugin-jest": "^29.16.0",
     "flatted": "^3.4.2",
     "js-yaml@3": "^3.15.1",
     "minimatch@9": "^9.0.9",
     "picomatch@2": "^2.3.2",
     "picomatch@4": "^4.0.4"
+  },
+  "allowScripts": {
+    "fsevents": false,
+    "unrs-resolver@1.12.2": true
   }
 }
