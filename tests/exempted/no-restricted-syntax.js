@@ -25,6 +25,7 @@ document.createElement('div')
   .classList // ✅️ ignore Identifier[name=/.+(?<!class|RadioNode)List$/] of `no-restricted-syntax` against classList
   .add('unit-layout')
 const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore Identifier[name=/.+(?<!class|RadioNode)List$/] of `no-restricted-syntax` against RadioNodeList
+const databaseIncludeList = [true] // ✅️ { selector: 'Identifier[name=/.+(?<!class|databaseInclude|databaseInclude|RadioNode)List$/]' } of `no-restricted-syntax` against databaseIncludeList
 
 /*
  * For members of DataTransfer
@@ -140,6 +141,8 @@ export default {
   betaValue,
   RequestInfo,
   isRadioNodeList,
+  databaseIncludeList,
+
   gammaPayload,
   FFUtils,
   DeltaClass,
