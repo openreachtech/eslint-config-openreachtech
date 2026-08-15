@@ -2,17 +2,18 @@
   "name": "@openreachtech/eslint-config",
   "version": "4.4.0",
   "description": "ESLint config by Open Reach Tech Inc.",
+  "type": "module",
+  "main": "index.js",
   "files": [
     "lib/",
     "types/"
   ],
-  "main": "index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "l": "npm run lint",
     "lint": "eslint . --ignore-pattern 'tests/linted/' --ignore-pattern 'playground/'",
     "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --detectOpenHandles"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openreachtech/eslint-config-openreachtech.git"
