@@ -36,6 +36,9 @@ jobs:
           # npm ci, can finish in 5s instead of 7s.
           cache: ${{ runner.environment == 'github-hosted' && 'npm' || '' }}
           package-manager-cache: false
+          # A floating LTS alias keeps every repository current without a scheduled
+          # sweep to bump a pinned major across all of them. Pin a concrete version
+          # here only in a repository that genuinely needs one.
           node-version: lts/*
 
       - name: 🖨️ Print runtime versions
