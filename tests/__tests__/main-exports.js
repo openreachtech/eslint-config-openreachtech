@@ -2,6 +2,7 @@ import {
   default as exportedDefault,
   coreConfig,
 
+  eslintCommentsPluginConfig,
   jestPluginConfig,
   jsdocPluginConfig,
   openreachtechPluginConfig,
@@ -13,6 +14,8 @@ import {
 import configAll from '../../lib/eslint.config.js'
 
 import expectedCoreConfig from '../../lib/configurations/core.js'
+
+import expectedEslintCommentsConfig from '../../lib/configurations/plugins/eslint-comments.js'
 import expectedJestConfig from '../../lib/configurations/plugins/jest.js'
 import expectedJsdocConfig from '../../lib/configurations/plugins/jsdoc.js'
 import expectedOpenreachtechConfig from '../../lib/configurations/plugins/openreachtech.js'
@@ -32,6 +35,13 @@ describe('main exports', () => {
     test('should export core config of the Open Reach Tech ESLint config', () => {
       expect(coreConfig)
         .toBe(expectedCoreConfig)
+    })
+  })
+
+  describe('export eslintCommentsPluginConfig', () => {
+    test('should export the ESLint Comments plugin config', () => {
+      expect(eslintCommentsPluginConfig)
+        .toBe(expectedEslintCommentsConfig)
     })
   })
 
