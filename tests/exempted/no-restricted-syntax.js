@@ -22,9 +22,12 @@ document.createElement('form')
   .namedItem('name') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against namedItem
 
 document.createElement('div')
-  .classList // ✅️ ignore Identifier[name=/.+(?<!class|RadioNode)List$/] of `no-restricted-syntax` against classList
+  .classList // ✅️ ignore Identifier[name=/.+(?<!class|databaseInclude|RadioNode)List$/] of `no-restricted-syntax` against classList
   .add('unit-layout')
-const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore Identifier[name=/.+(?<!class|RadioNode)List$/] of `no-restricted-syntax` against RadioNodeList
+const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore Identifier[name=/.+(?<!class|databaseInclude|RadioNode)List$/] of `no-restricted-syntax` against RadioNodeList
+const databaseIncludeList = [true] // ✅️ { selector: 'Identifier[name=/.+(?<!class|databaseInclude|databaseInclude|RadioNode)List$/]' } of `no-restricted-syntax` against databaseIncludeList
+
+const googleTagManager = {} // ✅️ ignore Identifier[name=/.+(?<!googleTag)Manager$/] of `no-restricted-syntax` against googleTagManager
 
 /*
  * For members of DataTransfer
@@ -140,6 +143,9 @@ export default {
   betaValue,
   RequestInfo,
   isRadioNodeList,
+  databaseIncludeList,
+  googleTagManager,
+
   gammaPayload,
   FFUtils,
   DeltaClass,

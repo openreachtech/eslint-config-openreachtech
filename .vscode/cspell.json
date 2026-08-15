@@ -1,14 +1,25 @@
 {
   "words": [
+    "openreach",
+    "openreachtech",
+    "steweucen",
+    "furo",
+    "mentsu",
+    "renchan",
+
+    "ehthumbs",
+    "encryptable",
+
     "datetime",
     "linebreak",
-    "openreachtech",
 
     "tinyint",
     "mediumint",
     "dateonly",
     "macaddr",
     "citext",
-    "tsvector"
+    "tsvector",
+
+    "esac"
   ]
 }
