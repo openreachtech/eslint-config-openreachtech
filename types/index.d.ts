@@ -2,8 +2,14 @@ import {
   Linter,
 } from 'eslint'
 
-declare module '@openreachtech/eslint-config' {
-  const configurations: Array<Linter.FlatConfig>
+export const coreConfig: Linter.FlatConfig
 
-  export = configurations
-}
+export const eslintCommentsPluginConfig: Linter.FlatConfig
+export const jestPluginConfig: Linter.FlatConfig
+export const jsdocPluginConfig: Linter.FlatConfig
+export const openreachtechPluginConfig: Linter.FlatConfig
+export const stylisticPluginConfig: Linter.FlatConfig
+
+declare const configurations: Array<Linter.FlatConfig>
+
+export default configurations
