@@ -4,6 +4,7 @@ import coreRuleOptionHash from './lib/configurations/core-rule-option-hash.js'
 export default [
   ...openreachtechEslintConfig,
 
+  // Re-turn on some rules in test files.
   {
     files: [
       'tests/**/*.js',
