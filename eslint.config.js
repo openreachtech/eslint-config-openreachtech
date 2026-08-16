@@ -1,4 +1,5 @@
 import openreachtechEslintConfig from './lib/eslint.config.js'
+import coreRuleOptionHash from './lib/configurations/core-rule-option-hash.js'
 
 export default [
   ...openreachtechEslintConfig,
@@ -14,6 +15,12 @@ export default [
           max: 1,
           ignoreExpressions: true, // false
         },
+      ],
+      'no-restricted-syntax': [
+        'error',
+        // There are 0 or more rest parameters in the array
+        // string | { selector: string, message: string }
+        ...coreRuleOptionHash['no-restricted-syntax'].spreadOptions,
       ],
       'no-undefined': [
         'error',
