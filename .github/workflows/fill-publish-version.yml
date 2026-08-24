@@ -33,7 +33,7 @@ jobs:
       # Regenerate the lockfile with `gh actions-lock --no-narrow`:
       # without the flag the tool rewrites a major tag to a full one, and the lockfile stops following the major.
       - name: 🤖 Replace vvvvvv with the version in the title
-        uses: actions/github-script@v9
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             /*
