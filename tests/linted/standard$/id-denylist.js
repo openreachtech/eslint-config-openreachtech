@@ -26,6 +26,7 @@ alpha.data = function () { // ❌️ ['data'] of `id-denylist`
 }
 
 const beta = {
+  data: {}, // ❌ ['data'] of `id-denylist`
   list: [], // ❌ ['list'] of `id-denylist`
 }
 
