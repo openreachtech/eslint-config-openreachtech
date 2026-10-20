@@ -5,7 +5,7 @@ class NoSuffix {
     this.array = []
   }
 
-  getAlphaUtil () { // ❌ { selector: 'Identifier[name=/.+Util$/]' } of `no-restricted-syntax`
+  getAlphaUtil () { // ❌ { selector: 'Identifier[name=/.+(?<!FF)Util$/]' } of `no-restricted-syntax`
     return this.array
   }
 }
