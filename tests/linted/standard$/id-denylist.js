@@ -48,6 +48,7 @@ class Gamma {
 const abbreviationHash = {
   acc: null, // ❌ ['acc'] of `id-denylist`
   arr: [], // ❌ ['arr'] of `id-denylist`
+  ary: [], // ❌ ['ary'] of `id-denylist`
   attr: null, // ❌️ ['attr'] of `id-denylist`
   btn: null, // ❌ ['btn'] of `id-denylist`
   cate: null, // ❌ ['cate'] of `id-denylist`
