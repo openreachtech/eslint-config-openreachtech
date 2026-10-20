@@ -5,7 +5,7 @@ class NoSuffix {
     this.array = []
   }
 
-  getAllItems () { // ❌ { selector: 'Identifier[name=/.+(?<!min)Items$/]' } of `no-restricted-syntax`
+  getAllItems () { // ❌ { selector: 'Identifier[name=/^(?!(?:minItems|…)$).+Items$/]' } of `no-restricted-syntax`
     return this.array
   }
 }
