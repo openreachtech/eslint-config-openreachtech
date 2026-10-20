@@ -5,7 +5,7 @@ class NoSuffix {
     this.array = []
   }
 
-  getUserArray () { // ❌ { selector: 'Identifier[name=/.+(?<!is)Array$/]' } of `no-restricted-syntax`
+  getUserArray () { // ❌ { selector: 'Identifier[name=/^(?!(?:isArray|…)$).+Array$/]' } of `no-restricted-syntax`
     return this.array
   }
 }
