@@ -178,21 +178,6 @@ export default [
 ]
 ```
 
-## Denied Identifiers
-
-`id-denylist` cannot carry a message, so the reason for each denied name is written here.
-
-| Identifier | Why | Use instead |
-| :-- | :-- | :-- |
-| `callback` | It does not say when the function runs | A name for the event, such as `onSuccess` |
-| `data` | Every value is data | A name for its kind, such as `userRecord` |
-| `item` | It names no kind of element | A name for the element, such as `product` |
-| `list` | It describes the container instead of the content | A plural noun, such as `users` |
-
-The rest of the names in `id-denylist` are abbreviations, such as `arr`, `btn`, `ctx`, `msg` and `val`. Write the full word instead. The names are listed in `lib/configurations/core-rule-option-hash.js`.
-
-The suffix bans (`List`, `Wrapper` and the others) report their own reason and an alternative in the lint message.
-
 ## License
 
 This project is released under the Apache License 2.0.
