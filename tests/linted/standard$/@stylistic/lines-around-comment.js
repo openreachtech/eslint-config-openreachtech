@@ -8,7 +8,7 @@ const alpha = 'alpha'
  */
 const beta = 'beta'
 
-const gammaArray = [
+const gammas = [
   /* ✅ allowArrayStart:true of `lines-around-comment` */
   'first',
   'second',
@@ -35,7 +35,7 @@ const zetaObject = {
 export default {
   alpha,
   beta,
-  gammaArray,
+  gammas,
   deltaFunc,
   Epsilon,
   zetaObject,
