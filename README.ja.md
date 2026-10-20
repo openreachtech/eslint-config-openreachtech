@@ -192,8 +192,6 @@ export default [
 
 `id-denylist` の残りの名前は `arr`、`btn`、`ctx`、`msg`、`val` などの省略語です。省略せずに書いてください。名前の一覧は `lib/configurations/core-rule-option-hash.js` にあります。
 
-`tests/` 配下のファイルでは、テストが GraphQL レスポンスの `data` キーを書けるように `data` を使えます。其の他の名前は、`tests/` 配下でも禁止のままです。
-
 接尾辞の禁止（`List`、`Wrapper` など）は、理由と代わりの名前を lint のメッセージで示します。
 
 ## License
