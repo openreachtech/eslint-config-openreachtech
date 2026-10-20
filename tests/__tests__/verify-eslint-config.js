@@ -22,7 +22,7 @@ const messageHash = {
     noIdentifierByCanceled: 'Use "canceled" instead of "cancelled" as identifier',
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier. The word adds no new information',
     noIdentifierWithInfoSuffix: 'Not allowed to use "Info" as suffix of identifier. The word adds no new information',
-    noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier',
+    noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier. The word adds no new information',
     noIdentifierWithListSuffix: 'Not allowed to use "List" as suffix of identifier. Use a plural noun at the end of the name of a variable that holds an array',
     noIdentifierWithManagerSuffix: 'Not allowed to use "Manager" as suffix of identifier',
     noShortCircuitEvaluation: 'Use `\\?\\?` instead of short-circuit evaluation with `\\|\\|` operator',
