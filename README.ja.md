@@ -179,21 +179,6 @@ export default [
 ]
 ```
 
-## 禁止している識別子
-
-`id-denylist` はメッセージを持てないため、禁止している名前の理由を此処に書きます。
-
-| Identifier | Why | Use instead |
-| :-- | :-- | :-- |
-| `callback` | 関数が何時動くのかを表さない | `onSuccess` のように、イベントを表す名前 |
-| `data` | 全ての値がデータである | `userRecord` のように、種類を表す名前 |
-| `item` | 要素の種類を表さない | `product` のように、要素を表す名前 |
-| `list` | 中身ではなく入れ物を表している | `users` のような複数形の名詞 |
-
-`id-denylist` の残りの名前は `arr`、`btn`、`ctx`、`msg`、`val` などの省略語です。省略せずに書いてください。名前の一覧は `lib/configurations/core-rule-option-hash.js` にあります。
-
-接尾辞の禁止（`List`、`Wrapper` など）は、理由と代わりの名前を lint のメッセージで示します。
-
 ## License
 
 本プロジェクトは Apache License 2.0 で公開されています。
