@@ -1,11 +1,16 @@
 /* eslint-disable max-classes-per-file */
+/* eslint-disable jsdoc/require-jsdoc */
 
 class AlphaUtil { // ❌ { selector: 'Identifier[name=/.+Util$/]' } of `no-restricted-syntax`
-  // noop
+  constructor () {
+    this.array = []
+  }
 }
 
 class BetaUtils { // ❌ { selector: 'Identifier[name=/.+Utils$/]' } of `no-restricted-syntax`
-  // noop
+  constructor () {
+    this.array = []
+  }
 }
 
 export default {

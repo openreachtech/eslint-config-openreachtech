@@ -1,5 +1,9 @@
+/* eslint-disable jsdoc/require-jsdoc */
+
 class AlphaWrapper { // ❌ { selector: 'Identifier[name=/.+Wrapper$/]' } of `no-restricted-syntax`
-  // noop
+  constructor () {
+    this.array = []
+  }
 }
 
 export default {
