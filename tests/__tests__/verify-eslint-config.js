@@ -20,6 +20,7 @@ const messageHash = {
     noDescribeWithTernaryOperator: 'Do not use ternary operator in `describe\\(\\)`',
     noExpectAnyWithObject: 'Do not use expect.any\\(Object\\)',
     noIdentifierByCanceled: 'Use "canceled" instead of "cancelled" as identifier',
+    noIdentifierWithArraySuffix: 'Not allowed to use "Array" as suffix of identifier. Use a plural noun at the end of the name of a variable that holds an array',
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier. The word adds no new information',
     noIdentifierWithInfoSuffix: 'Not allowed to use "Info" as suffix of identifier. The word adds no new information',
     noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier. The word adds no new information',
