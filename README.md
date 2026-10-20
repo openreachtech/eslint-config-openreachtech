@@ -191,8 +191,6 @@ export default [
 
 The rest of the names in `id-denylist` are abbreviations, such as `arr`, `btn`, `ctx`, `msg` and `val`. Write the full word instead. The names are listed in `lib/configurations/core-rule-option-hash.js`.
 
-Files under `tests/` may use `data`, so that a test can write the `data` key of a GraphQL response. Every other name stays denied there.
-
 The suffix bans (`List`, `Wrapper` and the others) report their own reason and an alternative in the lint message.
 
 ## License
