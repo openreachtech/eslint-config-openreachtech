@@ -60,6 +60,19 @@ export default [
     },
   },
 
+  // Re-turn on `data` of id-denylist for the fixtures of intentional lint errors.
+  {
+    files: [
+      'tests/linted/**/*.js',
+    ],
+    rules: {
+      'id-denylist': [
+        'error',
+        ...coreRuleOptionHash['id-denylist'].spreadOptions,
+      ],
+    },
+  },
+
   // Disable ESLint Comments rules for CI
   {
     rules: {
