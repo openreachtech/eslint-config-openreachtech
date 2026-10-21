@@ -48,7 +48,8 @@ const gammaPayload = {
 /*
  * For FFUtils
  */
-const FFUtils = null // ✅️ ignore Identifier[name=/.+(?<!FF)Utils?$/] of `no-restricted-syntax` against FFUtils
+const FFUtils = null // ✅️ ignore Identifier[name=/.+(?<!FF)Utils$/] of `no-restricted-syntax` against FFUtils
+const FFUtil = null // ✅️ ignore Identifier[name=/.+(?<!FF)Util$/] of `no-restricted-syntax` against FFUtil
 
 // -----------------------------------------------------------------------------
 
@@ -148,6 +149,7 @@ export default {
 
   gammaPayload,
   FFUtils,
+  FFUtil,
   DeltaClass,
   EpsilonClass,
 
