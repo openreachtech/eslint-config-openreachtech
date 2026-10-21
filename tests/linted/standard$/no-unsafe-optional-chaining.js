@@ -10,7 +10,7 @@ const alpha = (target?.alphaFunc)() // ❌ `no-unsafe-optional-chaining`
 const beta = (target?.beta).first // ❌ `no-unsafe-optional-chaining`
 
 const gamma = target.second
-const gammaArray = [
+const gammas = [
   (gamma?.()).second, // ❌ `no-unsafe-optional-chaining`
   (gamma?.()) // ❌ `no-unsafe-optional-chaining`
     .third(),
@@ -136,7 +136,7 @@ export default {
   alpha,
   beta,
   gamma,
-  gammaArray,
+  gammas,
   // delta,
   // epsilon,
   zeta,

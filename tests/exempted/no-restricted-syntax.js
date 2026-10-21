@@ -37,6 +37,14 @@ document.createElement('div')
 const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore Identifier[name=/.+(?<!class|databaseInclude|RadioNode)List$/] of `no-restricted-syntax` against RadioNodeList
 const databaseIncludeList = [true] // ✅️ { selector: 'Identifier[name=/.+(?<!class|databaseInclude|databaseInclude|RadioNode)List$/]' } of `no-restricted-syntax` against databaseIncludeList
 
+Array.isArray([]) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against isArray
+const bytes = new Uint8Array(4) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against Uint8Array
+const floats = new Float32Array(4) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against Float32Array
+const clamped = new Uint8ClampedArray(4) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against Uint8ClampedArray
+const converted = [].values()
+  .toArray() // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against toArray
+const fromArray = null // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against fromArray
+
 const googleTagManager = {} // ✅️ ignore Identifier[name=/.+(?<!googleTag)Manager$/] of `no-restricted-syntax` against googleTagManager
 
 /*
@@ -158,6 +166,11 @@ export default {
   paymentDetails,
   numberOfItems,
   ClipboardItems,
+  bytes,
+  floats,
+  clamped,
+  converted,
+  fromArray,
   isRadioNodeList,
   databaseIncludeList,
   googleTagManager,
