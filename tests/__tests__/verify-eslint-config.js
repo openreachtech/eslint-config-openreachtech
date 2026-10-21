@@ -23,7 +23,7 @@ const messageHash = {
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier',
     noIdentifierWithInfoSuffix: 'Not allowed to use "Info" as suffix of identifier',
     noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier',
-    noIdentifierWithListSuffix: 'Not allowed to use "List" as suffix of identifier',
+    noIdentifierWithListSuffix: 'Not allowed to use "List" as suffix of identifier. Use a plural noun at the end of the name of a variable that holds an array',
     noIdentifierWithManagerSuffix: 'Not allowed to use "Manager" as suffix of identifier',
     noShortCircuitEvaluation: 'Use `\\?\\?` instead of short-circuit evaluation with `\\|\\|` operator',
     noConstructorPassedToHigherOrderFunc: 'Do not pass constructors \\(e\\.g\\., Boolean, Number, String\\) to higher-order functions',
