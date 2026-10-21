@@ -23,6 +23,7 @@ const messageHash = {
     noIdentifierWithDataSuffix: 'Not allowed to use "Data" as suffix of identifier. The word adds no new information',
     noIdentifierWithInfoSuffix: 'Not allowed to use "Info" as suffix of identifier. The word adds no new information',
     noIdentifierWithItemSuffix: 'Not allowed to use "Item" as suffix of identifier. The word adds no new information',
+    noIdentifierWithItemsSuffix: 'Not allowed to use "Items" as suffix of identifier',
     noIdentifierWithListSuffix: 'Not allowed to use "List" as suffix of identifier. Use a plural noun at the end of the name of a variable that holds an array',
     noIdentifierWithManagerSuffix: 'Not allowed to use "Manager" as suffix of identifier',
     noIdentifierWithUtilSuffix: 'Not allowed to use "Util" as suffix of identifier',

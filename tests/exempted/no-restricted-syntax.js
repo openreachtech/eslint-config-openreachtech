@@ -17,6 +17,16 @@ const RequestInfo = class {} // ✅️ ignore Identifier[name=/.+(?<!Request)Inf
 localStorage.getItem('key') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against getItem
 localStorage.setItem('key', 'value') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against setItem
 localStorage.removeItem('key') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against removeItem
+const rule = { minItems: null, maxItems: null } // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against minItems and maxItems
+const { style } = document.createElement('div')
+style.alignItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against alignItems
+style.webkitAlignItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against webkitAlignItems
+style.placeItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against placeItems
+style.justifyItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against justifyItems
+const paymentDetails = { displayItems: [], additionalDisplayItems: [] } // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against displayItems and additionalDisplayItems
+const numberOfItems = 0 // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against numberOfItems
+const ClipboardItems = null // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against ClipboardItems
+
 document.createElement('form')
   .elements
   .namedItem('name') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against namedItem
@@ -143,6 +153,11 @@ export default {
   alpha,
   betaValue,
   RequestInfo,
+  rule,
+  style,
+  paymentDetails,
+  numberOfItems,
+  ClipboardItems,
   isRadioNodeList,
   databaseIncludeList,
   googleTagManager,
