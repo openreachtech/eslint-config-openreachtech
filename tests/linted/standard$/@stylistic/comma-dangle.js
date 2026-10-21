@@ -20,7 +20,7 @@ const objects = {
   gamma: 30 // ❌ always-multiline `comma-dangle`
 }
 
-const oneLineArray = [1, 2, 3] // ✅ always-multiline `comma-dangle`
+const oneLineNumbers = [1, 2, 3] // ✅ always-multiline `comma-dangle`
 const oneLineObject = { arrays, objects } // ✅ always-multiline `comma-dangle`
 
 function commaDangle (
@@ -31,7 +31,7 @@ function commaDangle (
 }
 
 export default {
-  oneLineArray,
+  oneLineNumbers,
   oneLineObject,
   commaDangle // ❌ always-multiline `comma-dangle`
 }

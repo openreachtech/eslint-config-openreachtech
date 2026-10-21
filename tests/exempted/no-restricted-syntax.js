@@ -17,6 +17,16 @@ const RequestInfo = class {} // ✅️ ignore Identifier[name=/.+(?<!Request)Inf
 localStorage.getItem('key') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against getItem
 localStorage.setItem('key', 'value') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against setItem
 localStorage.removeItem('key') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against removeItem
+const rule = { minItems: null, maxItems: null } // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against minItems and maxItems
+const { style } = document.createElement('div')
+style.alignItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against alignItems
+style.webkitAlignItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against webkitAlignItems
+style.placeItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against placeItems
+style.justifyItems = 'center' // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against justifyItems
+const paymentDetails = { displayItems: [], additionalDisplayItems: [] } // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against displayItems and additionalDisplayItems
+const numberOfItems = 0 // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against numberOfItems
+const ClipboardItems = null // ✅️ ignore Identifier[name=/^(?!(?:minItems|…)$).+Items$/] of `no-restricted-syntax` against ClipboardItems
+
 document.createElement('form')
   .elements
   .namedItem('name') // ✅️ ignore Identifier[name=/.+(?<!get|set|remove|named)Item$/] of `no-restricted-syntax` against namedItem
@@ -26,6 +36,14 @@ document.createElement('div')
   .add('unit-layout')
 const isRadioNodeList = value => value instanceof RadioNodeList // ✅️ ignore Identifier[name=/.+(?<!class|databaseInclude|RadioNode)List$/] of `no-restricted-syntax` against RadioNodeList
 const databaseIncludeList = [true] // ✅️ { selector: 'Identifier[name=/.+(?<!class|databaseInclude|databaseInclude|RadioNode)List$/]' } of `no-restricted-syntax` against databaseIncludeList
+
+Array.isArray([]) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against isArray
+const bytes = new Uint8Array(4) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against Uint8Array
+const floats = new Float32Array(4) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against Float32Array
+const clamped = new Uint8ClampedArray(4) // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against Uint8ClampedArray
+const converted = [].values()
+  .toArray() // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against toArray
+const fromArray = null // ✅️ ignore Identifier[name=/^(?!(?:isArray|…)$).+Array$/] of `no-restricted-syntax` against fromArray
 
 const googleTagManager = {} // ✅️ ignore Identifier[name=/.+(?<!googleTag)Manager$/] of `no-restricted-syntax` against googleTagManager
 
@@ -48,7 +66,8 @@ const gammaPayload = {
 /*
  * For FFUtils
  */
-const FFUtils = null // ✅️ ignore Identifier[name=/.+(?<!FF)Utils?$/] of `no-restricted-syntax` against FFUtils
+const FFUtils = null // ✅️ ignore Identifier[name=/.+(?<!FF)Utils$/] of `no-restricted-syntax` against FFUtils
+const FFUtil = null // ✅️ ignore Identifier[name=/.+(?<!FF)Util$/] of `no-restricted-syntax` against FFUtil
 
 // -----------------------------------------------------------------------------
 
@@ -142,12 +161,23 @@ export default {
   alpha,
   betaValue,
   RequestInfo,
+  rule,
+  style,
+  paymentDetails,
+  numberOfItems,
+  ClipboardItems,
+  bytes,
+  floats,
+  clamped,
+  converted,
+  fromArray,
   isRadioNodeList,
   databaseIncludeList,
   googleTagManager,
 
   gammaPayload,
   FFUtils,
+  FFUtil,
   DeltaClass,
   EpsilonClass,
 
