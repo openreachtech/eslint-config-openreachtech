@@ -10,6 +10,7 @@
   ],
   "types": "./types/index.d.ts",
   "scripts": {
+    "audit:npm": "node node_modules/@openreachtech/mentsu-npm-audit-gate/scripts/npm-audit-gate.js scripts/stopgap-audit/IGNORED_ADVISORIES.js",
     "l": "npm run lint",
     "lint": "eslint . --ignore-pattern 'tests/linted/' --ignore-pattern 'playground/'",
     "test": "export NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\"; jest --detectOpenHandles"
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@openreachtech/eslint-inspector": "^2.1.2",
+    "@openreachtech/mentsu-npm-audit-gate": "^0.1.0",
     "@types/jest": "^30.0.0",
     "eslint": "^9.39.5",
     "jest": "^30.4.2"
