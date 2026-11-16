@@ -45,7 +45,6 @@
     "jest": "^30.4.2"
   },
   "overrides": {
-    "brace-expansion@5": "^5.0.12",
     "eslint-plugin-jest": "^29.16.0",
     "flatted": "^3.4.2",
     "glob@>=9": "^14.0.2",
