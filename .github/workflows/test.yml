@@ -19,13 +19,24 @@ jobs:
     # from the merge gate.
     name: CI Test
 
-    runs-on: ubuntu-latest
+    # private repository: self-hosted
+    # public repository: github-hosted
+    runs-on: ${{ fromJSON(github.event.repository.private && '["self-hosted", "light"]' || '["ubuntu-latest"]') }}
 
     timeout-minutes: 60
 
     steps:
+      # ⚠️ Actions are named by their major tag, and actions.lock pins the commit each one runs.
+      # Regenerate the lockfile with `gh actions-lock --no-narrow`: without the flag the tool
+      # rewrites a major tag to a full one, and the lockfile stops following the major.
       - name: 🛎️ Checkout repository code
         uses: actions/checkout@v7
+        with:
+          # ⚠️ Checkout otherwise leaves the token in .git/config for the rest
+          # of the job, and no step here reaches a remote: npm ci talks to the
+          # registry. What would still reach the token is an install script, which
+          # arrives from whatever the lockfile of the branch under test names.
+          persist-credentials: false
 
       - name: 🏗️ Use Node.js
         uses: actions/setup-node@v7
@@ -41,13 +52,37 @@ jobs:
           # here only in a repository that genuinely needs one.
           node-version: lts/*
 
-      - name: 🖨️ Print runtime versions
+      - name: 🖨️ Print environment
+        env:
+          RUNNER_ENVIRONMENT: ${{ runner.environment }}
         run: |
-          node -v
-          npm -v
+          echo
+          echo "runner: $RUNNER_ENVIRONMENT"
+          echo "node  : $(node -v)"
+          echo "npm   : $(npm -v)"
 
       - name: 📦 Install packages
         run: npm ci
+
+      # ⚠️ This gate runs after npm ci and before ESLint and Jest.
+      # The script imports its own dependency from node_modules, so it cannot run before the install.
+      # What still matters is that an advisory answers before the installed files are executed,
+      # and ESLint and Jest are the steps that execute them.
+      # strict-allow-scripts in .npmrc stops npm ci from running install scripts,
+      # so the install itself runs none of that code.
+      #
+      # ⚠️ The script runs npm audit itself and fails on every advisory except the ones
+      # the file it is given lists, a stopgap until a release fixes them.
+      # An entry whose advisory is no longer reported fails too, so the list cannot outlive its reason.
+      #
+      # ⚠️ A 503 from the advisory service leaves npm with no report, and the script says
+      # so rather than listing advisories. npm does not retry the bulk POST
+      # (`--fetch-retries=4` still sends one request), so rerun the job.
+      - name: 🛡️ npm audit
+        run: npm run audit:npm
+
+      - name: 🛡️ Audit action versions
+        run: npm run audit:actions
 
       - name: 🧵 ESLint
         run: npm run lint
